@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DBBasedExplorer">
+    <MSBuild Projects="DB ReportExplorer\DBBasedExplorerD15.dproj" Targets="" />
+  </Target>
+  <Target Name="EQGrid6ReportLink">
+    <MSBuild Projects="EQGrid6RL\EQGrid6ReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLink">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLink">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorer">
+    <MSBuild Projects="ReportExplorer\ReportExplorerD15.dproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLink">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRL">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLD15.dproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLink">
+    <MSBuild Projects="StandardRL\StandardReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="TeeChartReportLink">
+    <MSBuild Projects="TeeChartRL\TeeChartReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLink">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLink">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkD15.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DBBasedExplorerD15;EQGrid6ReportLinkD15;FlowChartReportLinkD15;LayoutControlReportLinkD15;OrgChartReportLinkD15;ReportExplorerD15;SchedulerLinkD15;SpreadSheetRLD15;StandardReportLinkD15;TeeChartReportLinkD15;PivotGridReportLinkD15;cxTreeListReportLinkD15" />
+  </Target>
+</Project>

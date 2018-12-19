@@ -1,0 +1,7 @@
+In this demo you can:
+
+- look at a full-featured set of editors provided for you by Developer Express Inc.
+
+- experience with data editing by using different editors in one column
+
+- check how little source code required to provide the above functionality.

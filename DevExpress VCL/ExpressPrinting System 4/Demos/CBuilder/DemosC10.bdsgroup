@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="DBBasedExplorerC10.exe" Type="String">DB ReportExplorer\DBBasedExplorerC10.bdsproj</Projects>
+      <Projects Name="EQGrid6ReportLinkC10.exe" Type="String">EQGrid6RL\EQGrid6ReportLinkC10.bdsproj</Projects>
+      <Projects Name="FlowChartReportLinkC10.exe" Type="String">FlowChartRL\FlowChartReportLinkC10.bdsproj</Projects>
+      <Projects Name="LayoutControlReportLinkC10.exe" Type="String">LayoutControlRL\LayoutControlReportLinkC10.bdsproj</Projects>
+      <Projects Name="OrgChartReportLinkC10.exe" Type="String">OrgChartRL\OrgChartReportLinkC10.bdsproj</Projects>
+      <Projects Name="ReportExplorerC10.exe" Type="String">ReportExplorer\ReportExplorerC10.bdsproj</Projects>
+      <Projects Name="SchedulerLinkC10.exe" Type="String">SchedulerRL\SchedulerLinkC10.bdsproj</Projects>
+      <Projects Name="SpreadSheetRLC10.exe" Type="String">SpreadSheetRL\SpreadSheetRLC10.bdsproj</Projects>
+      <Projects Name="StandardReportLinkC10.exe" Type="String">StandardRL\StandardReportLinkC10.bdsproj</Projects>
+      <Projects Name="TeeChartReportLinkC10.exe" Type="String">TeeChartRL\TeeChartReportLinkC10.bdsproj</Projects>
+      <Projects Name="PivotGridReportLinkC10.exe" Type="String">PivotGridRL\PivotGridReportLinkC10.bdsproj</Projects>
+      <Projects Name="cxTreeListReportLinkC10.exe" Type="String">cxTreeListRL\cxTreeListReportLinkC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">DBBasedExplorerC10.exe EQGrid6ReportLinkC10.exe FlowChartReportLinkC10.exe LayoutControlReportLinkC10.exe OrgChartReportLinkC10.exe ReportExplorerC10.exe SchedulerLinkC10.exe SpreadSheetRLC10.exe StandardReportLinkC10.exe TeeChartReportLinkC10.exe PivotGridReportLinkC10.exe cxTreeListReportLinkC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

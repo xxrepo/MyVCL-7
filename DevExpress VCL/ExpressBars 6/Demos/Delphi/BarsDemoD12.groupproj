@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{D5FB5D96-F9AA-45A9-A3D7-D8723F1BC9A2}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EBar2000Demo">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="EBarMDIDemo">
+    <MSBuild Projects="EBarMDIDemo\EBarMDIDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="EBarMegaDemo">
+    <MSBuild Projects="EBarMegaDemo\EBarMegaDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="BackgroundDemo">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemo">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="ESBarDemo">
+    <MSBuild Projects="ESBarDemo\ESBarDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemo">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemo">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="SampleDocking">
+    <MSBuild Projects="SampleDocking\SampleDockingD12.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EBar2000DemoD12;EBarMDIDemoD12;EBarMegaDemoD12;BackgroundDemoD12;DockingMegaDemoD12;ESBarDemoD12;InPlaceEditorsDemoD12;RibbonNotepadDemoD12;SampleDockingD12" />
+  </Target>
+</Project>

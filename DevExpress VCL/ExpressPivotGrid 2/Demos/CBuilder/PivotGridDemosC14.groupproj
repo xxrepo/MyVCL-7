@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ChartConnectionDemo">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemo">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemo">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowser">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrderReportsDemo">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemo">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemo">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemo">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ChartConnectionDemoC14;CustomDrawDemoC14;DataSetsDemoC14;MultipleTotalsDemoC14;OLAPBrowserC14;OrderReportsDemoC14;SortBySummaryDemoC14;StylesMultiDemoC14;UnboundExternalDemoC14;PrefilterByCodeDemoC14;EditorsInPlaceDemoC14" />
+  </Target>
+</Project>

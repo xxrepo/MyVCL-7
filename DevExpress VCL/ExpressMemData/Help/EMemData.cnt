@@ -1,0 +1,19 @@
+:Base EMemData.hlp
+:Title ExpressMemData
+:Index ExpressMemData=EMemData.hlp
+1 ExpressMemData
+2 Getting Started=TdxMemDataGettingStarted
+2 Known Issues and Important Changes List=CD_Known_Issues_and_Important_Changes_List
+2 Unit dxmdaset=IDH_Unit_dxmdaset
+2 How To
+3 Add Different Types of Data=How_to_Add_Different_Types_of_Data_to_MemData
+3 Populate a MemData Table from Another DataSet=How_to_Populate_a_MemData_Table_from_Another_MemData_or_Any_Other_TDataSet_Descendant
+3 Populate MemData via Direct Memory Access=How_to_Populate_MemData_via_Direct_Memory_Access
+2 Controls
+3 TdxMemData=IDH_Class_TdxMemData
+2 Objects
+3 TdxCustomMemData=IDH_Class_TdxCustomMemData
+3 TdxMemField=IDH_Class_TdxMemField
+3 TdxMemFields=IDH_Class_TdxMemFields
+3 TdxMemIndex=IDH_Class_TdxMemIndex
+3 TdxMemIndexes=IDH_Class_TdxMemIndexes

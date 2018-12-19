@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="EBar2000Demo.exe" Type="String">EBar2000Demo\EBar2000Demo.bdsproj</Projects>
+      <Projects Name="MDIDemo.exe" Type="String">MDIDemo\MDIDemo.bdsproj</Projects>
+      <Projects Name="EBarMegaDemo.exe" Type="String">EBarMegaDemo\EBarMegaDemo.bdsproj</Projects>
+      <Projects Name="BackgroundDemo.exe" Type="String">BackgroundDemo\BackgroundDemo.bdsproj</Projects>
+      <Projects Name="DockingMegaDemo.exe" Type="String">DockingMegaDemo\DockingMegaDemo.bdsproj</Projects>
+      <Projects Name="ESBarDemo.exe" Type="String">ESBarDemo\ESBarDemo.bdsproj</Projects>
+      <Projects Name="InPlaceEditorsDemo.exe" Type="String">InPlaceEditorsDemo\InPlaceEditorsDemo.bdsproj</Projects>
+      <Projects Name="RibbonNotepadDemo.exe" Type="String">RibbonNotepadDemo\RibbonNotepadDemo.bdsproj</Projects>
+      <Projects Name="SampleDocking.exe" Type="String">SampleDocking\SampleDocking.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">EBar2000Demo.exe MDIDemo.exe EBarMegaDemo.exe BackgroundDemo.exe DockingMegaDemo.exe ESBarDemo.exe InPlaceEditorsDemo.exe RibbonNotepadDemo.exe SampleDocking.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

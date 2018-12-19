@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DBBasedExplorer">
+    <MSBuild Projects="DB ReportExplorer\DBBasedExplorerRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="DBTreeReportLink">
+    <MSBuild Projects="DBTreeRL\DBTreeReportLinkRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLink">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink1">
+    <MSBuild Projects="LC LookAndFeel\LayoutControlReportLink1RSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink2">
+    <MSBuild Projects="LC MSMoneyStyle\LayoutControlReportLink2RSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLink">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorer">
+    <MSBuild Projects="ReportExplorer\ReportExplorerRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRL">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLink">
+    <MSBuild Projects="StandardRL\StandardReportLinkRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="TeeChartReportLink">
+    <MSBuild Projects="TeeChartRL\TeeChartReportLinkRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DBBasedExplorerRSC14;DBTreeReportLinkRSC14;FlowChartReportLinkRSC14;LayoutControlReportLink1RSC14;LayoutControlReportLink2RSC14;OrgChartReportLinkRSC14;ReportExplorerRSC14;SpreadSheetRLRSC14;StandardReportLinkRSC14;TeeChartReportLinkRSC14" />
+  </Target>
+</Project>

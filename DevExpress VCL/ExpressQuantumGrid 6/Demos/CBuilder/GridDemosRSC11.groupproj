@@ -1,0 +1,146 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ViewTableSimpleDemo">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemo">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemo">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemo">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemo">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemo">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemo">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemo">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemo">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemo">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemo">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemo">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemo">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemo">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemo">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemo">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemo">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemo">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemo">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemo">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemo">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemo">
+    <MSBuild Projects="GridModeDemo\GridModeDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemo">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsLookupDemo">
+    <MSBuild Projects="EditorsLookupDemo\EditorsLookupDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsMaskDemo">
+    <MSBuild Projects="EditorsMaskDemo\EditorsMaskDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemo">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemo">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemo">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemo">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemo">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemo">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemo">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemo">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemo">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemo">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemo">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="IssueList">
+    <MSBuild Projects="IssueList\IssueListRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsStylesDemo">
+    <MSBuild Projects="EditorsStylesDemo\EditorsStylesDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemo">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemo">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemo">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemo">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemo">
+    <MSBuild Projects="FilterDemo\FilterDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ViewTableSimpleDemoRSC11;ViewBandedDemoRSC11;ViewBandedFixedDemoRSC11;ViewNestedBandsDemoRSC11;ViewCardSimpleDemoRSC11;ViewCardDemoRSC11;MasterDetailTableDemoRSC11;MasterDetailCardDemoRSC11;MasterDetailDemoRSC11;MasterDetailMultiDemoRSC11;UnboundSimpleDemoRSC11;UnboundListDemoRSC11;UnboundExternalDataDemoRSC11;UnboundDesignDefinedDemoRSC11;UnboundModeDemoRSC11;UnboundColumnsDemoRSC11;SummaryFooterDemoRSC11;SummaryGroupDemoRSC11;SummaryMultiDemoRSC11;FilterByCodeDemoRSC11;FilterControlDemoRSC11;GridModeDemoRSC11;ColumnsSimpleDemoRSC11;EditorsInPlaceDemoRSC11;EditorsLookupDemoRSC11;EditorsMaskDemoRSC11;ColumnsMultiEditorsDemoRSC11;ColumnsShareDemoRSC11;StylesMultiDemoRSC11;StylesCardViewDemoRSC11;StylesSimpleDemoRSC11;CellLevelMultiselectDemoRSC11;CustomDrawTableViewDemoRSC11;CustomDrawCardViewDemoRSC11;Office11GroupRowStyleDemoRSC11;DragDropDemoRSC11;CustomRowHeightDemoRSC11;GridMenuViewsDemoRSC11;IssueListRSC11;EditorsStylesDemoRSC11;ViewChartDemoRSC11;MasterDetailChartDemoRSC11;CardLayoutDemoRSC11;ChartDataDrillingDemoRSC11;FilterDemoRSC11" />
+  </Target>
+</Project>

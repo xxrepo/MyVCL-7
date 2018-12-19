@@ -1,0 +1,45 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = EBar2000Demo.exe EBarMDIDemo.exe EBarMegaDemo.exe BackgroundDemo.exe \
+DockingMegaDemo.exe ESBarDemo.exe InPlaceEditorsDemo.exe RibbonNotepadDemo.exe \
+SampleDocking.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+EBar2000Demo.exe: EBar2000Demo\EBar2000Demo.dpr
+  $(DCC)
+
+EBarMDIDemo.exe: EBarMDIDemo\EBarMDIDemo.dpr
+  $(DCC)
+
+EBarMegaDemo.exe: EBarMegaDemo\EBarMegaDemo.dpr
+  $(DCC)
+
+BackgroundDemo.exe: BackgroundDemo\BackgroundDemo.dpr
+  $(DCC)
+
+DockingMegaDemo.exe: DockingMegaDemo\DockingMegaDemo.dpr
+  $(DCC)
+
+ESBarDemo.exe: ESBarDemo\ESBarDemo.dpr
+  $(DCC)
+
+InPlaceEditorsDemo.exe: InPlaceEditorsDemo\InPlaceEditorsDemo.dpr
+  $(DCC)
+
+RibbonNotepadDemo.exe: RibbonNotepadDemo\RibbonNotepadDemo.dpr
+  $(DCC)
+
+SampleDocking.exe: SampleDocking\SampleDocking.dpr
+  $(DCC)

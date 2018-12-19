@@ -1,0 +1,62 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemo">
+    <MSBuild Projects="BandedDemo\BandedDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemo">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemo">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemo">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemo">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemo">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemo">
+    <MSBuild Projects="SummariesDemo\SummariesDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemo">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemo">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemo">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemo">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemo">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsLookupDemo">
+    <MSBuild Projects="EditorsLookupDemo\EditorsLookupDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsMaskDemo">
+    <MSBuild Projects="EditorsMaskDemo\EditorsMaskDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoD11;BandedFixedDemoD11;CheckGroupsDemoD11;CustomDrawDemoD11;EditorsInPlaceDemoD11;SimpleListDemoD11;SimpleTreeDemoD11;StylesMultiDemoD11;StylesSimpleDemoD11;SummariesDemoD11;UnboundModeDemoD11;VirtualModeDemoD11;ProviderModeDemoD11;DragDropDemoD11;ColumnsMultiEditorsDemoD11;EditorsLookupDemoD11;EditorsMaskDemoD11" />
+  </Target>
+</Project>

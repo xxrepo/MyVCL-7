@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="OrderReportsDemo.exe" Type="String">OrderReportsDemo\OrderReportsDemo.bdsproj</Projects>
+      <Projects Name="MultipleTotalsDemo.exe" Type="String">MultipleTotalsDemo\MultipleTotalsDemo.bdsproj</Projects>
+      <Projects Name="SortBySummaryDemo.exe" Type="String">SortBySummaryDemo\SortBySummaryDemo.bdsproj</Projects>
+      <Projects Name="UnboundExternalDemo.exe" Type="String">UnboundExternalDemo\UnboundExternalDemo.bdsproj</Projects>
+      <Projects Name="StylesMultiDemo.exe" Type="String">StylesMultiDemo\StylesMultiDemo.bdsproj</Projects>
+      <Projects Name="CustomDrawDemo.exe" Type="String">CustomDrawDemo\CustomDrawDemo.bdsproj</Projects>
+      <Projects Name="DataSetsDemo.exe" Type="String">DataSetsDemo\DataSetsDemo.bdsproj</Projects>
+      <Projects Name="ChartConnectionDemo.exe" Type="String">ChartConnectionDemo\ChartConnectionDemo.bdsproj</Projects>
+      <Projects Name="OLAPBrowser.exe" Type="String">OLAPBrowser\OLAPBrowser.bdsproj</Projects>
+      <Projects Name="PrefilterByCodeDemo.exe" Type="String">PrefilterByCodeDemo\PrefilterByCodeDemo.bdsproj</Projects>
+      <Projects Name="EditorsInPlaceDemo.exe" Type="String">EditorsInPlaceDemo\EditorsInPlaceDemo.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">OrderReportsDemo.exe MultipleTotalsDemo.exe SortBySummaryDemo.exe UnboundExternalDemo.exe StylesMultiDemo.exe CustomDrawDemo.exe DataSetsDemo.exe ChartConnectionDemo.exe OLAPBrowser.exe PrefilterByCodeDemo.exe EditorsInPlaceDemo.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="CustomDrawDemoC10.exe" Type="String">CustomDrawDemo\CustomDrawDemoC10.bdsproj</Projects>
+      <Projects Name="DBDemoC10.exe" Type="String">DBDemo\DBDemoC10.bdsproj</Projects>
+      <Projects Name="StylesDemoC10.exe" Type="String">StylesDemo\StylesDemoC10.bdsproj</Projects>
+      <Projects Name="UnboundDemoC10.exe" Type="String">UnboundDemo\UnboundDemoC10.bdsproj</Projects>
+      <Projects Name="ResourceDemoC10.exe" Type="String">ResourceDemo\ResourceDemoC10.bdsproj</Projects>
+      <Projects Name="GanttViewDemoC10.exe" Type="String">GanttViewDemo\GanttViewDemoC10.bdsproj</Projects>
+      <Projects Name="HolidaysDemoC10.exe" Type="String">HolidaysDemo\HolidaysDemoC10.bdsproj</Projects>
+      <Projects Name="AggregateDemoC10.exe" Type="String">AggregateDemo\AggregateDemoC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">CustomDrawDemoC10.exe DBDemoC10.exe StylesDemoC10.exe UnboundDemoC10.exe ResourceDemoC10.exe GanttViewDemoC10.exe HolidaysDemoC10.exe AggregateDemoC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

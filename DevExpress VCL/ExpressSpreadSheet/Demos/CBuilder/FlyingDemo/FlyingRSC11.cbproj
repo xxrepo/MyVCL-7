@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MainSource>Flying.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+    <Defines>NO_STRICT</Defines>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <BCC_wpar>false</BCC_wpar>
+    <IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;..\Common;..</IncludePath>
+    <AllPackageLibs>rtl.lib;vcl.lib;cxSpreadSheetRS11.lib;cxLibraryRS11.lib;dxThemeRS11.lib;vcldb.lib;dbrtl.lib;bdertl.lib;adortl.lib;vclx.lib;;dxCoreRS11.lib;dxGDIPlusRS11.lib</AllPackageLibs>
+    <ILINK_LibraryPath>$(BDS)\lib\release;$(BDS)\lib;$(BDS)\lib\obj;$(BDS)\lib\psdk;..\Common;..</ILINK_LibraryPath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <BorlandProject>
+        <CPlusPlusBuilder.Personality>
+        </CPlusPlusBuilder.Personality>
+      </BorlandProject>
+    </BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Cpp.Targets" />
+  <ItemGroup>
+    <ResFiles Include="Flying.res">
+    </ResFiles>
+    <ResFiles Include="Default.res">
+    </ResFiles>
+    <CppCompile Include="Flying.cpp"> </CppCompile>
+    <CppCompile Include="FlyingMain.cpp">
+      <Form>FlyingMainForm</Form>
+    </CppCompile>
+    <CppCompile Include="FlyingSeatCalc.cpp">
+      <Form>FlyingSeatCalcForm</Form>
+    </CppCompile>
+    <CppCompile Include="FlyingSupport.cpp"> </CppCompile>
+    <FormResources Include="FlyingMain.dfm" />
+    <FormResources Include="FlyingSeatCalc.dfm" />
+  </ItemGroup>
+</Project>

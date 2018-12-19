@@ -1,0 +1,1 @@
+IF EXIST PrintCapabilities.dll regsvr32.exe PrintCapabilities.dll

@@ -1,0 +1,118 @@
+<%
+    if (Form.IsFirstRequest) {
+      var NavBar = Form.CreateComponent("TcxWebNavBar");
+      if(NavBar)
+      {
+        NavBar.Name = "bMain";
+        NavBar.Left = 10;
+        NavBar.Top = 100;
+        var NavBarGroup = NavBar.Groups.Add;
+        NavBarGroup.Text = 'Pages';
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Login page"
+        gi.URL.Href = "IncludeLoginPage"
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Welcome page"
+        gi.URL.Href = "IncludeWelcomePage"
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Database page"
+        gi.URL.Href = "IncludeGridPage"
+
+        var NavBarGroup = NavBar.Groups.Add;
+        NavBarGroup.Text = 'Links';
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Developer Express Inc."
+        gi.URL.Href = "http://www.devexpress.com"
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Borland Inc."
+        gi.URL.Href = "http://www.borland.com"
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Microsoft Corp."
+        gi.URL.Href = "http://www.microsoft.com"
+
+        var NavBarGroup = NavBar.Groups.Add;
+        NavBarGroup.Text = 'Seachers';
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Altavista"
+        gi.URL.Href = "http://www.altavista.com"
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Google"
+        gi.URL.Href = "http://www.google.com"
+        var gi = NavBarGroup.Items.Add;
+        gi.Text = "Yahoo!"
+        gi.URL.Href = "http://www.yahoo.com"
+      }
+      var Menu = Form.CreateComponent("TcxWebMainMenu");
+      if(Menu)
+      {
+        Menu.Name = "mmMain";
+        Menu.Left = 240;
+        Menu.Top = 10;
+        Menu.ZIndex = 100;
+
+        var MenuItem = Menu.Items.Add;
+        MenuItem.Width = 200;
+        MenuItem.Name = "miPages";
+        MenuItem.Caption = "Pages";
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miPage1";
+        MenuSubItem.Caption = "Login page";
+        MenuSubItem.URL.Href = "IncludeLoginPage"
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miPage2";
+        MenuSubItem.Caption = "Welcome page";
+        MenuSubItem.URL.Href = "IncludeWelcomePage"
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miPage3";
+        MenuSubItem.Caption = "Database page";
+        MenuSubItem.URL.Href = "IncludeGridPage"
+
+        var MenuItem = Menu.Items.Add;
+        MenuItem.Name = "miLinks";
+        MenuItem.Width = 200;
+        MenuItem.Caption = "Links";
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miLink1";
+        MenuSubItem.Caption = "Developer Express Inc.";
+        MenuSubItem.URL.Href = "http://www.devexpress.com"
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miLink2";
+        MenuSubItem.Caption = "Borland Inc.";
+        MenuSubItem.URL.Href = "http://www.borland.com"
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miLink3";
+        MenuSubItem.Caption = "Microsoft Corp.";
+        MenuSubItem.URL.Href = "http://www.microsoft.com"
+
+        var MenuItem = Menu.Items.Add;
+        MenuItem.Name = "miSearchers";
+        MenuItem.Width = 200;
+        MenuItem.Caption = "Searchers";
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miSearcher1";
+        MenuSubItem.Caption = "Altavista";
+        MenuSubItem.URL.Href = "http://www.altavista.com"
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miSearcher2";
+        MenuSubItem.Caption = "Google";
+        MenuSubItem.URL.Href = "http://www.google.com"
+        var MenuSubItem = MenuItem.Add;
+        MenuSubItem.Name = "miSearcher3";
+        MenuSubItem.Caption = "Yahoo!";
+        MenuSubItem.URL.Href = "http://www.yahoo.com"
+      }
+      
+    }
+%>
+
+<TABLE border=0 width="100%">
+  <TR>
+    <TD align="left" valign="top" rowspan=2 height=300 width=220 >
+      <ewf:NavBar id="bMain">
+    </TD>
+    <TD align="left" valign="top" colspan=2 height=40>
+      <ewf:MainMenu id="mmMain">
+    </TD>
+  </TR>
+  <TR>
+     <TD align="left" valign="top">

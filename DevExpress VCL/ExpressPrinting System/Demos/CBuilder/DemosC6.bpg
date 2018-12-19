@@ -1,0 +1,48 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = DBBasedExplorerC6.exe DBTreeReportLinkC6.exe FlowChartReportLinkC6.exe LayoutControlReportLink1C6.exe \
+LayoutControlReportLink2C6.exe OrgChartReportLinkC6.exe ReportExplorerC6.exe SpreadSheetRLC6.exe \
+StandardReportLinkC6.exe TeeChartReportLinkC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+DBBasedExplorerC6.exe: DB ReportExplorer\DBBasedExplorerC6.bpr
+  $(MAKE)
+
+DBTreeReportLinkC6.exe: DBTreeRL\DBTreeReportLinkC6.bpr
+  $(MAKE)
+
+FlowChartReportLinkC6.exe: FlowChartRL\FlowChartReportLinkC6.bpr
+  $(MAKE)
+
+LayoutControlReportLink1C6.exe: LC LookAndFeel\LayoutControlReportLink1C6.bpr
+  $(MAKE)
+
+LayoutControlReportLink2C6.exe: LC MSMoneyStyle\LayoutControlReportLink2C6.bpr
+  $(MAKE)
+
+OrgChartReportLinkC6.exe: OrgChartRL\OrgChartReportLinkC6.bpr
+  $(MAKE)
+
+ReportExplorerC6.exe: ReportExplorer\ReportExplorerC6.bpr
+  $(MAKE)
+
+SpreadSheetRLC6.exe: SpreadSheetRL\SpreadSheetRLC6.bpr
+  $(MAKE)
+
+StandardReportLinkC6.exe: StandardRL\StandardReportLinkC6.bpr
+  $(MAKE)
+
+TeeChartReportLinkC6.exe: TeeChartRL\TeeChartReportLinkC6.bpr
+  $(MAKE)

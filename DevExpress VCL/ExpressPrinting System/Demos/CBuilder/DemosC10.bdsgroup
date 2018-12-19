@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="DBBasedExplorerC10.exe" Type="String">DB ReportExplorer\DBBasedExplorerC10.bdsproj</Projects>
+      <Projects Name="DBTreeReportLinkC10.exe" Type="String">DBTreeRL\DBTreeReportLinkC10.bdsproj</Projects>
+      <Projects Name="FlowChartReportLinkC10.exe" Type="String">FlowChartRL\FlowChartReportLinkC10.bdsproj</Projects>
+      <Projects Name="LayoutControlReportLink1C10.exe" Type="String">LC LookAndFeel\LayoutControlReportLink1C10.bdsproj</Projects>
+      <Projects Name="LayoutControlReportLink2C10.exe" Type="String">LC MSMoneyStyle\LayoutControlReportLink2C10.bdsproj</Projects>
+      <Projects Name="OrgChartReportLinkC10.exe" Type="String">OrgChartRL\OrgChartReportLinkC10.bdsproj</Projects>
+      <Projects Name="ReportExplorerC10.exe" Type="String">ReportExplorer\ReportExplorerC10.bdsproj</Projects>
+      <Projects Name="SpreadSheetRLC10.exe" Type="String">SpreadSheetRL\SpreadSheetRLC10.bdsproj</Projects>
+      <Projects Name="StandardReportLinkC10.exe" Type="String">StandardRL\StandardReportLinkC10.bdsproj</Projects>
+      <Projects Name="TeeChartReportLinkC10.exe" Type="String">TeeChartRL\TeeChartReportLinkC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">DBBasedExplorerC10.exe DBTreeReportLinkC10.exe FlowChartReportLinkC10.exe LayoutControlReportLink1C10.exe LayoutControlReportLink2C10.exe OrgChartReportLinkC10.exe ReportExplorerC10.exe SpreadSheetRLC10.exe StandardReportLinkC10.exe TeeChartReportLinkC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

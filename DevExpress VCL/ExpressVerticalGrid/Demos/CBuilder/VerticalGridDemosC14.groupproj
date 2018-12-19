@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsLookupDemo">
+    <MSBuild Projects="EditorsLookupDemo\EditorsLookupDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsMaskDemo">
+    <MSBuild Projects="EditorsMaskDemo\EditorsMaskDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemo">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemo">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemo">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemo">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemo">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoC14;EditorsInPlaceDemoC14;EditorsLookupDemoC14;EditorsMaskDemoC14;ProviderModeDemoC14;RowsMultiEditorsDemoC14;RTTIInspectorDemoC14;SimpleVerticalGridDemoC14;StylesMultiDemoC14;StylesSimpleDemoC14" />
+  </Target>
+</Project>

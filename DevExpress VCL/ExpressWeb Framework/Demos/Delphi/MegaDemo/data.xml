@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<data>
+	<item id="i0" img="0" name=" Beginning ASP Databases">
+		As a tutorial, Beginning ASP Databases offers an entry point to one of the most crucial aspects of Microsoft-oriented Web development--database integration with Active Server Pages. In Beginning ASP Databases, a trio of authors covers the basics of working with databases from ASP--especially using...
+	</item>
+	<item id="i1" img="1" name=" Professional JavaScript with DHTML, ASP, CGI, FESI, Netscape Enterprise Server, Windows Script Host, LiveConnect and Java">
+		JavaScript is the language of the web, used in programming all the major browsers. It is a powerful scripting language that lets web developers produce more powerful, more user-friendly and more interactive web pages, and with the release of the Version 5 browsers its power will become even greater...
+	</item>
+	<item id="i2" img="2" name=" Sams Teach Yourself E-Commerce Programming with ASP in 21 Days (Teach Yourself -- 21 Days)">
+		The friendly, tutorial style of Sams Teach Yourself E-Commerce Programming with ASP in 21 Days empowers you to create your own online stores quickly and easily. Using online-proven methods, Stephen Walther, an expert e-commerce developer, provides you with an understanding of online commerce...
+	</item>
+	<item id="i3" img="3" name=" Programming Data-Driven Web Applications with ASP.NET">
+		Programming Data-Driven Web Applications with ASP.NET provides readers with a solid understanding of ASP.NET and how to effectively integrate databases with their Web sites. The key to making information instantly available on the Web is integrating the Web site and the database to work as one...
+	</item>
+	<item id="i4" img="4" name=" ASP Internals">
+		A concise guide to Microsoft's Active Server Pages in which software developer and instructor Flanders shows how to enhance the technology with the Component Object Model to create dynamic Web applications that are more scalable and robust. The ASP source code is private property and therefore...
+	</item>
+</data>

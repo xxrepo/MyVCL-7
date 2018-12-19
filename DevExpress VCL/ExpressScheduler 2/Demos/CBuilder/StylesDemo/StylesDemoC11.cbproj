@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MainSource>StylesDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+    <Defines>NO_STRICT</Defines>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <BCC_wpar>false</BCC_wpar>
+    <IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;..\Common;..</IncludePath>
+    <AllPackageLibs>rtl.lib;vcl.lib;cxSchedulerC11.lib;cxExportC11.lib;cxEditorsC11.lib;cxExtEditorsC11.lib;cxLibraryC11.lib;cxDataC11.lib;dxThemeC11.lib;vcldb.lib;dbrtl.lib;bdertl.lib;adortl.lib;vclx.lib;;dxCoreC11.lib;dxGDIPlusC11.lib</AllPackageLibs>
+    <ILINK_LibraryPath>$(BDS)\lib\release;$(BDS)\lib;$(BDS)\lib\obj;$(BDS)\lib\psdk;..\Common;..</ILINK_LibraryPath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <BorlandProject>
+        <CPlusPlusBuilder.Personality>
+        </CPlusPlusBuilder.Personality>
+      </BorlandProject>
+    </BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Cpp.Targets" />
+  <ItemGroup>
+    <ResFiles Include="StylesDemo.res">
+    </ResFiles>
+    <CppCompile Include="StylesDemo.cpp"> </CppCompile>
+    <CppCompile Include="..\DemoBasicMain.cpp">
+      <Form>DemoBasicMainForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\AboutDemoForm.cpp">
+      <Form>formAboutDemo</Form>
+    </CppCompile>
+    <CppCompile Include="StylesMainUnit.cpp">
+      <Form>StylesMainForm</Form>
+    </CppCompile>
+    <FormResources Include="..\DemoBasicMain.dfm" />
+    <FormResources Include="..\AboutDemoForm.dfm" />
+    <FormResources Include="StylesMainUnit.dfm" />
+  </ItemGroup>
+</Project>

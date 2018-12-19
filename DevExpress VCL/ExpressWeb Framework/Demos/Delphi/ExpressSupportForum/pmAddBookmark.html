@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title><%=Context.Page.Title%></title>
+      <% if (Form.NeedClose) { %>
+    <script>
+        close();
+    </script>
+      <% } %>
+  </head>
+  <body><ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<TABLE border=0 cellPadding=1 cellSpacing=1 width="340">
+    <TR><TD width=280 bgcolor="black"><span style="font-family: Arial; font-size: 8pt; color: #ffffff;">&nbsp;This item will be added the to your bookmarks</span></TD>
+        <td><img src="/dxforum/images/1x1.gif" width="1" height="1"></td>
+        <TD width=60><ewf:Button id="Add"></TD></TR>
+    <TR><TD><span style="font-family: Arial; font-size: 8pt;"><strong>Name:&nbsp;</strong></span> <ewf:Edit id="BookName">
+        <td><img src="/dxforum/images/1x1.gif" width="1" height="1"></td>
+        <TD><ewf:Button id="Cancel">
+</TD></TR>
+</TABLE>
+  </ewf:Form>
+  </body>
+</html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

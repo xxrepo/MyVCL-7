@@ -1,0 +1,22 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = SpellCheckerSimpleDemoC6.exe SpellCheckerMegaDemoC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+SpellCheckerSimpleDemoC6.exe: SimpleDemo\SpellCheckerSimpleDemoC6.bpr
+  $(MAKE)
+
+SpellCheckerMegaDemoC6.exe: MegaDemo\SpellCheckerMegaDemoC6.bpr
+  $(MAKE)

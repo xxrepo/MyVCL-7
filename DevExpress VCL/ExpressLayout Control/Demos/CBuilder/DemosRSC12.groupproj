@@ -1,0 +1,20 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{D5FB5D96-F9AA-45A9-A3D7-D8723F1BC9A2}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="LookAndFeels">
+    <MSBuild Projects="Look &amp; Feels\LookAndFeelsRSC12.cbproj" Targets="" />
+  </Target>
+  <Target Name="MSMoneyStyle">
+    <MSBuild Projects="MS Money Style\MSMoneyStyleRSC12.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="LookAndFeelsRSC12;MSMoneyStyleRSC12" />
+  </Target>
+</Project>

@@ -1,0 +1,38 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BackgroundDemo">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemo">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EBarMegaDemo">
+    <MSBuild Projects="EBarMegaDemo\EBarMegaDemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EBar2000Demo">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EBarMDIDemo">
+    <MSBuild Projects="EBarMDIDemo\EBarMDIDemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ESBarDemo">
+    <MSBuild Projects="ESBarDemo\ESBarDemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemo">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemo">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SampleDocking">
+    <MSBuild Projects="SampleDocking\SampleDockingC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BackgroundDemoC11;DockingMegaDemoC11;EBarMegaDemoC11;EBar2000DemoC11;EBarMDIDemoC11;ESBarDemoC11;InPlaceEditorsDemoC11;RibbonNotepadDemoC11;SampleDockingC11" />
+  </Target>
+</Project>

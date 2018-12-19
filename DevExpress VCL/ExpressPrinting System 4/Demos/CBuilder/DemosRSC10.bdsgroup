@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="DBBasedExplorerRSC10.exe" Type="String">DB ReportExplorer\DBBasedExplorerRSC10.bdsproj</Projects>
+      <Projects Name="EQGrid6ReportLinkRSC10.exe" Type="String">EQGrid6RL\EQGrid6ReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="FlowChartReportLinkRSC10.exe" Type="String">FlowChartRL\FlowChartReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="LayoutControlReportLinkRSC10.exe" Type="String">LayoutControlRL\LayoutControlReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="OrgChartReportLinkRSC10.exe" Type="String">OrgChartRL\OrgChartReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="ReportExplorerRSC10.exe" Type="String">ReportExplorer\ReportExplorerRSC10.bdsproj</Projects>
+      <Projects Name="SchedulerLinkRSC10.exe" Type="String">SchedulerRL\SchedulerLinkRSC10.bdsproj</Projects>
+      <Projects Name="SpreadSheetRLRSC10.exe" Type="String">SpreadSheetRL\SpreadSheetRLRSC10.bdsproj</Projects>
+      <Projects Name="StandardReportLinkRSC10.exe" Type="String">StandardRL\StandardReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="TeeChartReportLinkRSC10.exe" Type="String">TeeChartRL\TeeChartReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="PivotGridReportLinkRSC10.exe" Type="String">PivotGridRL\PivotGridReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="cxTreeListReportLinkRSC10.exe" Type="String">cxTreeListRL\cxTreeListReportLinkRSC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">DBBasedExplorerRSC10.exe EQGrid6ReportLinkRSC10.exe FlowChartReportLinkRSC10.exe LayoutControlReportLinkRSC10.exe OrgChartReportLinkRSC10.exe ReportExplorerRSC10.exe SchedulerLinkRSC10.exe SpreadSheetRLRSC10.exe StandardReportLinkRSC10.exe TeeChartReportLinkRSC10.exe PivotGridReportLinkRSC10.exe cxTreeListReportLinkRSC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

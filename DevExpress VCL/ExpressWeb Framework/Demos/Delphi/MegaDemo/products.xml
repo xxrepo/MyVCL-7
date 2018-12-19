@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<products xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:noNamespaceSchemaLocation="products.xsd">
+	<product id="i1" name="ExpressQuantumGrid">
+		<img src="EQuantumGrid.jpg"/>
+		<description>
+			The Limitless Grid - TreeList - and Field Editors control library for the VCL. Includes over 45 components to help you create killer applications without writing a single line of code. The ExpressQuantumGrid Suite is available in both a Professional and Standard Editions.
+		</description>
+		<price>249.99</price>
+	</product>
+	<product id="i2" name="ExpressQuantumTreeList">
+		<img src="ETreelist.jpg"/>
+		<description>
+			Data aware and non-data aware TreeList technology - along with 34 standalone field editors. With these components, you can quickly display self-referenced hierarchical data using both a tree and list display metaphor as well as build top-notch data entry forms, without writing a single line of code.
+		</description>
+		<price>169.99</price>
+	</product>
+	<product id="i3" name="ExpressBars">
+		<img src="Ebars.jpg"/>
+		<description>
+			The Unrivaled ExpressBars Suite - Fully emulate the menu/toolbar and sidebar navigation systems introduced in MS Officer 97, 2000, and Internet Explorer. In fact, with version 4, you can even emulate the new toolbar/menu system introduced in the yet unreleased version of Office 10 and the .NET IDE!
+		</description>
+		<price>129.99</price>
+	</product>
+	<product id="i4" name="ExpressMasterView">
+		<img src="Emasterv.jpg"/>
+		<description>
+			ExpressMasterView is specifically designed for Delphi and C++Builder developers who need to represent multiple datasets in a hierarchal manner within a single grid control.
+		</description>
+		<price>179.99</price>
+	</product>
+	<product id="i5" name="ExpressPrinting System">
+		<img src="Eprint.jpg"/>
+		<description>
+			Take a sledge hammer to traditional banded reports, and the hassles associated with their creation, with the only full featured data rendering and printing engine for the VCL. When you start using the ExpressPrinting System, you can bring your application to the printed page by rendering visual controls such as the ExpressQuantumGrid and ExpressMasterView - giving you reports on-the-fly without actually creating a single report!
+		</description>
+		<price>179.99</price>
+	</product>
+	<product id="i6" name="ExpressDBTree">
+		<img src="EDBTree.jpg"/>
+		<description>
+			Fast, efficient data aware and non data aware Tree Suite with the New Developer Express re-sizeable drop down window technology, to help you represent self-referenced tables via familiar tree structures.
+		</description>
+		<price>59.99</price>
+	</product>
+	<product id="i7" name="ExpressInspector">
+		<img src="EInspector.jpg"/>
+		<description>
+			A powerful-easy to use and resource friendly suite of components to help you build user friendly applications easily and without any hassles... The suite includes 14 unique in-place editors to solve all your data entry requirements.
+		</description>
+		<price>69.99</price>
+	</product>
+	<product id="i8" name="ExpressOrgChart">
+		<img src="EOrgChart.jpg"/>
+		<description>
+			Specifically designed for VCL programmers to display hierarchical tree information using the powerful display properties of charts such as those found in products like Visior&amp;reg;.
+		</description>
+		<price>89.99</price>
+	</product>
+	<product id="i9" name="ExpressFlowChart">
+		<img src="EFlowChart.jpg"/>
+		<description>
+			The Power to display and edit charts of any style and manner... You can finally build information and workflow diagrams, hierarchical charts, network topologies, equation graphs and so much more.
+		</description>
+		<price>89.99</price>
+	</product>
+</products>

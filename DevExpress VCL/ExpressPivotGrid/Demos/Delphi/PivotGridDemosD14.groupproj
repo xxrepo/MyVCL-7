@@ -1,0 +1,32 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemo">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemo">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemo">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemo">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoD14;MultipleTotalsDemoD14;SortBySummaryDemoD14;UnboundExternalDemoD14;StylesMultiDemoD14;CustomDrawDemoD14" />
+  </Target>
+</Project>

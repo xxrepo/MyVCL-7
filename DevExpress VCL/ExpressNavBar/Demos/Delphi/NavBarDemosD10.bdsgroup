@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="AlphaBlendingDemo.exe" Type="String">AlphaBlendingDemo\AlphaBlendingDemo.bdsproj</Projects>
+      <Projects Name="DragDropDemo.exe" Type="String">DragDropDemo\DragDropDemo.bdsproj</Projects>
+      <Projects Name="FeaturesDemo.exe" Type="String">FeaturesDemo\FeaturesDemo.bdsproj</Projects>
+      <Projects Name="GroupControlDemo.exe" Type="String">GroupControlDemo\GroupControlDemo.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">AlphaBlendingDemo.exe DragDropDemo.exe FeaturesDemo.exe GroupControlDemo.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

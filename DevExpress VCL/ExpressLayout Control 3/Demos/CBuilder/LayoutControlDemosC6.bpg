@@ -1,0 +1,25 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = cxEditorsDemoC6.exe EditorsDemoC6.exe PuzzleDemoC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+cxEditorsDemoC6.exe: cxEditorsDemo\cxEditorsDemoC6.bpr
+  $(MAKE)
+
+EditorsDemoC6.exe: EditorsDemo\EditorsDemoC6.bpr
+  $(MAKE)
+
+PuzzleDemoC6.exe: PuzzleDemo\PuzzleDemoC6.bpr
+  $(MAKE)

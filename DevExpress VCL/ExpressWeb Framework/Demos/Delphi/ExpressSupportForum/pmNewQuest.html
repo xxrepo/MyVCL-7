@@ -1,0 +1,114 @@
+<html>
+  <head><title><%=Context.Page.Title%></title>
+  <script language="javascript">
+  	function valid() {
+		var arNames = new Array("weSubject", "Body")
+		var arMessages = new Array("Subject Required!", "Body Required!")
+		var i;
+		frm = document.Newquest;
+
+		for (i = 0; i < arNames.length; i++) {
+			if(frm[arNames[i]].value == "") {
+				alert(arMessages[i])
+				frm[arNames[i]].focus();
+				return false
+			}
+		}
+		return true;
+	}
+  </script>
+    <link href="/dx.css" type="text/css" rel="stylesheet">
+<meta content="MSHTML 6.00.2600.0" name="GENERATOR"></head>
+  <body><ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<div align="center">
+<table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffc454" border="0" valign="middle">
+<tbody>
+<tr>
+  <td colspan="2"><img height="6" src="/dxforum/images/1x1.gif" width="20"></td></tr>
+<tr>
+  <td><img height="1" src="/dxforum/images/1x1.gif" width="20"></td>
+  <td width="2000">
+    <div style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Arial"><b>NEW QUESTION:</b></div></td></tr>
+<tr>
+  <td colspan="2"><img height="5" src="/dxforum/images/1x1.gif" width="20"></td></tr>
+<tr>
+  <td bgcolor="white" colspan="2"><img height="2" src="/dxforum/images/1x1.gif" width="20"></td></tr></tbody></table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+  <td bgcolor="black"><img height="2" src="/dxforum/images/1x1.gif" width="1"></td></tr>
+<tr>
+  <td align="middle" bgcolor="black"><font face="Arial" color="white" size="2">Subject</font></td></tr>
+<tr>
+  <td bgcolor="black"><img height="4" src="/dxforum/images/1x1.gif" width="1"></td></tr></tbody></table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+  <td bgcolor="white"><img height="7" src="/dxforum/images/1x1.gif" width="1"></td></tr>
+<tr>
+  <td align="middle" width="2000" bgcolor="white"><ewf:Edit id="weSubject"></td></tr></tbody></table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+  <td bgcolor="white"><img height="10" src="/dxforum/images/1x1.gif" width="1"></td>
+  <td bgcolor="white"><img height="7" src="/dxforum/images/1x1.gif" width="1"></td></tr>
+<tr>
+  <td bgcolor="white"><img height="1" src="/dxforum/images/1x1.gif" width="20"></td>
+  <td align="left" width="1000" bgcolor="#ffffff">
+    <table cellspacing="0" cellpadding="0" border="0">
+<tbody>
+    <tr><td colspan="6"><font face="Arial" color="#ff7d00" size="2"><strong>Platform:</strong></font></td></tr>
+    <tr>
+    <td><ewf:CheckBox id="win95"></td>
+    <td><ewf:CheckBox id="win98"></td>
+    <td><ewf:CheckBox id="winnt"></td>
+    <td><ewf:CheckBox id="winme"></td>
+    <td><ewf:CheckBox id="w2000"></td>
+    <td><ewf:CheckBox id="winxp"></td></tr></tbody></table></td></tr></tbody></table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+  <td bgcolor="white" rowspan="3"><img height="1" src="/dxforum/images/1x1.gif" width="20"></td>
+  <td width="1000"><img height="20" src="/dxforum/images/1x1.gif" width="1"></td></tr>
+<tr>
+<td align="left" bgcolor="#ffffff"><font face="Arial" color="#ff7d00" size="2">
+<strong>Development tool:</strong></font></td></tr>
+<tr>
+  <td bgcolor="#ffffff"><table cellspacing="3" cellpadding="0" width="100%" bgcolor="#ffffff" border="0">
+<tbody>
+      <tr>
+        <td align="left" bgcolor="#ffffff"><ewf:CheckBox id="d1"></td><td bgcolor="#ffffff"><ewf:CheckBox id="d2"></td><td bgcolor="#ffffff"><ewf:CheckBox id="d3"></td><td bgcolor="#ffffff"><ewf:CheckBox id="d4"></td><td bgcolor="#ffffff"><ewf:CheckBox id="d5"></td><td bgcolor="#ffffff"><ewf:CheckBox id="d6"></td></tr>
+<tr>
+<td align="left" bgcolor="#ffffff"><font size="2"><ewf:CheckBox id="cb1"></font></td><td bgcolor="#ffffff"><ewf:CheckBox id="cb3"></td><td bgcolor="#ffffff"><ewf:CheckBox id="cb4"></td><td bgcolor="#ffffff"><ewf:CheckBox id="cb5"></td><td bgcolor="#ffffff"><ewf:CheckBox id="cb6"></td><td bgcolor="#ffffff">&nbsp;</td></tr>
+<tr>
+<td align="left" bgcolor="#ffffff"><font size="2"><ewf:CheckBox id="cppnet" type=checkbox value="check"></font></td><td bgcolor="#ffffff"><ewf:CheckBox id="csnet" type=checkbox value="check"></td><td bgcolor="#ffffff"><ewf:CheckBox id="vbnet" type=checkbox value="check"></td><td bgcolor="#ffffff"><ewf:CheckBox id="jsnet" type=checkbox value="check"></td><td bgcolor="#ffffff"><ewf:CheckBox id="fpnet" type=checkbox value="check"></td><td bgcolor="#ffffff"><ewf:CheckBox id="aspnet" type=checkbox value="check"></td><td bgcolor="#ffffff">&nbsp;</td></tr>
+<tr>
+<td align="left" bgcolor="#ffffff"><font size="2"><ewf:CheckBox id="vb5"></font></td><td bgcolor="#ffffff"><ewf:CheckBox id="vb6"></td><td bgcolor="#ffffff"><ewf:CheckBox id="vc5"></td><td bgcolor="#ffffff"><ewf:CheckBox id="vc6"></td>
+<td bgcolor="#ffffff">&nbsp;</td></tr>
+<tr>
+<td align="left" bgcolor="#ffffff"><font size="2"><ewf:CheckBox id="vid6"></font></td><td bgcolor="#ffffff"><ewf:CheckBox id="IE"></td><td bgcolor="#ffffff"><ewf:CheckBox id=ACC97></td><td bgcolor="#ffffff"><ewf:CheckBox id=ACC2000></td><td bgcolor="#ffffff"><ewf:CheckBox id=ACC2002></td><td bgcolor="#ffffff">&nbsp;</td></tr></tbody></table></td></tr></tbody></table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+  <td bgcolor="black"><img height="2" src="/dxforum/images/1x1.gif" width="1"></td></tr>
+<tr>
+  <td align="middle" bgcolor="black"><font face="Arial" color="white" size="2">Body</font></td></tr>
+<tr>
+  <td bgcolor="black"><img height="4" src="/dxforum/images/1x1.gif" width="1"></td></tr></tbody></table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+  <td><img height="7" src="/dxforum/images/1x1.gif" width="1"></td></tr>
+  <tr>
+    <td align="middle" colspan="2"><ewf:Memo id="Body"></td></tr>
+<tr>
+  <td><img height="7" src="/dxforum/images/1x1.gif" width="1"></td></tr>
+  <tr>
+    <td align="middle" bgcolor="#ffffff" colspan="2">
+<ewf:Button id="wbAsk">&nbsp;<ewf:Button id="wbReset"></td></tr></tbody></table></div></ewf:form><!--#include file="copy.inc"--></body></html>

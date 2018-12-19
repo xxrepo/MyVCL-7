@@ -1,0 +1,27 @@
+:Base EFChart.hlp
+:Title ExpressFlowChart Suite
+:Index ExpressFlowChart Suite=EFChart.hlp
+1 ExpressFlowChart
+2 Overview=Overview
+2 Getting Started=ExpressFlowChart_Getting_Started
+2 Controls
+3 TdxFlowChart=IDH_Class_TdxFlowChart
+3 TdxCustomFlowChart=IDH_Class_TdxCustomFlowChart
+2 Objects
+3 TdxFcItem=IDH_Class_TdxFcItem
+3 TdxFcConnection=IDH_Class_TdxFcConnection
+3 TdxFcConnectionArrow=IDH_Class_TdxFcConnectionArrow
+3 TdxFcObject=IDH_Class_TdxFcObject
+2 Procedures
+3 Distance=IDH_Lines_Distance
+3 ExtendRect=IDH_Lines_ExtendRect
+3 LineCenter=IDH_Lines_LineCenter
+3 LineLength=IDH_Lines_LineLength
+3 MassCenter=IDH_Lines_MassCenter
+3 PtOnLine=IDH_Lines_PtOnLine
+3 QSpline=IDH_Lines_QSpline
+3 RectHLine=IDH_Lines_RectHLine
+3 RectVLine=IDH_Lines_RectVLine
+3 ShowFlowChartEditor=IDH_ShowFlowChartEditor
+2 Types
+3 TLineType=IDH_Type_TLineType

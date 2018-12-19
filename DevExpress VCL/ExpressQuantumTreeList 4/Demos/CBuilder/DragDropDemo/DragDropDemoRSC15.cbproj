@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{203A8955-30D0-427D-9BC8-F362BF24E09E}</ProjectGuid>
+    <ProjectVersion>12.2</ProjectVersion>
+    <MainSource>DragDropDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <Multithreaded>true</Multithreaded>
+    <AllPackageLibs>rtl.lib;vcl.lib;vcldb.lib;dbrtl.lib;bdertl.lib;adortl.lib;cxLibraryRS15.lib;dxGDIPlusRS15.lib;dxThemeRS15.lib;cxTreeListRS15.lib;cxEditorsRS15.lib;cxExportRS15.lib;cxDataRS15.lib;vclimg.lib;vclx.lib;dxCoreRS15.lib</AllPackageLibs>
+    <LinkPackageImports></LinkPackageImports>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+   <IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;$(BDS)\include\windows\;$(BDS)\include\windows\vcl;$(BDS)\include\windows\rtl;..\Common;..</IncludePath>
+   <ILINK_LibraryPath>$(BDS)\lib\release;$(BDS)\lib;$(BDS)\lib\obj;$(BDS)\lib\psdk;..\Common;..</ILINK_LibraryPath>
+    <BCC_wpar>false</BCC_wpar>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResFiles Include="DragDropDemo.res">
+    </ResFiles>
+    <CppCompile Include="DragDropDemo.cpp"> </CppCompile>
+    <CppCompile Include="DragDropDemoMain.cpp">
+      <Form>DragDropDemoMainForm</Form>
+    </CppCompile>
+    <CppCompile Include="DragDropDemoData.cpp">
+      <Form>DragDropDemoDataDM</Form>
+    </CppCompile>
+    <CppCompile Include="..\Common\DemoRating.cpp">
+      <Form>DemoRatingForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\Common\DemoBasicAbout.cpp">
+      <Form>DemoBasicAboutForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\Common\DemoBasicMain.cpp">
+      <Form>DemoBasicMainForm</Form>
+    </CppCompile>
+    <CppCompile Include="DragDropDemoDictionary.cpp">
+      <Form>DragDropDemoDictionaryForm</Form>
+    </CppCompile>
+    <FormResources Include="DragDropDemoMain.dfm" />
+    <FormResources Include="DragDropDemoData.dfm" />
+    <FormResources Include="..\Common\DemoRating.dfm" />
+    <FormResources Include="..\Common\DemoBasicAbout.dfm" />
+    <FormResources Include="..\Common\DemoBasicMain.dfm" />
+    <FormResources Include="DragDropDemoDictionary.dfm" />
+  </ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <CPlusPlusBuilder.Personality>
+      </CPlusPlusBuilder.Personality>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DBBasedExplorer">
+    <MSBuild Projects="DB ReportExplorer\DBBasedExplorerD11.dproj" Targets="" />
+  </Target>
+  <Target Name="EQGrid6ReportLink">
+    <MSBuild Projects="EQGrid6RL\EQGrid6ReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLink">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLink">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorer">
+    <MSBuild Projects="ReportExplorer\ReportExplorerD11.dproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLink">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRL">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLD11.dproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLink">
+    <MSBuild Projects="StandardRL\StandardReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="TeeChartReportLink">
+    <MSBuild Projects="TeeChartRL\TeeChartReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLink">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLink">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkD11.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DBBasedExplorerD11;EQGrid6ReportLinkD11;FlowChartReportLinkD11;LayoutControlReportLinkD11;OrgChartReportLinkD11;ReportExplorerD11;SchedulerLinkD11;SpreadSheetRLD11;StandardReportLinkD11;TeeChartReportLinkD11;PivotGridReportLinkD11;cxTreeListReportLinkD11" />
+  </Target>
+</Project>

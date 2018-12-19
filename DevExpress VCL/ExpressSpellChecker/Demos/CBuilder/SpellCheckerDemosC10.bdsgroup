@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="SpellCheckerSimpleDemoC10.exe" Type="String">SimpleDemo\SpellCheckerSimpleDemoC10.bdsproj</Projects>
+      <Projects Name="SpellCheckerMegaDemoC10.exe" Type="String">MegaDemo\SpellCheckerMegaDemoC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">SpellCheckerSimpleDemoC10.exe SpellCheckerMegaDemoC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

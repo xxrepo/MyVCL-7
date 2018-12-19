@@ -1,0 +1,89 @@
+v4.0.0 4 October 2012
+- Borrowed from ESBPCS for VCL so that ESBMaths so that it would be 64-bit compatible for XE2 and above.
+
+v3.2.1 14 June 2001
+- PiE constant renamed to PiToE
+- Fixed D3 compatibility
+
+v3.2 18 May 2001 - Only on D6 Companion Disk
+- Added Delphi 6 Support
+
+v3.1 17 April 2001
+- Added Rory Daulton's LongWord Routines
+- Added Rory Daulton's IGreatestPowerOf2 Routine
+- Added Gamma Function Calculation
+- Added Inverse Gamma Function Calculation
+- Added LnGamma (Natural Log of Gamma) Function Calculation
+- Added Beta Function Calculation
+- Added Incomplete Beta Function Calculation
+
+v3.0 8 October 2000
+- Many improvements to Optimisation.
+- Improved and Added Constants.
+- Michael Schnell developed BitsHighest that makes BitsNeeded much
+	more efficient.
+- Set Default ESBTolerance much smaller.
+- Added FloatIsNegative & FloatIsPositive.
+- Swaps changed back to Pascal since for D4 and above it optimises to
+	better code.
+- Added Swaps for the Floats and Int64.
+- Improved ISqrt from Rory Daulton.
+- Added ILog2 from Rory Daulton.
+- Factorial, Permutations & Binomial Coefficients now correctly handle
+	up to N = 1754.
+- Added ESBArcSec and ESBArcCosec.
+- Power & Log Routines completely overhauled - many thanks to Rory Daulton.
+
+v2.3 13 November 1999
+- very nice GCD Routine donated by Marcel Martin.
+- LCM and Relative Prime Routines to go with above added.
+- InPlace Addition & Subtraction of Matrices added.
+- Multiplication of Matrices added.
+- Transposing Matrices added.
+
+v2.2 18 September 1999
+- Now over 130 Routines
+- Added Delphi 5 Support
+- All Optional Dependence on Math Unit removed by our own routines
+- Added a collection of Constants for faster calculations
+- Added several Trigonometric Routines
+- Added Hyperbolic Routines
+- Added Various Logarithm and Power Routines
+
+v2.1 13 July 1999
+- Now with over 110 Routines!
+- Added ESBDigits and ESBBitsNeeded for Cardinals to ESBMaths
+- Added ESBMagnitude for Reals to ESBMaths
+- Added GrandMean to ESBMath2
+- Added Matrix Operations to ESBMath2, just the start
+
+v2.0 16 Apr 1999
+- Delphi 4 specific routines moved to ESBMaths2
+- Added Vector operations to ESBMath2
+
+v1.1 22 Jan 1999
+- Improved Delphi 4 support
+- Added: SumLWArray, SumSqEArray, SumSqDiffEArray, SumXYEArray
+- Added: IsPositiveEArray
+- Added: Geometric and Harmonic Means
+- Added ESBMean, Median and Mode
+- Added Routines for Variances and Means for Populations & Samples
+- Added Quartile Calculations
+- Fixed a couple of minor bugs
+- Fixed bug in XY2Polar reported by Wolfgang Werner
+- Added Help File
+
+v1.01 17 July 1998
+- Added some improvements suggested by Rory Daulton
+- Added Factorials using Extendeds
+- Added Permutations using Extendeds
+- Added Combinations using Extendeds
+- Added SwapI32 to Swap Integers
+- Added SwapC to Swap Cardinals
+- Added Factorials computed using Extendeds
+- Added Permutations computed using Extendeds
+- Added Binomial Coefficients (Combinations) computed using Extendeds
+
+1.0 17 Apr 1997
+- First Public Freeware Release
+

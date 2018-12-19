@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+   <Option>
+      <Option Name="Personality">CPlusPlusBuilder.Personality</Option>
+      <Option Name="ProjectType">CppVCLApplication</Option>
+    </Option>
+  </PersonalityInfo>
+  <CPlusPlusBuilder.Personality>
+    <BCBPROJECT>
+      <project version="10.0">
+        <property category="build.config" name="excludedefaultforzero" value="0"/>
+        <property category="build.config.0" name="settings.win32b" value="default"/>
+        <property category="build.node" name="name" value="MasterDetailDemoRSC10.exe"/>
+        <property category="build.node" name="sparelibs" value="cxPageControlRS10.lib cxGridRS10.lib cxExportRS10.lib cxEditorsRS10.lib cxExtEditorsRS10.lib cxLibraryRS10.lib dxGDIPlusRS10.lib cxDataRS10.lib dxThemeRS10.lib vcldb.lib dbrtl.lib bdertl.lib adortl.lib vclx.lib vcl.lib rtl.lib dxCoreRS10.lib  "/>
+        <property category="build.platform" name="active" value="win32"/>
+        <property category="build.platform" name="win32.default" value="win32b"/>
+        <property category="build.platform" name="win32.enabled" value="1"/>
+        <property category="build.platform" name="win32.win32b.enabled" value="1"/>
+        <optionset name="all_configurations">
+          <property category="node" name="displayname" value="All Configurations"/>
+          <property category="win32.*.win32b.bcc32" name="option.D.arg.1" value="$(SYSDEFINES)"/>
+          <property category="win32.*.win32b.bcc32" name="option.D.arg.2" value="$(USERDEFINES)"/>
+          <property category="win32.*.win32b.bcc32" name="option.D.arg.3" value="NO_WIN32_LEAN_AND_MEAN"/>
+          <property category="win32.*.win32b.bcc32" name="option.D.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.D.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.H=.arg.1" value="$(BCB)\lib\vcl100.csm"/>
+          <property category="win32.*.win32b.bcc32" name="option.H=.arg.merge" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.H=.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Hc.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.1" value="$(BCB)\include"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.2" value="$(BCB)\include\vcl"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.3" value="..\..\..\..\Library\RS10"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.4" value="$(BCB)\include"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.5" value="$(BCB)\include\vcl"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.6" value="..\Common"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.7" value=".."/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.1" value="_RTLDLL"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.2" value="NO_STRICT"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.1" value="$(BCB)\lib\release"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.2" value="..\Common"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.3" value="$(BCB)\lib\obj"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.4" value="$(BCB)\lib"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.5" value="..\..\..\..\Library\RS10"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.6" value=".."/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.aa.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.1" value="..\Common"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.arg.1" value="."/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.1" value="$(LIBRARIES)"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.2" value="import32.lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.3" value="cp32mt.lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.1" value="c0w32.obj"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.2" value="Memmgr.Lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.3" value="$(PACKAGES)"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.4" value="sysinit.obj"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.merge" value="1"/>
+        </optionset>
+      </project>
+      <FILELIST>
+         <FILE FILENAME="MasterDetailDemo.res" CONTAINERID="ResTool" LOCALCOMMAND="" UNITNAME="MasterDetailDemo" FORMNAME="" DESIGNCLASS=""/>
+         <FILE FILENAME="MasterDetailDemo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MasterDetailDemo" FORMNAME="" DESIGNCLASS=""/>
+         <FILE FILENAME="MasterDetailDemoMain.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MasterDetailDemoMain" FORMNAME="MasterDetailDemoMainForm" DESIGNCLASS=""/>
+         <FILE FILENAME="MasterDetailDemoData.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MasterDetailDemoData" FORMNAME="MasterDetailDemoDataDM" DESIGNCLASS=""/>
+         <FILE FILENAME="..\AboutDemoForm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="AboutDemoForm" FORMNAME="formAboutDemo" DESIGNCLASS=""/>
+      </FILELIST>
+      <IDEOPTIONS>
+        <VersionInfo/>
+        <VersionInfoKeys/>
+        <Debugging/>
+        <Parameters/>
+        <Linker/>
+      </IDEOPTIONS>
+    </BCBPROJECT>
+    <Source>
+      <Source Name="MainSource">MasterDetailDemo.cpp</Source>
+    </Source>
+  </CPlusPlusBuilder.Personality>
+</BorlandProject>

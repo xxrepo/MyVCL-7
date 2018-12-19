@@ -1,0 +1,162 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = ViewTableSimpleDemoC6.exe ViewBandedDemoC6.exe ViewBandedFixedDemoC6.exe ViewNestedBandsDemoC6.exe \
+ViewCardSimpleDemoC6.exe ViewCardDemoC6.exe MasterDetailTableDemoC6.exe MasterDetailCardDemoC6.exe \
+MasterDetailDemoC6.exe MasterDetailMultiDemoC6.exe UnboundSimpleDemoC6.exe UnboundListDemoC6.exe \
+UnboundExternalDataDemoC6.exe UnboundDesignDefinedDemoC6.exe UnboundModeDemoC6.exe UnboundColumnsDemoC6.exe \
+SummaryFooterDemoC6.exe SummaryGroupDemoC6.exe SummaryMultiDemoC6.exe FilterByCodeDemoC6.exe \
+FilterControlDemoC6.exe GridModeDemoC6.exe ColumnsSimpleDemoC6.exe EditorsInPlaceDemoC6.exe \
+EditorsLookupDemoC6.exe EditorsMaskDemoC6.exe ColumnsMultiEditorsDemoC6.exe ColumnsShareDemoC6.exe \
+StylesMultiDemoC6.exe StylesCardViewDemoC6.exe StylesSimpleDemoC6.exe CellLevelMultiselectDemoC6.exe \
+CustomDrawTableViewDemoC6.exe CustomDrawCardViewDemoC6.exe Office11GroupRowStyleDemoC6.exe DragDropDemoC6.exe \
+CustomRowHeightDemoC6.exe GridMenuViewsDemoC6.exe IssueListC6.exe EditorsStylesDemoC6.exe \
+ViewChartDemoC6.exe MasterDetailChartDemoC6.exe CardLayoutDemoC6.exe ChartDataDrillingDemoC6.exe \
+FilterDemoC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+ViewTableSimpleDemoC6.exe: ViewTableSimpleDemo\ViewTableSimpleDemoC6.bpr
+  $(MAKE)
+
+ViewBandedDemoC6.exe: ViewBandedDemo\ViewBandedDemoC6.bpr
+  $(MAKE)
+
+ViewBandedFixedDemoC6.exe: ViewBandedFixedDemo\ViewBandedFixedDemoC6.bpr
+  $(MAKE)
+
+ViewNestedBandsDemoC6.exe: ViewNestedBandsDemo\ViewNestedBandsDemoC6.bpr
+  $(MAKE)
+
+ViewCardSimpleDemoC6.exe: ViewCardSimpleDemo\ViewCardSimpleDemoC6.bpr
+  $(MAKE)
+
+ViewCardDemoC6.exe: ViewCardDemo\ViewCardDemoC6.bpr
+  $(MAKE)
+
+MasterDetailTableDemoC6.exe: MasterDetailTableDemo\MasterDetailTableDemoC6.bpr
+  $(MAKE)
+
+MasterDetailCardDemoC6.exe: MasterDetailCardDemo\MasterDetailCardDemoC6.bpr
+  $(MAKE)
+
+MasterDetailDemoC6.exe: MasterDetailDemo\MasterDetailDemoC6.bpr
+  $(MAKE)
+
+MasterDetailMultiDemoC6.exe: MasterDetailMultiDemo\MasterDetailMultiDemoC6.bpr
+  $(MAKE)
+
+UnboundSimpleDemoC6.exe: UnboundSimpleDemo\UnboundSimpleDemoC6.bpr
+  $(MAKE)
+
+UnboundListDemoC6.exe: UnboundListDemo\UnboundListDemoC6.bpr
+  $(MAKE)
+
+UnboundExternalDataDemoC6.exe: UnboundExternalDataDemo\UnboundExternalDataDemoC6.bpr
+  $(MAKE)
+
+UnboundDesignDefinedDemoC6.exe: UnboundDesignDefinedDemo\UnboundDesignDefinedDemoC6.bpr
+  $(MAKE)
+
+UnboundModeDemoC6.exe: UnboundModeDemo\UnboundModeDemoC6.bpr
+  $(MAKE)
+
+UnboundColumnsDemoC6.exe: UnboundColumnsDemo\UnboundColumnsDemoC6.bpr
+  $(MAKE)
+
+SummaryFooterDemoC6.exe: SummaryFooterDemo\SummaryFooterDemoC6.bpr
+  $(MAKE)
+
+SummaryGroupDemoC6.exe: SummaryGroupDemo\SummaryGroupDemoC6.bpr
+  $(MAKE)
+
+SummaryMultiDemoC6.exe: SummaryMultiDemo\SummaryMultiDemoC6.bpr
+  $(MAKE)
+
+FilterByCodeDemoC6.exe: FilterByCodeDemo\FilterByCodeDemoC6.bpr
+  $(MAKE)
+
+FilterControlDemoC6.exe: FilterControlDemo\FilterControlDemoC6.bpr
+  $(MAKE)
+
+GridModeDemoC6.exe: GridModeDemo\GridModeDemoC6.bpr
+  $(MAKE)
+
+ColumnsSimpleDemoC6.exe: ColumnsSimpleDemo\ColumnsSimpleDemoC6.bpr
+  $(MAKE)
+
+EditorsInPlaceDemoC6.exe: EditorsInPlaceDemo\EditorsInPlaceDemoC6.bpr
+  $(MAKE)
+
+EditorsLookupDemoC6.exe: EditorsLookupDemo\EditorsLookupDemoC6.bpr
+  $(MAKE)
+
+EditorsMaskDemoC6.exe: EditorsMaskDemo\EditorsMaskDemoC6.bpr
+  $(MAKE)
+
+ColumnsMultiEditorsDemoC6.exe: ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoC6.bpr
+  $(MAKE)
+
+ColumnsShareDemoC6.exe: ColumnsShareDemo\ColumnsShareDemoC6.bpr
+  $(MAKE)
+
+StylesMultiDemoC6.exe: StylesMultiDemo\StylesMultiDemoC6.bpr
+  $(MAKE)
+
+StylesCardViewDemoC6.exe: StylesCardViewDemo\StylesCardViewDemoC6.bpr
+  $(MAKE)
+
+StylesSimpleDemoC6.exe: StylesSimpleDemo\StylesSimpleDemoC6.bpr
+  $(MAKE)
+
+CellLevelMultiselectDemoC6.exe: CellLevelMultiselectDemo\CellLevelMultiselectDemoC6.bpr
+  $(MAKE)
+
+CustomDrawTableViewDemoC6.exe: CustomDrawTableViewDemo\CustomDrawTableViewDemoC6.bpr
+  $(MAKE)
+
+CustomDrawCardViewDemoC6.exe: CustomDrawCardViewDemo\CustomDrawCardViewDemoC6.bpr
+  $(MAKE)
+
+Office11GroupRowStyleDemoC6.exe: Office11GroupRowStyleDemo\Office11GroupRowStyleDemoC6.bpr
+  $(MAKE)
+
+DragDropDemoC6.exe: DragDropDemo\DragDropDemoC6.bpr
+  $(MAKE)
+
+CustomRowHeightDemoC6.exe: CustomRowHeightDemo\CustomRowHeightDemoC6.bpr
+  $(MAKE)
+
+GridMenuViewsDemoC6.exe: GridMenuViewsDemo\GridMenuViewsDemoC6.bpr
+  $(MAKE)
+
+IssueListC6.exe: IssueList\IssueListC6.bpr
+  $(MAKE)
+
+EditorsStylesDemoC6.exe: EditorsStylesDemo\EditorsStylesDemoC6.bpr
+  $(MAKE)
+
+ViewChartDemoC6.exe: ViewChartDemo\ViewChartDemoC6.bpr
+  $(MAKE)
+
+MasterDetailChartDemoC6.exe: MasterDetailChartDemo\MasterDetailChartDemoC6.bpr
+  $(MAKE)
+
+CardLayoutDemoC6.exe: CardLayoutDemo\CardLayoutDemoC6.bpr
+  $(MAKE)
+
+ChartDataDrillingDemoC6.exe: ChartDataDrillingDemo\ChartDataDrillingDemoC6.bpr
+  $(MAKE)
+
+FilterDemoC6.exe: FilterDemo\FilterDemoC6.bpr
+  $(MAKE)

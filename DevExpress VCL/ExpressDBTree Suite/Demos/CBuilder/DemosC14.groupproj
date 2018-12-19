@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="dbtree">
+    <MSBuild Projects="DBTree\dbtreeC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="dbtree_f">
+    <MSBuild Projects="DBTree_F\dbtree_fC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="dbtrprnp">
+    <MSBuild Projects="DBTrPrn\dbtrprnpC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="dbtredit">
+    <MSBuild Projects="TreeEdit\dbtreditC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="dbtreeC14;dbtree_fC14;dbtrprnpC14;dbtreditC14" />
+  </Target>
+</Project>

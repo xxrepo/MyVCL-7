@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="ColumnsMultiEditorsDemo.exe" Type="String">ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemo.bdsproj</Projects>
+      <Projects Name="ColumnsShareDemo.exe" Type="String">ColumnsShareDemo\ColumnsShareDemo.bdsproj</Projects>
+      <Projects Name="ColumnsSimpleDemo.exe" Type="String">ColumnsSimpleDemo\ColumnsSimpleDemo.bdsproj</Projects>
+      <Projects Name="CustomDrawCardViewDemo.exe" Type="String">CustomDrawCardViewDemo\CustomDrawCardViewDemo.bdsproj</Projects>
+      <Projects Name="CustomDrawTableViewDemo.exe" Type="String">CustomDrawTableViewDemo\CustomDrawTableViewDemo.bdsproj</Projects>
+      <Projects Name="DragDropDemo.exe" Type="String">DragDropDemo\DragDropDemo.bdsproj</Projects>
+      <Projects Name="EditorsInPlaceDemo.exe" Type="String">EditorsInPlaceDemo\EditorsInPlaceDemo.bdsproj</Projects>
+      <Projects Name="EditorsLookupDemo.exe" Type="String">EditorsLookupDemo\EditorsLookupDemo.bdsproj</Projects>
+      <Projects Name="EditorsMaskDemo.exe" Type="String">EditorsMaskDemo\EditorsMaskDemo.bdsproj</Projects>
+      <Projects Name="EditorsStylesDemo.exe" Type="String">EditorsStylesDemo\EditorsStylesDemo.bdsproj</Projects>
+      <Projects Name="FilterByCodeDemo.exe" Type="String">FilterByCodeDemo\FilterByCodeDemo.bdsproj</Projects>
+      <Projects Name="FilterControlDemo.exe" Type="String">FilterControlDemo\FilterControlDemo.bdsproj</Projects>
+      <Projects Name="GridMenuViewsDemo.exe" Type="String">GridMenuViewsDemo\GridMenuViewsDemo.bdsproj</Projects>
+      <Projects Name="GridModeDemo.exe" Type="String">GridModeDemo\GridModeDemo.bdsproj</Projects>
+      <Projects Name="IssueList.exe" Type="String">IssueList\IssueList.bdsproj</Projects>
+      <Projects Name="MasterDetailCardDemo.exe" Type="String">MasterDetailCardDemo\MasterDetailCardDemo.bdsproj</Projects>
+      <Projects Name="MasterDetailDemo.exe" Type="String">MasterDetailDemo\MasterDetailDemo.bdsproj</Projects>
+      <Projects Name="MasterDetailMultiDemo.exe" Type="String">MasterDetailMultiDemo\MasterDetailMultiDemo.bdsproj</Projects>
+      <Projects Name="MasterDetailTableDemo.exe" Type="String">MasterDetailTableDemo\MasterDetailTableDemo.bdsproj</Projects>
+      <Projects Name="StylesCardViewDemo.exe" Type="String">StylesCardViewDemo\StylesCardViewDemo.bdsproj</Projects>
+      <Projects Name="StylesMultiDemo.exe" Type="String">StylesMultiDemo\StylesMultiDemo.bdsproj</Projects>
+      <Projects Name="StylesSimpleDemo.exe" Type="String">StylesSimpleDemo\StylesSimpleDemo.bdsproj</Projects>
+      <Projects Name="SummaryFooterDemo.exe" Type="String">SummaryFooterDemo\SummaryFooterDemo.bdsproj</Projects>
+      <Projects Name="SummaryGroupDemo.exe" Type="String">SummaryGroupDemo\SummaryGroupDemo.bdsproj</Projects>
+      <Projects Name="SummaryMultiDemo.exe" Type="String">SummaryMultiDemo\SummaryMultiDemo.bdsproj</Projects>
+      <Projects Name="UnboundExternalDataDemo.exe" Type="String">UnboundExternalDataDemo\UnboundExternalDataDemo.bdsproj</Projects>
+      <Projects Name="UnboundModeDemo.exe" Type="String">UnboundModeDemo\UnboundModeDemo.bdsproj</Projects>
+      <Projects Name="UnboundSimpleDemo.exe" Type="String">UnboundSimpleDemo\UnboundSimpleDemo.bdsproj</Projects>
+      <Projects Name="ViewBandedDemo.exe" Type="String">ViewBandedDemo\ViewBandedDemo.bdsproj</Projects>
+      <Projects Name="ViewBandedFixedDemo.exe" Type="String">ViewBandedFixedDemo\ViewBandedFixedDemo.bdsproj</Projects>
+      <Projects Name="ViewCardSimpleDemo.exe" Type="String">ViewCardSimpleDemo\ViewCardSimpleDemo.bdsproj</Projects>
+      <Projects Name="ViewTableSimpleDemo.exe" Type="String">ViewTableSimpleDemo\ViewTableSimpleDemo.bdsproj</Projects>
+      <Projects Name="CellLevelMultiselectDemo.exe" Type="String">CellLevelMultiselectDemo\CellLevelMultiselectDemo.bdsproj</Projects>
+      <Projects Name="CustomRowHeightDemo.exe" Type="String">CustomRowHeightDemo\CustomRowHeightDemo.bdsproj</Projects>
+      <Projects Name="Office11GroupRowStyleDemo.exe" Type="String">Office11GroupRowStyleDemo\Office11GroupRowStyleDemo.bdsproj</Projects>
+      <Projects Name="UnboundColumnsDemo.exe" Type="String">UnboundColumnsDemo\UnboundColumnsDemo.bdsproj</Projects>
+      <Projects Name="UnboundDesignDefinedDemo.exe" Type="String">UnboundDesignDefinedDemo\UnboundDesignDefinedDemo.bdsproj</Projects>
+      <Projects Name="ViewCardDemo.exe" Type="String">ViewCardDemo\ViewCardDemo.bdsproj</Projects>
+      <Projects Name="ViewNestedBandsDemo.exe" Type="String">ViewNestedBandsDemo\ViewNestedBandsDemo.bdsproj</Projects>
+      <Projects Name="UnboundListDemo.exe" Type="String">UnboundListDemo\UnboundListDemo.bdsproj</Projects>
+      <Projects Name="ViewChartDemo.exe" Type="String">ViewChartDemo\ViewChartDemo.bdsproj</Projects>
+      <Projects Name="MasterDetailChartDemo.exe" Type="String">MasterDetailChartDemo\MasterDetailChartDemo.bdsproj</Projects>
+      <Projects Name="CardLayoutDemo.exe" Type="String">CardLayoutDemo\CardLayoutDemo.bdsproj</Projects>
+      <Projects Name="ChartDataDrillingDemo.exe" Type="String">ChartDataDrillingDemo\ChartDataDrillingDemo.bdsproj</Projects>
+      <Projects Name="FilterDemo.exe" Type="String">FilterDemo\FilterDemo.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">ColumnsMultiEditorsDemo.exe ColumnsShareDemo.exe ColumnsSimpleDemo.exe CustomDrawCardViewDemo.exe CustomDrawTableViewDemo.exe DragDropDemo.exe EditorsInPlaceDemo.exe EditorsLookupDemo.exe EditorsMaskDemo.exe EditorsStylesDemo.exe FilterByCodeDemo.exe FilterControlDemo.exe GridMenuViewsDemo.exe GridModeDemo.exe IssueList.exe MasterDetailCardDemo.exe MasterDetailDemo.exe MasterDetailMultiDemo.exe MasterDetailTableDemo.exe StylesCardViewDemo.exe StylesMultiDemo.exe StylesSimpleDemo.exe SummaryFooterDemo.exe SummaryGroupDemo.exe SummaryMultiDemo.exe UnboundExternalDataDemo.exe UnboundModeDemo.exe UnboundSimpleDemo.exe ViewBandedDemo.exe ViewBandedFixedDemo.exe ViewCardSimpleDemo.exe ViewTableSimpleDemo.exe CellLevelMultiselectDemo.exe CustomRowHeightDemo.exe Office11GroupRowStyleDemo.exe UnboundColumnsDemo.exe UnboundDesignDefinedDemo.exe ViewCardDemo.exe ViewNestedBandsDemo.exe UnboundListDemo.exe ViewChartDemo.exe MasterDetailChartDemo.exe CardLayoutDemo.exe ChartDataDrillingDemo.exe FilterDemo.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

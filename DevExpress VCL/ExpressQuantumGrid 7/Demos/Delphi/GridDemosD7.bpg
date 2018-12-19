@@ -1,0 +1,168 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = ColumnsMultiEditorsDemo.exe ColumnsShareDemo.exe ColumnsSimpleDemo.exe CustomDrawCardViewDemo.exe \
+CustomDrawTableViewDemo.exe DragDropDemo.exe EditorsInPlaceDemo.exe EditorsLookupDemo.exe \
+EditorsMaskDemo.exe EditorsStylesDemo.exe FilterByCodeDemo.exe FilterControlDemo.exe \
+GridMenuViewsDemo.exe GridModeDemo.exe IssueList.exe MasterDetailCardDemo.exe \
+MasterDetailDemo.exe MasterDetailMultiDemo.exe MasterDetailTableDemo.exe StylesCardViewDemo.exe \
+StylesMultiDemo.exe StylesSimpleDemo.exe SummaryFooterDemo.exe SummaryGroupDemo.exe \
+SummaryMultiDemo.exe UnboundExternalDataDemo.exe UnboundModeDemo.exe UnboundSimpleDemo.exe \
+ViewBandedDemo.exe ViewBandedFixedDemo.exe ViewCardSimpleDemo.exe ViewTableSimpleDemo.exe \
+CellLevelMultiselectDemo.exe CustomRowHeightDemo.exe Office11GroupRowStyleDemo.exe UnboundColumnsDemo.exe \
+UnboundDesignDefinedDemo.exe ViewCardDemo.exe ViewNestedBandsDemo.exe UnboundListDemo.exe \
+ViewChartDemo.exe ViewChartStackedDemo.exe MasterDetailChartDemo.exe CardLayoutDemo.exe \
+ChartDataDrillingDemo.exe FilterDemo.exe LayoutViewDemo.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+ColumnsMultiEditorsDemo.exe: ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemo.dpr
+  $(DCC)
+
+ColumnsShareDemo.exe: ColumnsShareDemo\ColumnsShareDemo.dpr
+  $(DCC)
+
+ColumnsSimpleDemo.exe: ColumnsSimpleDemo\ColumnsSimpleDemo.dpr
+  $(DCC)
+
+CustomDrawCardViewDemo.exe: CustomDrawCardViewDemo\CustomDrawCardViewDemo.dpr
+  $(DCC)
+
+CustomDrawTableViewDemo.exe: CustomDrawTableViewDemo\CustomDrawTableViewDemo.dpr
+  $(DCC)
+
+DragDropDemo.exe: DragDropDemo\DragDropDemo.dpr
+  $(DCC)
+
+EditorsInPlaceDemo.exe: EditorsInPlaceDemo\EditorsInPlaceDemo.dpr
+  $(DCC)
+
+EditorsLookupDemo.exe: EditorsLookupDemo\EditorsLookupDemo.dpr
+  $(DCC)
+
+EditorsMaskDemo.exe: EditorsMaskDemo\EditorsMaskDemo.dpr
+  $(DCC)
+
+EditorsStylesDemo.exe: EditorsStylesDemo\EditorsStylesDemo.dpr
+  $(DCC)
+
+FilterByCodeDemo.exe: FilterByCodeDemo\FilterByCodeDemo.dpr
+  $(DCC)
+
+FilterControlDemo.exe: FilterControlDemo\FilterControlDemo.dpr
+  $(DCC)
+
+GridMenuViewsDemo.exe: GridMenuViewsDemo\GridMenuViewsDemo.dpr
+  $(DCC)
+
+GridModeDemo.exe: GridModeDemo\GridModeDemo.dpr
+  $(DCC)
+
+IssueList.exe: IssueList\IssueList.dpr
+  $(DCC)
+
+MasterDetailCardDemo.exe: MasterDetailCardDemo\MasterDetailCardDemo.dpr
+  $(DCC)
+
+MasterDetailDemo.exe: MasterDetailDemo\MasterDetailDemo.dpr
+  $(DCC)
+
+MasterDetailMultiDemo.exe: MasterDetailMultiDemo\MasterDetailMultiDemo.dpr
+  $(DCC)
+
+MasterDetailTableDemo.exe: MasterDetailTableDemo\MasterDetailTableDemo.dpr
+  $(DCC)
+
+StylesCardViewDemo.exe: StylesCardViewDemo\StylesCardViewDemo.dpr
+  $(DCC)
+
+StylesMultiDemo.exe: StylesMultiDemo\StylesMultiDemo.dpr
+  $(DCC)
+
+StylesSimpleDemo.exe: StylesSimpleDemo\StylesSimpleDemo.dpr
+  $(DCC)
+
+SummaryFooterDemo.exe: SummaryFooterDemo\SummaryFooterDemo.dpr
+  $(DCC)
+
+SummaryGroupDemo.exe: SummaryGroupDemo\SummaryGroupDemo.dpr
+  $(DCC)
+
+SummaryMultiDemo.exe: SummaryMultiDemo\SummaryMultiDemo.dpr
+  $(DCC)
+
+UnboundExternalDataDemo.exe: UnboundExternalDataDemo\UnboundExternalDataDemo.dpr
+  $(DCC)
+
+UnboundModeDemo.exe: UnboundModeDemo\UnboundModeDemo.dpr
+  $(DCC)
+
+UnboundSimpleDemo.exe: UnboundSimpleDemo\UnboundSimpleDemo.dpr
+  $(DCC)
+
+ViewBandedDemo.exe: ViewBandedDemo\ViewBandedDemo.dpr
+  $(DCC)
+
+ViewBandedFixedDemo.exe: ViewBandedFixedDemo\ViewBandedFixedDemo.dpr
+  $(DCC)
+
+ViewCardSimpleDemo.exe: ViewCardSimpleDemo\ViewCardSimpleDemo.dpr
+  $(DCC)
+
+ViewTableSimpleDemo.exe: ViewTableSimpleDemo\ViewTableSimpleDemo.dpr
+  $(DCC)
+
+CellLevelMultiselectDemo.exe: CellLevelMultiselectDemo\CellLevelMultiselectDemo.dpr
+  $(DCC)
+
+CustomRowHeightDemo.exe: CustomRowHeightDemo\CustomRowHeightDemo.dpr
+  $(DCC)
+
+Office11GroupRowStyleDemo.exe: Office11GroupRowStyleDemo\Office11GroupRowStyleDemo.dpr
+  $(DCC)
+
+UnboundColumnsDemo.exe: UnboundColumnsDemo\UnboundColumnsDemo.dpr
+  $(DCC)
+
+UnboundDesignDefinedDemo.exe: UnboundDesignDefinedDemo\UnboundDesignDefinedDemo.dpr
+  $(DCC)
+
+ViewCardDemo.exe: ViewCardDemo\ViewCardDemo.dpr
+  $(DCC)
+
+ViewNestedBandsDemo.exe: ViewNestedBandsDemo\ViewNestedBandsDemo.dpr
+  $(DCC)
+
+UnboundListDemo.exe: UnboundListDemo\UnboundListDemo.dpr
+  $(DCC)
+
+ViewChartDemo.exe: ViewChartDemo\ViewChartDemo.dpr
+  $(DCC)
+
+ViewChartStackedDemo.exe: ViewChartStackedDemo\ViewChartStackedDemo.dpr
+  $(DCC)
+
+MasterDetailChartDemo.exe: MasterDetailChartDemo\MasterDetailChartDemo.dpr
+  $(DCC)
+
+CardLayoutDemo.exe: CardLayoutDemo\CardLayoutDemo.dpr
+  $(DCC)
+
+ChartDataDrillingDemo.exe: ChartDataDrillingDemo\ChartDataDrillingDemo.dpr
+  $(DCC)
+
+FilterDemo.exe: FilterDemo\FilterDemo.dpr
+  $(DCC)
+
+LayoutViewDemo.exe: LayoutViewDemo\LayoutViewDemo.dpr
+  $(DCC)

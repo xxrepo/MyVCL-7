@@ -1,0 +1,48 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = DBBasedExplorer.exe DBTreeReportLink.exe FlowChartReportLink.exe LayoutControlReportLink1.exe \
+LayoutControlReportLink2.exe OrgChartReportLink.exe ReportExplorer.exe SpreadSheetRL.exe \
+StandardReportLink.exe TeeChartReportLink.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+DBBasedExplorer.exe: DB ReportExplorer\DBBasedExplorer.dpr
+  $(DCC)
+
+DBTreeReportLink.exe: DBTreeRL\DBTreeReportLink.dpr
+  $(DCC)
+
+FlowChartReportLink.exe: FlowChartRL\FlowChartReportLink.dpr
+  $(DCC)
+
+LayoutControlReportLink1.exe: LC LookAndFeel\LayoutControlReportLink1.dpr
+  $(DCC)
+
+LayoutControlReportLink2.exe: LC MSMoneyStyle\LayoutControlReportLink2.dpr
+  $(DCC)
+
+OrgChartReportLink.exe: OrgChartRL\OrgChartReportLink.dpr
+  $(DCC)
+
+ReportExplorer.exe: ReportExplorer\ReportExplorer.dpr
+  $(DCC)
+
+SpreadSheetRL.exe: SpreadSheetRL\SpreadSheetRL.dpr
+  $(DCC)
+
+StandardReportLink.exe: StandardRL\StandardReportLink.dpr
+  $(DCC)
+
+TeeChartReportLink.exe: TeeChartRL\TeeChartReportLink.dpr
+  $(DCC)

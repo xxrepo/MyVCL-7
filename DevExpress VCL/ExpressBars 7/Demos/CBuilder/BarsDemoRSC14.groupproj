@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BackgroundDemo">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemo">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="EBarMegaDemo">
+    <MSBuild Projects="EBarMegaDemo\EBarMegaDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="EBar2000Demo">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="MDIDemo">
+    <MSBuild Projects="MDIDemo\MDIDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="ESBarDemo">
+    <MSBuild Projects="ESBarDemo\ESBarDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemo">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemo">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="SampleDocking">
+    <MSBuild Projects="SampleDocking\SampleDockingRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BackgroundDemoRSC14;DockingMegaDemoRSC14;EBarMegaDemoRSC14;EBar2000DemoRSC14;MDIDemoRSC14;ESBarDemoRSC14;InPlaceEditorsDemoRSC14;RibbonNotepadDemoRSC14;SampleDockingRSC14" />
+  </Target>
+</Project>

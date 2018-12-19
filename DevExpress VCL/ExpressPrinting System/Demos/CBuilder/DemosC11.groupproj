@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DBBasedExplorer">
+    <MSBuild Projects="DB ReportExplorer\DBBasedExplorerC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="DBTreeReportLink">
+    <MSBuild Projects="DBTreeRL\DBTreeReportLinkC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLink">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink1">
+    <MSBuild Projects="LC LookAndFeel\LayoutControlReportLink1C11.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink2">
+    <MSBuild Projects="LC MSMoneyStyle\LayoutControlReportLink2C11.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLink">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorer">
+    <MSBuild Projects="ReportExplorer\ReportExplorerC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRL">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLink">
+    <MSBuild Projects="StandardRL\StandardReportLinkC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="TeeChartReportLink">
+    <MSBuild Projects="TeeChartRL\TeeChartReportLinkC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DBBasedExplorerC11;DBTreeReportLinkC11;FlowChartReportLinkC11;LayoutControlReportLink1C11;LayoutControlReportLink2C11;OrgChartReportLinkC11;ReportExplorerC11;SpreadSheetRLC11;StandardReportLinkC11;TeeChartReportLinkC11" />
+  </Target>
+</Project>

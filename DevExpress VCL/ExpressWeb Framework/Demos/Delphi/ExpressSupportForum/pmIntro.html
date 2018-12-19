@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <title><%=Context.Page.Title%></title>
+<%
+  Now = new Date();
+  function h(t) {
+%>
+<table bgcolor=black width=100% cellspacing="0" cellpadding="0" border="0">
+<tr>
+  <td><img width="1" height="1"></td>
+  <td><img src="/dxforum/images/b_d_l.gif" vspace="5" hspace="7"></td>
+  <td width="1000"><FONT face="Arial" size=1 color=#ffffff><b><%=t%></b></font></td>
+  <td><img src="/dxforum/images/b_d_r.gif" hspace="7"></td>
+</tr>
+<tr>
+  <td bgcolor="white" colspan="4"><img src="/dxforum/images/1x1.gif" width="1" height="1"></td>
+</tr>
+<tr>
+  <td bgcolor="black" colspan="4"><img width="1" height="1"></td>
+</tr>
+</table>
+<br>
+<%
+  }
+%>
+    <link rel="stylesheet" href="/dx.css" type="text/css">
+  </head>
+  <body>
+    <ewf:Form id="<%=Form.Name%>">
+<div align=center>
+<table border="0" valign="middle" cellspacing="0" cellpadding="0" bgcolor=#FFC454 width=100%>
+<tr>
+  <td><img width="20" height="1"></td>
+  <td width="1000">
+    <font size=1 color=#814103 face="Arial"><b><script language="javascript">d = new Date();document.write(d.toLocaleString())</script></b></font>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><img width="1" height="10"></td>
+</tr>
+<tr>
+  <td><img width="1" height="1"></td>
+  <td><FONT face="Arial" size=2 color="black"><b>Hello,&nbsp;<%=Form.Nick%></b></font></td>
+</tr>
+<tr>
+  <td colspan="2"><img width="1" height="7"></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="white"><img width="1" height="2"></td>
+</tr>
+
+<!--tr>
+<!--td colspan=2 ><font size=2 color=#454343><br><b>&nbsp; "If you give a man a fish, you feed him for a day.  If you teach a man to
+fish, you feed him for a lifetime."  Anonymous
+&nbsp; </b></FONT></td></tr-->
+</table>
+</div>
+<% //RSu.Close();%>
+<%// categories
+if(Form.LastCatergoryCounter > 0)
+{
+  h("NEW CATEGORIES");
+%>
+<table cellspacing="0" cellpadding="0" border="0">
+<%
+	for(i = 0; i < Form.LastCatergoryCounter; i++)
+	{
+%>
+<tr>
+  <td><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+  <td><a href="IntroList?cid=<%=Form.CategoryId%>" target="info"><img src="/dxforum/images/bullet.gif" border=0 width=4 height=4 alt="View capter" onmouseover="document.all('cat<%=Form.CategoryId%>').style.color='#00008b';" onmouseout="document.all('cat<%=Form.CategoryId%>').style.color='#000000';"></a></td>
+  <td><img src="/dxforum/images/1x1.gif" width="8" height="1"></td>
+  <td><span id=cat<%=Form.CategoryId%> style="link" style="cursor: hand; font-family: Arial; font-size: 9pt;" onmouseover="document.all('cat<%=Form.CategoryId%>').style.color='#00008b';" onmouseout="document.all('cat<%=Form.CategoryId%>').style.color='#000000';" onclick="parent.info.location='IntroList?cid=<%=Form.CategoryId%>';"><%=Form.CategoryName%></span></td>
+</tr>
+<tr>
+  <td colspan="4"><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+</tr>
+<%
+  	Form.CurrentCategoryRow++;
+	}
+%>
+</table>
+<%
+}
+
+if(Form.LastArticleCounter > 0)
+{
+%>
+<%
+  h("NEW ARTICLES");
+%>
+<table cellspacing="0" cellpadding="0" border="0">
+<%
+	for(i = 0; i < Form.LastArticleCounter; i++)
+	{
+%>
+<tr>
+  <td><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+  <td><a href="View?aid=<%=Form.ArticleId%>&s=" target=info><img src="/dxforum/images/bullet.gif" border=0 width=4 height=4 alt="View article" onmouseover="document.all('art<%=Form.ArticleId%>').style.color='#00008b';" onmouseout="document.all('art<%=Form.ArticleId%>').style.color='#000000';"></a></td>
+  <td><img src="/dxforum/images/1x1.gif" width="8" height="1"></td>
+  <td><span id=art<%=Form.ArticleId%> style="link" style="cursor: hand; font-family: Arial; font-size: 9pt;" onmouseover="document.all('art<%=Form.ArticleId%>').style.color='#00008b';" onmouseout="document.all('art<%=Form.ArticleId%>').style.color='#000000';" onclick="parent.info.location='View?aid=<%=Form.ArticleId%>';"><%=Form.ArticleSubject%></span></td>
+</tr>
+<tr>
+  <td colspan="4"><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+</tr>
+<%
+	  Form.CurrentArticleRow++;
+	}
+%>
+</table>
+<%
+}
+if(Form.AnsweredQuestionsCount > 0)
+{
+%>
+<br>
+<%
+  h("ANSWERED QUESTIONS");
+%>
+<table cellspacing="0" cellpadding="0" border="0">
+<%
+
+	for(i = 0; i < Form.AnsweredQuestionsCount; i++)
+	{
+%>
+<tr>
+  <td><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+  <td><a href="View?aid=<%=Form.AnswerArticleId%>" target=info>
+	<img src="/dxforum/images/bullet.gif" border=0 width=4 height=4 alt="View answer." onmouseover="document.all('quest<%=Form.QuestionId%>').style.color='#00008b';" onmouseout="document.all('quest<%=Form.QuestionId%>').style.color='#000000';"></a></td>
+  <td><img src="/dxforum/images/1x1.gif" width="8" height="1"></td>
+  <td><span id=quest<%=Form.QuestionId%> style="link" style="cursor: hand; font-family: Arial; font-size: 9pt;" onmouseover="document.all('quest<%=Form.QuestionId%>').style.color='#00008b';" onmouseout="document.all('quest<%=Form.QuestionId%>').style.color='#000000';" onclick="parent.info.location='View?aid=<%=Form.AnswerArticleId%>';">
+	<%=Form.AnswerQuestionSubject%></span></td>
+</tr>
+<tr>
+  <td colspan="4"><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+</tr>
+
+	<%
+	  Form.CurrentAnsweredQuestionsRow++;
+	}
+%>
+</table>
+<%
+}
+if(Form.UnassignedQuestionsCount > 0)
+{
+%>
+	<br>
+<%
+  h("RESPONSES TO YOUR QUESTIONS");
+%>
+<table cellspacing="0" cellpadding="0" border="0">
+<%
+	for(i = 0; i < Form.UnassignedQuestionsCount; i++)
+	{
+%>
+<tr>
+  <td><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+  <td><a href="ViewReject?qid=<%=Form.UnassignedQuestionId%>" target=info>
+	<img src="/dxforum/images/bullet.gif" border=0 width=4 height=4 alt="View answer." onmouseover="document.all('quest1<%=Form.UnassignedQuestionId%>').style.color='#00008b';" onmouseout="document.all('quest1<%=Form.UnassignedQuestionId%>').style.color='#000000';"></a></td>
+  <td><img src="/dxforum/images/1x1.gif" width="8" height="1"></td>
+  <td><span id=quest1<%=Form.UnassignedQuestionId%> style="link" style="cursor: hand; font-family: Arial; font-size: 9pt;" onmouseover="document.all('quest1<%=Form.UnassignedQuestionId%>').style.color='#00008b';" onmouseout="document.all('quest1<%=Form.UnassignedQuestionId%>').style.color='#000000';" onclick="parent.info.location='ViewReject?qid=<%=Form.UnassignedQuestionId%>';">
+    <%=Form.UnassignedQuestionSubject%></span></td>
+</tr>
+<tr>
+  <td colspan="4"><img src="/dxforum/images/1x1.gif" width="9" height="1"></td>
+</tr>
+
+<%
+  	Form.UnassignedQuestionCurrentRow++;
+	}
+%>
+</table>
+<%
+}
+%>
+    </ewf:Form>
+<!--#include file="copy.inc"-->
+  </body>
+</html>

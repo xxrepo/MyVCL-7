@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Include demo</title>
+  </head>
+  <body>
+    <ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<!-- #include file="head.html" //-->
+<TABLE id=LoginPageTable height=132 cellSpacing=0 cellPadding=0 width=233 
+border=0 ewf_tablebuilder="true">
+  
+  <TR vAlign=top>
+    <TD width=11 height=14></TD>
+    <TD width=1></TD>
+    <TD width=3></TD>
+    <TD width=2></TD>
+    <TD width=72></TD>
+    <TD width=144></TD></TR>
+  <TR vAlign=top height=2>
+    <TD colSpan=5 height=2></TD>
+    <TD rowSpan=2><ewf:Edit id="weLogin"></TD>
+    <TD></TD></TR>
+  <TR vAlign=top height=24>
+    <TD height=24></TD>
+    <TD colSpan=4><ewf:Label id="cxWebLabel1"></TD>
+    <TD></TD></TR>
+  <TR vAlign=top height=2>
+    <TD colSpan=5 height=2></TD>
+    <TD rowSpan=2><ewf:Edit id="wePassword"></TD>
+    <TD></TD></TR>
+  <TR vAlign=top height=31>
+    <TD colSpan=2 height=31></TD>
+    <TD colSpan=3><ewf:Label id="cxWebLabel2"></TD>
+    <TD></TD></TR>
+  <TR vAlign=top height=43>
+    <TD colSpan=3 height=43></TD>
+    <TD colSpan=3><ewf:Button id="wbLogin"></TD>
+    <TD></TD></TR>
+  <TR vAlign=top height=16>
+    <TD colSpan=4 height=16></TD>
+    <TD colSpan=2><ewf:Label id="wlMessage"></TD>
+    <TD></TD></TR></TABLE>
+<!-- #include file="tail.html" //-->    
+  </ewf:Form>
+  </body>
+</html>
+   
+   

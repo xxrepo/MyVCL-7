@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DBBasedExplorer">
+    <MSBuild Projects="DB ReportExplorer\DBBasedExplorerD14.dproj" Targets="" />
+  </Target>
+  <Target Name="DBTreeReportLink">
+    <MSBuild Projects="DBTreeRL\DBTreeReportLinkD14.dproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLink">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkD14.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink1">
+    <MSBuild Projects="LC LookAndFeel\LayoutControlReportLink1D14.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLink2">
+    <MSBuild Projects="LC MSMoneyStyle\LayoutControlReportLink2D14.dproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLink">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkD14.dproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorer">
+    <MSBuild Projects="ReportExplorer\ReportExplorerD14.dproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRL">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLD14.dproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLink">
+    <MSBuild Projects="StandardRL\StandardReportLinkD14.dproj" Targets="" />
+  </Target>
+  <Target Name="TeeChartReportLink">
+    <MSBuild Projects="TeeChartRL\TeeChartReportLinkD14.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DBBasedExplorerD14;DBTreeReportLinkD14;FlowChartReportLinkD14;LayoutControlReportLink1D14;LayoutControlReportLink2D14;OrgChartReportLinkD14;ReportExplorerD14;SpreadSheetRLD14;StandardReportLinkD14;TeeChartReportLinkD14" />
+  </Target>
+</Project>

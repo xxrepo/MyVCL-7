@@ -1,0 +1,757 @@
+#    Warning, this file includes special characters ISO-8859-1.
+#
+#    Affix file for Italian rev UNIFIED VERSION 0.09 02/02/2000.
+#
+#    This version unify the 2 different development from 
+#    - Antonio Palamà 
+#    - Marco Roveri
+#    I had the agreements of authors to do this work. 
+#    This is an improved version of their common affixes found
+#    in the Italian language.  It's still not final.  This is the
+#    equivalent of a beta version.  The dictionary is not complete
+#    either but include around 160.000 words-
+#
+#    Italian dictionary and affix file for ispell. This program is free
+#    software; you can redistribute it and/or modify it under the terms of
+#    the GNU General Public License as published by the Free Software
+#    Foundation; either version 2 of the License. 
+#    You should have received a copy of the GNU General
+#    Public License along with this program; if not, write to the Free
+#    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#    or write the authors. Part of this FREE software are: 
+#
+#    Copyright 1996-2000 (C) Antonio Palamà <palama@posso.dm.unipi.it>
+#    Copyright 1999-2000 (C) Loris Palmerini <l.palmerini@tin.it>
+#    Copyright 1997-2000 (C) Marco Roveri <marco@mrg.dist.unige.it>
+#
+#    You must keep the author's name in any furthur modifications.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#000210  Il dizionario sale a 160.000 parole,
+#        la nuova tavola degli affissi incorpora 
+#        - 3+1 declinazione dei verbi
+#        - plurale per genere maschile (o/i) e femminile (a/e)
+#        - plurali irregolari in e/i (abile/abili)
+#        - plurali irregolari in a/i  (aroma/aromi)
+#        - forme proclitiche dei verbi (es: darla)
+#        - articoli e preposizioni come parole composte
+#        - aggettivi da singolari (bello>bella>belle>belli)
+#        - aggettivi da plurali (belli>bella>belle>bello)
+#
+# To use both upper- and lower-case affix flags, you must
+# define MASKBITS 64 in compile time option in your local.h file. 
+#
+# Here's a record of flags used, in case you want to add new ones.
+#
+#            ABCDEFGHIJKLMNOPQRSTUVXYWZabcdefghijlkmnopqrstuvxywz
+# Used:      *   ****** ****  ** **  *      *    *
+#
+#headers
+
+nroffchars      ().\\*
+texchars        ()\[]{}<\>\\$*.%
+
+# elimina suggerrimento di nuove combinazioni
+# attenzione! mettere "on" aumenta la tolleranza per parole illegali
+allaffixes off
+
+# La codifica di base è la ISO 8859-1.
+# Sono riportate le equivalenze per TeX.
+
+#char-sets
+# Character-set definitions.  The special-character strings are appropriate
+# for use with the "-mm" nroff/troff macro package.  Users of other formatters
+# or macro packages will undoubtedly have to modify these definitions.
+#
+compoundwords on
+compoundmin 3
+
+defstringtype "list" "nroff" ".list" ".txt"
+
+wordchars	'	`
+wordchars	a       A
+stringchar      à       À
+stringchar      á       Á
+wordchars	[b-e]	[B-E]
+stringchar      é       É
+stringchar      è       È
+stringchar      £       £
+stringchar      &       &
+wordchars	[f-i]	[F-I]
+stringchar      í       Í
+stringchar      ì       Ì
+wordchars	[j-n]	[J-N]
+wordchars	o       O
+stringchar      ó       Ó
+stringchar      ò       Ò
+stringchar      ô       Ô
+wordchars	[p-u]	[P-U]
+stringchar      ù       Ù
+stringchar      ú       Ú
+wordchars	[v-z]	[V-Z]
+boundarychars   [.]             # electronic adresses ("." is a regexp!)
+boundarychars   [---]           # vedere il significato in quello francese
+
+# attenzion questo va inserito ora, dopo aver definito il char '
+#compound-opt  controlled '
+#compoundwords 
+
+#
+# TeX/LaTeX `a la italian.sty (It is the same as the default)
+#
+#  Some differente version are included, choose what you prefer.
+#
+# Nel seguito sono riportate alcune definizioni del set di caratteri
+# utilizzabili per TeX o LaTeX. Levate i commenti a quella che preferite
+#
+
+altstringtype "tex" "TeX" ".tex" ".ltx" ".bib"
+
+altstringchar   \\'a     á
+altstringchar   \\'A     Á
+altstringchar   \\`a     à
+altstringchar   \\`A     À
+altstringchar   \\'e     é
+altstringchar   \\'E     É
+altstringchar   \\`e     è
+altstringchar   \\`E     È
+altstringchar   \\'{\\i} í
+altstringchar   \\'I     Í
+altstringchar   \\`{\\i} ì
+altstringchar   \\`I     Ì
+altstringchar   \\'o     ó
+altstringchar   \\'O     Ó
+altstringchar   \\`o     ò
+altstringchar   \\`O     Ò
+altstringchar   \\^o     ô
+altstringchar   \\^O     Ô
+altstringchar   \\'u     ú
+altstringchar   \\'U     Ú
+altstringchar   \\`u     ù
+altstringchar   \\`U     Ù
+
+# Plain ascii version, no escape char.
+#
+# Questa è quella che usa solo caratteri ascii senza nessuna sequanza di
+# escape; conviene per la verifica di ortografia nei programmi di posta
+# elettronica nei quali, a volte, non conviene usare altro che l'ascii.
+
+#altstringtype "ascii" "nroff" 
+
+#altstringchar   a      à
+#altstringchar   A      A
+#altstringchar   e      è
+#altstringchar   E      E
+#altstringchar   e'      é
+#altstringchar   E'      É
+#altstringchar   i      ì
+#altstringchar   I      I
+#altstringchar   o      ò
+#altstringchar   O      O
+#altstringchar   u      ù
+#altstringchar   U      U
+#
+
+
+suffixes
+
+flag *L:    # plurali femminile
+# caso generale esclusi -ca ga ( valida > valide )
+      [^cg] a       >   -a,e   # 
+# quando finisce in  -ga -ca si aggiunghe h
+       [cg] a       >   -a,he  # (amaca > amache  - targa > targhe )
+
+flag *Q:    # plurali femminile da a in I
+       a       >   -a,i   #  ala  > ali   aroma> aromi
+
+flag *G:    # plurali maschile
+      [^cgi] o      >    -o,i    # anello  -> anelli
+       [cg] o        >    -o,hi     # prarafango -> prarafango
+       [i] o       >    -o,""   # ammiraglio  -> ammiragli, bilancio, bilanci
+
+flag *H:          # generico aggettivo    maschile/femminile/plurale
+# dal maschile sing. agli altri 
+            o      >    -o,i            # prarafango -> parafanghi poco > pochi
+            o      >    -o, a           #  cara, perfetta
+      [^cg] o      >    -o, e           #  cara, perfetta
+      [ cg] o      >    -o, he          #  poco > poche
+     [^cg] a        > -a,   i           #  furbi
+     [ cg] a        > -a,   hi          #  fresca > freschi - lunga > lunghi
+     [^cg] a        > -a,   e           #  furbe
+     [ cg] a        > -a,   he          #  fresca > fresche - lunga > lunghe
+# dal masc. plur. agli altri
+     [^h ] i        > -hi,  o           #  freschi fresco
+           i        > -i,   o           #  furbi furbo
+     [^h ] i        > -hi,  a           #  freschi fresca
+           i        > -i,   a           #  
+     [^h ] i        > -i,   e           #  freschi fresche
+           i        > -i,   e           #  furbi > furbe
+# dal fem. plur. agli altri
+     [^h ] e        > -he,  o           #  fresche fresco
+           e        > -e,   o           #  furbe > furno
+     [^h ] e        > -he,  a           #  fresche fresca
+           e        > -e,   a           #
+     [^h ] e        > -e,   i           #  fresche freschi
+           e        > -e,   i           #  furbe > furbi
+
+# attenzione: non è utile fare un flag separato
+# che dal femminile generi il maschile e i plurali a > -a, o # furba > furbo
+#  come potrebbe essere 
+#     [^cg] a        > -a,   i           #  furbi
+#     [ cg] a        > -a,   hi          #  fresca > freschi - lunga > lunghi
+#     [^cg] a        > -a,   e           #  furbe
+#     [ cg] a        > -a,   he          #  fresca > fresche - lunga > lunghe
+# in questo modo gli aggettivi possono essere tenuti tutti nello stesso file
+# comunque essi siano messi (al plurale o sing., al masc o femm)
+
+
+# Conviene un flag per gli irregolari in -e che fanno -i al plurale
+flag *J:  # sostantivi e aggettivi in -e che hanno il pl. in -i 
+       e        > -e,   i           #  irragionevole > irragionevoli
+                                        #  rappresentante > rappresentanti
+#      #  -ce non fa -chi es. arence aranci
+# 
+
+flag *S:
+        r       >       essa
+        e       >       ssa
+
+#
+# Suffissi.
+# La coniugazione dei verbi segue tre regole, le prime due corrispondono
+# alla prima ed alla seconda coniugazione (-are ed -ere) la terza e la
+# quarta corrispondono alla terza coniugazione (-ire).
+#
+##########################################################################
+#   Verbi regolari della prima coniugazione
+#
+#
+#   Nota: Non si ritiene opportuno descrivere la coniugazione dei verbi
+#         in -iare che hanno la -i tonica nella prima persona
+#         dell'indicativo presente (es. io spio, tu spii) ma, dato il loro
+#         basso numero (espiare, inviare, obliare, spiare, sviare) nel
+#         presente dizionario, trattarli come verbi irregolari.
+#
+
+flag *A:        # I Coniugazione
+        # present  - indicativo presente
+       a r e      >  -are, o          # io amo
+  [^icg]a r e     >  -are, i          # tu ami
+     i a r e      >  -iare, i         # oli
+   [cg]a r e      >  -are, hi         # abbocchi
+       a r e      >  -are, a          # egli ama
+  [^icg]a r e     >  -are, iamo       # noi amiamo
+                                      # che noi amiamo
+     i a r e      >  -re, mo          # che noi oliamo = noi oliamo
+   [cg]a r e      >  -are, hiamo      # abbocchiamo
+#      a r e      >  -are, ate        # voi amate = participio passato
+       a r e      >  -are, ano        # essi amano
+
+        # imperfetto
+        a r e   >       -are,avo
+        a r e   >       -are,avi
+        a r e   >       -are,ava
+        a r e   >       -are,avamo
+        a r e   >       -are,avate
+        a r e   >       -are,avano
+
+        # passato remoto
+        a r e   >       -are,ai
+        a r e   >       -are,asti
+        a r e   >       -are,ò
+        a r e   >       -are,ammo
+        a r e   >       -are,aste
+        a r e   >       -are,arono
+
+# futuro
+  [^cgi]a r e      >  -are, erò        # io amerò
+  [^cgi]a r e      >  -are, erai       # tu amerai
+  [^cgi]a r e      >  -are, erà        # egli amerà
+  [^cgi]a r e      >  -are, eremo      # noi ameremo
+  [^cgi]a r e      >  -are, erete      # voi amerete
+  [^cgi]a r e      >  -are, eranno     # essi ameranno
+
+   [cg]a r e      >  -are, herò        # io abboccherò
+   [cg]a r e      >  -are, herai       # tu abboccherai
+   [cg]a r e      >  -are, herà        # egli abboccherà
+   [cg]a r e      >  -are, heremo      # noi abboccheremo
+   [cg]a r e      >  -are, herete      # voi abboccherete
+   [cg]a r e      >  -are, heranno     # essi abboccheranno
+
+  [^cg]i a r e      >  -are, erò        # io olierò
+  [^cg]i a r e      >  -are, erai       # tu olierai
+  [^cg]i a r e      >  -are, erà        # egli olierà
+  [^cg]i a r e      >  -are, eremo      # noi olieremo
+  [^cg]i a r e      >  -are, erete      # voi olierete
+  [^cg]i a r e      >  -are, eranno     # essi olieranno
+
+  [cg]i a r e      >  -iare, erò        # io adagerò
+  [cg]i a r e      >  -iare, erai       # tu adagerai
+  [cg]i a r e      >  -iare, erà        # egli adagerà
+  [cg]i a r e      >  -iare, eremo      # noi adageremo
+  [cg]i a r e      >  -iare, erete      # voi adagerete
+  [cg]i a r e      >  -iare, eranno     # essi adageranno
+
+        # participio presente
+        a r e   >       -are,ante
+
+# participio passato
+       a r e      >  -are, ato        # amato
+       a r e      >  -are, ati        # amati
+       a r e      >  -are, ata        # amata
+       a r e      >  -are, ate        # amate
+        
+        # gerundio
+        a r e   >       -are,ando
+
+# congiuntivo presente
+                                      # che io ami
+                                      # che tu ami
+                                      # che egli ami
+  [^icg]a r e     >  -are, iate       # che voi amiate
+  [^icg]a r e     >  -are, ino        # che essi amino
+  [cg]a r e       >  -are, hiate      # che voi abbocchiate
+  [cg]a r e       >  -are, hino       # che essi abbocchino
+#    i a r e      >  -re, te          # che voi oliate = voi oliate
+     i a r e      >  -are, no         # che essi olino
+
+
+# congiuntivo passato
+       a r e      >  -are, assi       # che io amassi
+                                      # che tu amassi
+       a r e      >  -are, asse       # che egli amasse
+       a r e      >  -are, assimo     # che noi amassimo
+                                      # che voi amaste = passato remoto
+       a r e      >  -are, assero     # che essi amassero
+
+
+# condizionale presente
+  [^cgi]a r e      >  -are, erei       # io amerei
+  [^cgi]a r e      >  -are, eresti     # tu ameresti
+  [^cgi]a r e      >  -are, erebbe     # gli amerebbe
+  [^cgi]a r e      >  -are, eremmo     # noi ameremmo
+  [^cgi]a r e      >  -are, ereste     # voi amereste
+  [^cgi]a r e      >  -are, erebbero   # essi amerebbero
+
+   [cg]a r e      >  -are, herei      # io abboccherei
+   [cg]a r e      >  -are, heresti    # tu abboccheresti
+   [cg]a r e      >  -are, herebbe    # gli abboccherebbe
+   [cg]a r e      >  -are, heremmo    # noi abboccheremmo
+   [cg]a r e      >  -are, hereste    # voi abbocchereste
+   [cg]a r e      >  -are, herebbero  # essi abboccherebbero
+
+  [^cg]i a r e      >  -are, erei       # io olierei
+  [^cg]i a r e      >  -are, eresti     # tu olieresti
+  [^cg]i a r e      >  -are, erebbe     # gli olierebbe
+  [^cg]i a r e      >  -are, eremmo     # noi olieremmo
+  [^cg]i a r e      >  -are, ereste     # voi oliereste
+  [^cg]i a r e      >  -are, erebbero   # essi olierebbero
+
+  [cg]i a r e      >  -iare, erei       # io adagerei
+  [cg]i a r e      >  -iare, eresti     # tu adageresti
+  [cg]i a r e      >  -iare, erebbe     # gli adagerebbe
+  [cg]i a r e      >  -iare, eremmo     # noi adageremmo
+  [cg]i a r e      >  -iare, ereste     # voi adagereste
+  [cg]i a r e      >  -iare, erebbero   # essi adagerebbero
+
+##########################################################################
+#   Verbi regolari della seconda coniugazione
+#
+#IERE:  cogliere, scegliere, sciogliere, togliere sono irregolari
+#       compiere è solo non val la pena di trattarlo.
+#CERE:  conoscere, contorcere, convincere, crescere, cuocere, decrescere,
+#       giacere, nascere, piacere, riconoscere, storcere, tacere, torcere,
+#       vincere  sono irregolari.
+#GERE:  affliggere, aggiungere, attingere, cingere, correggere, cospargere
+#       detergere, dipingere, dirigere, distruggere, eleggere, emergere,
+#       erigere, esigere, fingere, friggere, giungere, immergere, infrangere,
+#       intingere, piangere, porgere, proteggere, pungere, raggiungere,
+#       recingere, redigere, reggere, respingere, ridirigere, rieleggere,
+#       sconfiggere, scorgere, sorgere, sorreggere, sospingere, spingere,
+#       sporgere, stingere, stringere, struggere, svolgere, tergere, tingere,
+#       travolgere, ungere, volgere, sono irregolari.
+
+flag *E:        # II Coniugazione
+        # present
+#   Indicativo presente
+#
+       e r e      >  -ere, o          # io temo
+       e r e      >  -ere, i          # tu temi
+       e r e      >  -ere, e          # egli teme
+       e r e      >  -ere, iamo       # noi temiamo
+       e r e      >  -ere, ete        # voi temete
+       e r e      >  -ere, ono        # essi temono
+
+# imperfetto
+       e r e      >  -ere, evo        # io temevo
+       e r e      >  -ere, evi        # tu temevi
+       e r e      >  -ere, eva        # egli temeva
+       e r e      >  -ere, evamo      # noi temevamo
+       e r e      >  -ere, evate      # voi temevate
+       e r e      >  -ere, evano      # essi temevano
+
+
+# passato remoto
+       e r e      >  -ere, ei         # io temei
+       e r e      >  -ere, etti       # io temetti
+       e r e      >  -ere, esti       # tu temesti
+       e r e      >  -ere, é          # egli temé
+       e r e      >  -ere, ette       # egli temette
+       e r e      >  -ere, emmo       # noi tememmo
+       e r e      >  -ere, este       # voi temeste
+       e r e      >  -ere, erono      # essi temerono
+       e r e      >  -ere, ettero     # essi temettero
+
+# futuro
+        e r e      >  -ere, erò        # io temerò
+        e r e      >  -ere, erai       # tu temerai
+        e r e      >  -ere, erà        # egli temerà
+        e r e      >  -ere, eremo      # noi temeremo
+        e r e      >  -ere, erete      # voi temerete
+        e r e      >  -ere, eranno     # essi temeranno
+
+# participio presente
+       e r e      >  -ere, ente       # temente
+
+# ATTENZIONE il participio passato GENERA TROPPE PAROLE ERRATE, 
+# perciò lo ho eliminato (conviene averle scritte nel dizionario)
+#  Loris Palmerini (20/02/2000)
+#
+# participio passato
+#    [^d] e r e      >  -ere, uto        # temuto
+#    [^d] e r e      >  -ere, uti        # temuti
+#    [^d] e r e      >  -ere, uta        # temuta
+#    [^d] e r e      >  -ere, ute        # temute
+#     d e r e      >  -dere, sa        # occlusa acclusa
+#     d e r e      >  -dere, se        # occlusa acclusa
+#     d e r e      >  -dere, si        # occlusa acclusa
+#     d e r e      >  -dere, so        # occlusa acclusa
+
+# gerundio
+       e r e      >  -ere, endo       # temendo
+
+# congiuntivo presente
+        e r e   >       -ere, a    # che io tema
+                                   # che tu tema
+# ??    e r e   >       -ere,i     # che tu tema
+        e r e   >       -ere,iamo  # che noi temiamo
+        e r e   >       -ere,iate  # che voi temiate
+        e r e   >       -ere,ano   # che essi temano
+
+# congiuntivo passato
+       e r e      >  -ere, essi       # che io temessi
+                                      # che tu temessi
+       e r e      >  -ere, esse       # che egli temesse
+       e r e      >  -ere, essimo     # che noi temessimo
+                                      # che voi temeste = passato remoto
+       e r e      >  -ere, essero     # che essi temessero
+
+# condizionale presente
+        e r e      >  -ere, erei       # io temerei
+        e r e      >  -ere, eresti     # tu temeresti
+        e r e      >  -ere, erebbe     # gli temerebbe
+        e r e      >  -ere, eremmo     # noi temeremmo
+        e r e      >  -ere, ereste     # voi temereste
+        e r e      >  -ere, erebbero   # essi temerebbero
+
+
+############################################################################
+#
+#   verbi regolari della terza coniugazione senza -isc-
+#
+
+flag *I:        # iii coniugazione senza -isc-
+
+# present  -  indicativo presente
+
+       i r e      >  -ire, o          # io servo
+       i r e      >  -ire, i          # tu servi
+       i r e      >  -ire, e          # egli serve
+       i r e      >  -ire, iamo       # noi serviamo
+       i r e      >  -ire, ite        # voi servite
+       i r e      >  -ire, ono        # essi servono
+
+# imperfetto
+       i r e      >  -ire, ivo        # io servivo
+       i r e      >  -ire, ivi        # tu servivi
+       i r e      >  -ire, iva        # egli serviva
+       i r e      >  -ire, ivamo      # noi servivamo
+       i r e      >  -ire, ivate      # voi servivate
+       i r e      >  -ire, ivano      # essi servivano
+
+# passato remoto
+       i r e      >  -ire, ii         # io servii
+       i r e      >  -ire, isti       # io servisti
+       i r e      >  -ire, ì          # egli servì
+       i r e      >  -ire, immo       # noi servimmo
+       i r e      >  -ire, iste       # voi serviste
+       i r e      >  -ire, irono      # essi servirono
+
+# futuro
+        i r e      >  -ire, irò        # io servirò
+        i r e      >  -ire, irai       # tu servirai
+        i r e      >  -ire, irà        # egli servirà
+        i r e      >  -ire, iremo      # noi serviremo
+        i r e      >  -ire, irete      # voi servirete
+        i r e      >  -ire, iranno     # essi serviranno
+
+# participio presente
+       i r e      >  -ire, ente       # servente
+
+# participio passato
+       i r e      >  -ire, ito        # servito
+       i r e      >  -ire, iti        # serviti
+       i r e      >  -ire, ita        # servita
+                                      # servite = voi servite
+# gerundio
+       i r e      >  -ire, endo       # servendo
+ 
+# congiuntivo presente
+        i r e     >  -ire, a          # che io serva
+                                      # che tu serva
+                                      # che egli serva
+        i r e     >  -ire, iamo       # che noi serviamo
+        i r e     >  -ire, iate       # che voi serviate
+        i r e     >  -ire, ano        # che essi servano
+
+# congiuntivo passato
+       i r e      >  -ire, issi       # che io servissi
+                                      # che tu servissi
+       i r e      >  -ire, isse       # che egli servisse
+       i r e      >  -ire, issimo     # che noi servissimo
+                                      # che voi serviste = passato remoto
+       i r e      >  -ire, issero     # che essi servissero
+
+# condizionale presente
+        i r e      >  -ire, irei       # io servirei
+        i r e      >  -ire, iresti     # tu serviresti
+        i r e      >  -ire, irebbe     # gli servirebbe
+        i r e      >  -ire, iremmo     # noi serviremmo
+        i r e      >  -ire, ireste     # voi servireste
+        i r e      >  -ire, irebbero   # essi servirebbero
+
+########################################################################
+#
+#   verbi regolari della iii coniugazione con -isc-
+#
+flag *U:  # verbi regolari della iii coniugazione con -isc-
+          # obbedire --> obedisco (precedente flag o ver palama')
+
+        # present -   indicativo presente
+
+       i r e      >  -ire, isco       # io capisco
+       i r e      >  -ire, isci       # tu capisci
+       i r e      >  -ire, isce       # egli capisce
+       i r e      >  -ire, iamo       # noi capiamo
+       i r e      >  -ire, ite        # voi capite
+       i r e      >  -ire, iscono     # essi capiscono
+
+# imperfetto
+       i r e      >  -ire, ivo        # io capivo
+       i r e      >  -ire, ivi        # tu capivi
+       i r e      >  -ire, iva        # egli capiva
+       i r e      >  -ire, ivamo      # noi capivamo
+       i r e      >  -ire, ivate      # voi capivate
+       i r e      >  -ire, ivano      # essi capivano
+
+# passato remoto
+       i r e      >  -ire, ii         # io capii
+       i r e      >  -ire, isti       # io capisti
+       i r e      >  -ire, ì          # egli capì
+       i r e      >  -ire, immo       # noi capimmo
+       i r e      >  -ire, iste       # voi capiste
+       i r e      >  -ire, irono      # essi capirono
+
+# futuro semplice
+        i r e      >  -ire, irò        # io capirò
+        i r e      >  -ire, irai       # tu capirai
+        i r e      >  -ire, irà        # egli capirà
+        i r e      >  -ire, iremo      # noi capiremo
+        i r e      >  -ire, irete      # voi capirete
+        i r e      >  -ire, iranno     # essi capiranno
+
+# participio presente
+       i r e      >  -ire, ente       # capente
+
+# participio passato
+       i r e      >  -ire, ito        # capito
+       i r e      >  -ire, iti        # capiti
+       i r e      >  -ire, ita        # capita
+                                      # capite = voi capite
+# gerundio
+       i r e      >  -ire, endo       # capendo
+
+
+# congiuntivo presente
+       i r e     >  -ire, isca        # che io capisca
+                                      # che tu capisca
+                                      # che egli capisca
+       i r e     >  -ire, iamo        # che noi capiamo
+       i r e     >  -ire, iate        # che voi capiate
+       i r e     >  -ire, iscano      # che essi capiscano
+
+# congiuntivo passato
+       i r e      >  -ire, issi       # che io capissi
+                                      # che tu capissi
+       i r e      >  -ire, isse       # che egli capisse
+       i r e      >  -ire, issimo     # che noi capissimo
+                                      # che voi capiste = passato remoto
+       i r e      >  -ire, issero     # che essi capissero
+
+# condizionale presente
+        i r e      >  -ire, irei       # io capirei
+        i r e      >  -ire, iresti     # tu capiresti
+        i r e      >  -ire, irebbe     # gli capirebbe
+        i r e      >  -ire, iremmo     # noi capiremmo
+        i r e      >  -ire, ireste     # voi capireste
+        i r e      >  -ire, irebbero   # essi capirebbero
+
+# fine iii coniugazion con -isc-
+
+################# Riflessivo
+flag *F:   #   Riflessivo
+# vincere    vincer si
+# mangiare   mangiar si
+# imbrutire  imbrutir si
+        # infinito presente
+        r e     >       -e,si   # lavare -> lavarsi
+        r e     >       -e,mi   # lavare -> lavarmi
+        r e     >       -e,ti   # lavare -> lavarti
+        r e     >       -e,ci   # lavare -> lavarci
+        r e     >       -e,le   # lavare -> lavarle
+        r e     >       -e,gli   # lavare -> lavargli
+        # participio presente
+        r e     >       -re,ntesi   # lavare -> lavantesi
+        r e     >       -re,ntisi   # lavare -> lavantisi
+        # participio passato
+        r e     >       -re,tosi   # lavare -> lavatosi
+        r e     >       -re,tomi   # lavare -> lavatomi
+        r e     >       -re,toti   # lavare -> lavatoti
+        r e     >       -re,tici   # lavare -> lavatici
+        r e     >       -re,tivi   # lavare -> lavativi
+        r e     >       -re,tisi   # lavare -> lavatisi
+        # gerundio presente
+        r e     >       -re,ndosi       # lavare -> lavandosi
+        r e     >       -re,ndomi       # lavare -> lavandomi
+        r e     >       -re,ndoti       # lavare -> lavandoti
+        r e     >       -re,ndoci       # lavare -> lavandoci
+        r e     >       -re,ndovi       # lavare -> lavandovi
+        r e     >       -re,ndolo       # lavare -> lavandolo
+        r e     >       -re,ndola       # lavare -> lavandola
+        r e     >       -re,ndole       # lavare -> lavandole
+        r e     >       -re,ndoli       # lavare -> lavandoli
+flag *P:   #   pronominale ?? ATTENZIONE 
+# Non tutti i verbi riflessivi sembrano accettare questo flag 
+# e alcuni verbi  NON riflessivi lo accettano 
+#   es "accattare"   > accattarla
+#   categorrizzare > categorrizzarli
+
+        r e     >       -e,la         # lavare -> lavarla
+        r e     >       -e,lo         # lavare -> lavarlo
+        r e     >       -e,le         # lavare -> lavarle
+        r e     >       -e,li         # lavare -> lavarli
+        r e     >       -e,vi         # lavare -> lavarvi
+        r e     >       -e,ti         # lavare -> lavarti
+        r e     >       -e,ci         # lavare -> lavarci
+#        r e     >       -e,si   # lavare -> lavarsi
+#        r e     >       -e,mi   # lavare -> lavarmi
+        r e     >       -e,gli   # lavare -> lavargli
+
+
+# Avverbi derivati +mente
+# La forma grammaticale da cui nasce e' l'aggettivo, cui si aggiunge
+# il suffisso +mente
+flag *V:
+        o       >       -o,amente       # pazzo -> pazzamente
+        a       >       mente        # pazza -> pazzamente
+# se le ultime due lettere sono delle "re" o "le" si ha l'apocope
+# della vocale finale: amorevole -> amorevolmente
+        r e     >       -e,mente
+        l e     >       -e,mente
+# else aggiunge mente o aggiunge +issimamente
+        e       >       mente
+        e       >       -e,issimamente
+
+
+# Superlativo assoluto in +issimo
+# indica il grado massimo di intensita' di una qualita' o di un
+# concetto, senza cistituire paragoni con altre grandezze.
+# si esprome con il suffisso +issimo, aggiunto all'aggettivo di grado
+# positivo: nuovo -> nuovissim[aeio]
+#           brillante -> brillantissim[aeio]
+flag *O:
+     [^C]O        > -O,   ISSIMO      #  carissimo
+     [^C]O        > -O,   ISSIMA      #  carissima
+     [^C]O        > -O,   ISSIMI      #  carissimi
+     [^C]O        > -O,   ISSIME      #  carissime
+       C O        > -O,   HISSIMO     #        biechissimo
+       C O        > -O,   HISSIMA     #        biechissima
+       C O        > -O,   HISSIMI     #        biechissimi
+       C O        > -O,   HISSIME     #        biechissime
+
+
+# Superlativo assoluto in +errimo
+flag *N:
+        r e     >       -e,errimo       # acre -> acerrimo, salubre -> saluberrimo
+# Superlativo assoluto in +entissimo
+flag *M:
+        c o     >       -o,entissimo
+        l o     >       -o,entissimo
+
+# Tavola dei prefissi, per ora si considerano l'elisione
+# degli articoli, delle preposizioni e delle preposizioni
+# articolate, i ri- e pre-.
+prefixes
+
+flag *R:
+	.	>	ri      # vedere -> rivedere
+                                # vendere -> rivendere
+                                # usare -> riusare
+                                # dire -> ridire
+                                # partire -> ripartire
+
+flag *W:
+        .       >       pre     # vedere -> prevedere
+                                # venire -> prevenire
+                                # scrivere -> prescivere
+                                # dire -> predire
+
+flag L:    # plurali femminile
+      [aeiou] . a "$"   >    l'   #
+      [aeiou] . a "$"   >    un'   #
+      [aeiou] . a "$"   >    d'
+      [aeiou] . a "$"   >    all'
+      [aeiou] . a "$"   >   dall'
+      [aeiou] . a "$"   >   dell'
+      [aeiou] . a "$"   >   nell'
+      [aeiou] . a "$"   >   sull'
+
+flag *H:
+    [aeiou]             >       l'            # elisione dell'articolo
+    [aeiou]             >       dell'         # sostantivi e aggettivi
+    [aeiou]             >       dall'
+    [aeiou]             >       all'
+    [aeiou]             >       sull'
+    [aeiou]             >       nell'
+    [aeiou]             >       d'
+
+flag Q:    # plurali femminile da a in I
+      [aeiou]         >   l'   #
+      [aeiou]         >   un'   #
+
+flag *G:    # plurali maschile
+      [aeiou]         >   gl'   #
+
+flag *X:    # l'ultima risorsa per l'
+      [aeiou]         >   l'   #
+
+flag *Y:    # l'ultima risorsa d'
+      [aeiou]         >   d'   #
+
+flag *Z:    # l'ultima risorsa un'
+      [aeiou]         >   l'   #
+

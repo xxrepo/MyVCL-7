@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsLookupDemo">
+    <MSBuild Projects="EditorsLookupDemo\EditorsLookupDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsMaskDemo">
+    <MSBuild Projects="EditorsMaskDemo\EditorsMaskDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemo">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemo">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemo">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemo">
+    <MSBuild Projects="STYLESSIMPLEDEMO\StylesSimpleDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemo">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoD14.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoD14;EditorsInPlaceDemoD14;EditorsLookupDemoD14;EditorsMaskDemoD14;ProviderModeDemoD14;RTTIInspectorDemoD14;SimpleVerticalGridDemoD14;StylesMultiDemoD14;StylesSimpleDemoD14;RowsMultiEditorsDemoD14" />
+  </Target>
+</Project>

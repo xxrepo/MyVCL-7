@@ -1,0 +1,39 @@
+<HTML>
+  <HEAD>
+    <TITLE><%=Context.Page.Title%></TITLE>
+  </HEAD>
+  <BODY bgcolor="white">
+<!--#include file="head.html"-->
+<%
+  arNames = new Array("B2C Service Demo",
+                      "DataSource Demo",
+                      "Data Controls Demo",
+                      "WebDBGrid Customize Demo",
+                      "WebTreeView Customize Demo",
+                      "WebCalendar Customize Demo",
+                      "WebMenu Customize Demo",
+                      "Order Form Demo");
+  arLinks = new Array("b2csd", "DataSourceDemo", "DataCtrlsDemo1", "GridDemo1","TreeDemo1", "CalendarDemo", "MenuDemo1", "OrderDemo")
+%>
+<STYLE TYPE="text/css">
+ .demo_menu { font-family: Arial, Helvetica, sans-serif; color: #2F59aC; font-size: 12px; font-weight: bold; text-decoration: none; }
+</STYLE>
+<TABLE cellpadding="0" cellspacing="0" border="0">
+  <TR><TD colspan="3"><IMG height=84 alt="" src="<%=QualifyImage("demoh_u.gif")%>" width=352 border=0></TD></TR>
+  <TR>
+    <TD><IMG height=182 alt="" src="<%=QualifyImage("demoh_l.gif")%>" width=206 border=0></TD>
+    <TD background="<%=QualifyImage("demo_back.gif")%>"><img src="<%=QualifyImage("1x1.gif")%>" width="1" height="1" alt="" border="0"></TD>
+    <TD valign="top">
+      <TABLE cellpadding="0" cellspacing="0" border="0">
+        <TR><TD><img src="<%=QualifyImage("1x1.gif")%>" width="2" height="10" alt="" border="0"></TD></TR>
+        <%for(var i = 0; i < arNames.length; i++) {%>
+        <TR><TD><A href="<%=arLinks[i]%>" class="demo_menu">&nbsp;&nbsp;-&nbsp;<%=arNames[i]%></A></TD></TR>
+        <TR><TD background="<%=QualifyImage("demo_back.gif")%>"><img src="<%=QualifyImage("1x1.gif")%>" width="2" height="2" alt="" border="0"></TD></TR>
+        <%}%>
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+<!--#include file="tail.html"-->
+  </BODY>
+</HTML>

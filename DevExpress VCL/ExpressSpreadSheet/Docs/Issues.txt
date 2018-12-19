@@ -1,0 +1,39 @@
+DEVELOPER EXPRESS INC
+ExpressSpreadSheet COMPONENT 
+Copyright (C) 2001-2004 Developer Express Inc.
+
+
+Known Issues List
+--------------------------------------------------------------------------------
+This file documents the known issues list for the ExpressSpreadSheet product from Developer Express Inc.  The issue number is an internal ID that we use to track the status of known issues, and can be used in conversations with our support personnel (support@devexpress.com) to refer to known issues.
+
+
+Known differences between ESS and Excel
+--------------------------------------------------------------------------------
+These are features that exist in the Excel User Interface that are not currently supported by ExpressSpreadSheet, many of these can be implemented programmatically by the developer as needed.  For example: issue 3941- ExpressSpreadSheet does not support all Excel functions.  However users can programmatically add any custom function (see the CustomFunction demo for an example).  
+
+Note many of these features are under active development for a later release of this product and will be prioritized based upon user demand.
+
+ Issue#  Description
+--------------------------------------------------------------------------------
+ 2906	ExpressSpreadSheet does not support entire column or row selection feature of Excel UI
+ 2980	Excel will auto-correct lotus 123 style ranges (A1..A3) into Excel Style Ranges (A1:A3) - ExpressSpreadSheet does not support 123 style ranges.  
+ 3587	The Excel User Interface supports a range of hotkey keyboard shortcuts that are not supported in ExpressSpreadSheet
+ 3588	ExpressSpreadSheet does not support Excels "Column best fit" action (double clicking while the column resize icon is displayed)
+ 3593	ExpressSpreadSheet does not currently support Excels "Cell comment" feature
+ 3602  	ExpressSpreadSheet does not currently support non-rectangular ranges/cell selection
+ 3657	Microsoft Excel 5 format is not currently supported.
+ 3680	ExpressSpreadSheet supports sorting only on the first column in a range, and does not currently support Excels UI column sorting functionality
+ 3681	ExpressSpreadSheet does not currently support Excels Filtering User Interface behavior 
+ 3752	ExpressSpreadSheet does not currently support saving the Spreadsheet background color 
+ 3860	ExpressSpreadSheet does not currently support Excels fixed row/col User Interface behavior
+ 3891	ExpressSpreadSheet does not support functions with whitespace eg: "INT  (2.3)" will result in a 'syntax in string expression' error
+ 3941	ExpressSpreadSheet does not support all Excel functions - see online help for list of supported functions
+ 3946	ExpressSpreadSheet does not currently support other file import/export formats of Excel (csv, and other common formats)
+ 3948	ExpressSpreadSheet does not currently support Excels conditional formatting
+ 3949	ExpressSpreadSheet does not currently support the embedding of images 
+ 3950	ExpressSpreadSheet does not support the embedding of Charts
+ 3981	ExpressSpreadSheet does not currently support password protected spreadsheets
+ 4098	ExpressSpreadSheet does not currently support Excels Custom Masks, including custom date formats (General data format is supported)
+ 4105	ExpressSpreadSheet does not support Excels drag and drop cell content moving and copying
+

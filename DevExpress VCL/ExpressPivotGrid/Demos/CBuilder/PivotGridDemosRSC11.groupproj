@@ -1,0 +1,29 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemo">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemo">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemo">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemo">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoRSC11;MultipleTotalsDemoRSC11;SortBySummaryDemoRSC11;CustomDrawDemoRSC11;StylesMultiDemoRSC11;UnboundExternalDemoRSC11" />
+  </Target>
+</Project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="OCDemoC10.exe" Type="String">OCDemoC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">OCDemoC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

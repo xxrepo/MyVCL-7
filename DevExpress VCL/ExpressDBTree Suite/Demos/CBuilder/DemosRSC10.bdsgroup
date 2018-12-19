@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="dbtreeRSC10.exe" Type="String">DBTree\dbtreeRSC10.bdsproj</Projects>
+      <Projects Name="dbtree_fRSC10.exe" Type="String">DBTree_F\dbtree_fRSC10.bdsproj</Projects>
+      <Projects Name="dbtrprnpRSC10.exe" Type="String">DBTrPrn\dbtrprnpRSC10.bdsproj</Projects>
+      <Projects Name="dbtreditRSC10.exe" Type="String">TreeEdit\dbtreditRSC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">dbtreeRSC10.exe dbtree_fRSC10.exe dbtrprnpRSC10.exe dbtreditRSC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

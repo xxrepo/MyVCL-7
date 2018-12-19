@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Frames Demo</title>
+  </head>
+  <frameset cols="280,*">
+    <frame name="Frame1Page" src="<%=Request.InternalScriptName%>/Frame1Page" scrolling="no" noresize>
+    <frameset rows="60,*">
+      <frame name="Frame2Page" src="<%=Request.InternalScriptName%>/Frame2Page">
+      <frame name="Frame3Page" src="http://www.devexpress.com">
+    </frameset>
+    <noframes>
+      <p>
+        This HTML frameset displays multiple Web pages. To view this frameset, use a
+        Web browser that supports HTML 4.0 and later.
+      </p>
+    </noframes>
+  </frameset>
+</html> 

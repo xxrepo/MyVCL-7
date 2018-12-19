@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="CustomAttrDemoWAD.exe" Type="String">CustomAttrDemo\CustomAttrDemoWAD.bdsproj</Projects>
+      <Projects Name="FramesDemoWAD.exe" Type="String">FramesDemo\FramesDemoWAD.bdsproj</Projects>
+      <Projects Name="SessionDemoWAD.exe" Type="String">SessionDemo\SessionDemoWAD.bdsproj</Projects>
+      <Projects Name="ServerScriptsDemoWAD.exe" Type="String">ServerScripts\ServerScriptsDemoWAD.bdsproj</Projects>
+      <Projects Name="MasterDetailDemoWAD.exe" Type="String">MasterDetailDemo\MasterDetailDemoWAD.bdsproj</Projects>
+      <Projects Name="WebDBTableDemoWAD.exe" Type="String">WebDBTable\WebDBTableDemoWAD.bdsproj</Projects>
+      <Projects Name="WebSnapAdaptersDemoWAD.exe" Type="String">WebSnapAdapters\WebSnapAdaptersDemoWAD.bdsproj</Projects>
+      <Projects Name="VBScriptDemoWAD.exe" Type="String">VBScriptDemo\VBScriptDemoWAD.bdsproj</Projects>
+      <Projects Name="WebDateEditDemoWAD.exe" Type="String">WebDateEdit\WebDateEditDemoWAD.bdsproj</Projects>
+      <Projects Name="WebServiceDemoWAD.exe" Type="String">WebServices\WebServiceDemoWAD.bdsproj</Projects>
+      <Projects Name="LoginDemoWAD.exe" Type="String">LoginDemo\LoginDemoWAD.bdsproj</Projects>
+      <Projects Name="ClientEventsDemoWAD.exe" Type="String">ClientEventsDemo\ClientEventsDemoWAD.bdsproj</Projects>
+      <Projects Name="XPBarDemoWAD.exe" Type="String">XPBarDemo\XPBarDemoWAD.bdsproj</Projects>
+      <Projects Name="IncludeDemoWAD.exe" Type="String">IncludeDemo\IncludeDemoWAD.bdsproj</Projects>
+      <Projects Name="TabControlTest.exe" Type="String">SimpleTabControl\TestDemo\TabControlTest.bdsproj</Projects>
+      <Projects Name="LoginDemoWAD.exe" Type="String">LoginDemo\LoginDemoWAD.bdsproj</Projects>
+      <Projects Name="LookupDemoWAD.exe" Type="String">LookupDemo\LookupDemoWAD.bdsproj</Projects>
+      <Projects Name="WebChartDemoWAD.exe" Type="String">WebChartDemo\WebChartDemoWAD.bdsproj</Projects>
+      <Projects Name="CustomRenderDemo.exe" Type="String">CustomRenderDemo\CustomRenderDemo.bdsproj</Projects>
+      <Projects Name="WebChartProDemoWAD.exe" Type="String">WebChartProDemo\WebChartProDemoWAD.bdsproj</Projects>
+      <Projects Name="DxForum.exe" Type="String">ExpressSupportForum\DxForum.bdsproj</Projects>
+      <Projects Name="webob.exe" Type="String">MegaDemo\webob.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">CustomAttrDemoWAD.exe FramesDemoWAD.exe SessionDemoWAD.exe ServerScriptsDemoWAD.exe MasterDetailDemoWAD.exe WebDBTableDemoWAD.exe WebSnapAdaptersDemoWAD.exe VBScriptDemoWAD.exe WebDateEditDemoWAD.exe WebServiceDemoWAD.exe LoginDemoWAD.exe ClientEventsDemoWAD.exe XPBarDemoWAD.exe IncludeDemoWAD.exe TabControlTest.exe LoginDemoWAD.exe LookupDemoWAD.exe WebChartDemoWAD.exe CustomRenderDemo.exe WebChartProDemoWAD.exe DxForum.exe webob.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

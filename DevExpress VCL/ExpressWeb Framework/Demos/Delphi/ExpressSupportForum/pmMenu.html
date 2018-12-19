@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title><%=Context.Page.Title%></title>
+    <script language="javascript">
+      function add_book() {
+        form = top.info.document.forms[0];
+        if(!form.isbook)
+          alert("Can't add bookmark on this screen!");
+        else {
+          aid = form.aid ? form.aid.value : -1;
+          cid = form.cid ? form.cid.value : -1;
+          page = 'AddBookmark?aid=' + aid + '&cid='+ cid;
+          open(page,"AddBookmark","width=370,height=100,status=no,toolbar=no,menubar=no")
+        }
+      }
+      function op() {
+        open('Bookmarks', 'displayWindow','width=400,height=200,status=no,toolbar=no,menubar=no,scrollbars=yes');
+      }
+      function home() {
+        top.location.href="http://www.devexpress.com";
+      }
+    </script>
+  </head>
+  <body bgcolor="black"><ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<TABLE id=MenuTable height=20 cellSpacing=0 cellPadding=0 width=600 border=0 
+ewf_tablebuilder="true">
+  
+  <TR vAlign=top>
+    <TD width=0 height=0></TD>
+    <TD width=600></TD></TR>
+  <TR vAlign=top height=20>
+    <TD colSpan=2><ewf:MainMenu id="cxWebMainMenu1"></TD>
+    <TD></TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ewf:Form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

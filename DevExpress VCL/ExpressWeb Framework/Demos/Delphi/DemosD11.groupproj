@@ -1,0 +1,77 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomAttrDemoWAD">
+    <MSBuild Projects="CustomAttrDemo\CustomAttrDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="FramesDemoWAD">
+    <MSBuild Projects="FramesDemo\FramesDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="SessionDemoWAD">
+    <MSBuild Projects="SessionDemo\SessionDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerScriptsDemoWAD">
+    <MSBuild Projects="ServerScripts\ServerScriptsDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoWAD">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="WebDBTableDemoWAD">
+    <MSBuild Projects="WebDBTable\WebDBTableDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="WebSnapAdaptersDemoWAD">
+    <MSBuild Projects="WebSnapAdapters\WebSnapAdaptersDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="VBScriptDemoWAD">
+    <MSBuild Projects="VBScriptDemo\VBScriptDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="WebDateEditDemoWAD">
+    <MSBuild Projects="WebDateEdit\WebDateEditDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoWAD">
+    <MSBuild Projects="WebServices\WebServiceDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="LoginDemoWAD">
+    <MSBuild Projects="LoginDemo\LoginDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="ClientEventsDemoWAD">
+    <MSBuild Projects="ClientEventsDemo\ClientEventsDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="XPBarDemoWAD">
+    <MSBuild Projects="XPBarDemo\XPBarDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="IncludeDemoWAD">
+    <MSBuild Projects="IncludeDemo\IncludeDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="TabControlTest">
+    <MSBuild Projects="SimpleTabControl\TestDemo\TabControlTestD11.dproj" Targets="" />
+  </Target>
+  <Target Name="LoginDemoWAD">
+    <MSBuild Projects="LoginDemo\LoginDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="LookupDemoWAD">
+    <MSBuild Projects="LookupDemo\LookupDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="WebChartDemoWAD">
+    <MSBuild Projects="WebChartDemo\WebChartDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRenderDemo">
+    <MSBuild Projects="CustomRenderDemo\CustomRenderDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="WebChartProDemoWAD">
+    <MSBuild Projects="WebChartProDemo\WebChartProDemoWADD11.dproj" Targets="" />
+  </Target>
+  <Target Name="DxForum">
+    <MSBuild Projects="ExpressSupportForum\DxForumD11.dproj" Targets="" />
+  </Target>
+  <Target Name="webob">
+    <MSBuild Projects="MegaDemo\webobD11.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomAttrDemoWADD11;FramesDemoWADD11;SessionDemoWADD11;ServerScriptsDemoWADD11;MasterDetailDemoWADD11;WebDBTableDemoWADD11;WebSnapAdaptersDemoWADD11;VBScriptDemoWADD11;WebDateEditDemoWADD11;WebServiceDemoWADD11;LoginDemoWADD11;ClientEventsDemoWADD11;XPBarDemoWADD11;IncludeDemoWADD11;TabControlTestD11;LoginDemoWADD11;LookupDemoWADD11;WebChartDemoWADD11;CustomRenderDemoD11;WebChartProDemoWADD11;DxForumD11;webobD11" />
+  </Target>
+</Project>

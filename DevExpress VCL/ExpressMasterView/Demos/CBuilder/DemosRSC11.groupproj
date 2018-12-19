@@ -1,0 +1,29 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="HugeTablesDemo">
+    <MSBuild Projects="HugeTables\HugeTablesDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterViewColumnsDemo">
+    <MSBuild Projects="MasterViewColumns\MasterViewColumnsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="ExpressMasterViewStyles">
+    <MSBuild Projects="MasterViewStyles\ExpressMasterViewStylesRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="querydemo">
+    <MSBuild Projects="QueryDemo\querydemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="RuntimeStyles">
+    <MSBuild Projects="RunTimeStyles\RuntimeStylesRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SelfRef">
+    <MSBuild Projects="SelfRef\SelfRefRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="HugeTablesDemoRSC11;MasterViewColumnsDemoRSC11;ExpressMasterViewStylesRSC11;querydemoRSC11;RuntimeStylesRSC11;SelfRefRSC11" />
+  </Target>
+</Project>

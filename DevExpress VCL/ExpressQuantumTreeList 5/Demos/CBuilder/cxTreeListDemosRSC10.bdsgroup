@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="BandedDemoRSC10.exe" Type="String">BandedDemo\BandedDemoRSC10.bdsproj</Projects>
+      <Projects Name="BandedFixedDemoRSC10.exe" Type="String">BandedFixedDemo\BandedFixedDemoRSC10.bdsproj</Projects>
+      <Projects Name="ColumnsMultiEditorsDemoRSC10.exe" Type="String">ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSC10.bdsproj</Projects>
+      <Projects Name="CheckGroupsDemoRSC10.exe" Type="String">CheckGroupsDemo\CheckGroupsDemoRSC10.bdsproj</Projects>
+      <Projects Name="CustomDrawDemoRSC10.exe" Type="String">CustomDrawDemo\CustomDrawDemoRSC10.bdsproj</Projects>
+      <Projects Name="DragDropDemoRSC10.exe" Type="String">DragDropDemo\DragDropDemoRSC10.bdsproj</Projects>
+      <Projects Name="EditorsInPlaceDemoRSC10.exe" Type="String">EditorsInPlaceDemo\EditorsInPlaceDemoRSC10.bdsproj</Projects>
+      <Projects Name="EditorsLookupDemoRSC10.exe" Type="String">EditorsLookupDemo\EditorsLookupDemoRSC10.bdsproj</Projects>
+      <Projects Name="EditorsMaskDemoRSC10.exe" Type="String">EditorsMaskDemo\EditorsMaskDemoRSC10.bdsproj</Projects>
+      <Projects Name="VirtualModeDemoRSC10.exe" Type="String">VirtualModeDemo\VirtualModeDemoRSC10.bdsproj</Projects>
+      <Projects Name="ProviderModeDemoRSC10.exe" Type="String">ProviderModeDemo\ProviderModeDemoRSC10.bdsproj</Projects>
+      <Projects Name="SimpleListDemoRSC10.exe" Type="String">SimpleListDemo\SimpleListDemoRSC10.bdsproj</Projects>
+      <Projects Name="SimpleTreeDemoRSC10.exe" Type="String">SimpleTreeDemo\SimpleTreeDemoRSC10.bdsproj</Projects>
+      <Projects Name="StylesMultiDemoRSC10.exe" Type="String">StylesMultiDemo\StylesMultiDemoRSC10.bdsproj</Projects>
+      <Projects Name="StylesSimpleDemoRSC10.exe" Type="String">StylesSimpleDemo\StylesSimpleDemoRSC10.bdsproj</Projects>
+      <Projects Name="SummariesDemoRSC10.exe" Type="String">SummariesDemo\SummariesDemoRSC10.bdsproj</Projects>
+      <Projects Name="UnboundModeDemoRSC10.exe" Type="String">UnboundModeDemo\UnboundModeDemoRSC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">BandedDemoRSC10.exe BandedFixedDemoRSC10.exe ColumnsMultiEditorsDemoRSC10.exe CheckGroupsDemoRSC10.exe CustomDrawDemoRSC10.exe DragDropDemoRSC10.exe EditorsInPlaceDemoRSC10.exe EditorsLookupDemoRSC10.exe EditorsMaskDemoRSC10.exe VirtualModeDemoRSC10.exe ProviderModeDemoRSC10.exe SimpleListDemoRSC10.exe SimpleTreeDemoRSC10.exe StylesMultiDemoRSC10.exe StylesSimpleDemoRSC10.exe SummariesDemoRSC10.exe UnboundModeDemoRSC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

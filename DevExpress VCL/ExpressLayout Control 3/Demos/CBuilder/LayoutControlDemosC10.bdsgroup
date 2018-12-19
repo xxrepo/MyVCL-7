@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="cxEditorsDemoC10.exe" Type="String">cxEditorsDemo\cxEditorsDemoC10.bdsproj</Projects>
+      <Projects Name="EditorsDemoC10.exe" Type="String">EditorsDemo\EditorsDemoC10.bdsproj</Projects>
+      <Projects Name="PuzzleDemoC10.exe" Type="String">PuzzleDemo\PuzzleDemoC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">cxEditorsDemoC10.exe EditorsDemoC10.exe PuzzleDemoC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

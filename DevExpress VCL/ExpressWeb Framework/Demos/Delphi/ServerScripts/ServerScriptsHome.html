@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Server scripts Demo</title>
+  </head>
+  <body>
+  <ewf:Form id="<%=Form.Name%>"  renderchildren="noRender">
+  <%while (! Table.eof) { %>
+      <TABLE  cellSpacing=0 cellPadding=0 border=1>
+        <TR>
+          <TD width=250 colSpan=2><%=Table.FindField("event_name").DisplayText %></TD>
+          <TD width=400 rowSpan=3><%=Table.FindField('event_description').AsString %></TD>
+          <TD width=200 rowSpan=3><Image src=<%=Form.CurrentImageSrc%>></TD>
+        </TR>
+        <TR>
+          <TD width=100><% =Table.FindField("event_date").DisplayText %></TD>
+          <TD width=150><% =Table.FindField("event_time").DisplayText %></TD></TR>
+        <TR>
+          <TD width=205 colSpan=2><%=Table.FindField("ticket_price").DisplayText %></TD></TR></TABLE>
+  <% Table.next; } %>
+
+  </ewf:Form>
+  </body>
+</html>
+

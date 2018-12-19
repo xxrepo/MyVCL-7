@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="DBBasedExplorer.exe" Type="String">DB ReportExplorer\DBBasedExplorer.bdsproj</Projects>
+      <Projects Name="EQGrid6ReportLink.exe" Type="String">EQGrid6RL\EQGrid6ReportLink.bdsproj</Projects>
+      <Projects Name="FlowChartReportLink.exe" Type="String">FlowChartRL\FlowChartReportLink.bdsproj</Projects>
+      <Projects Name="LayoutControlReportLink.exe" Type="String">LayoutControlRL\LayoutControlReportLink.bdsproj</Projects>
+      <Projects Name="OrgChartReportLink.exe" Type="String">OrgChartRL\OrgChartReportLink.bdsproj</Projects>
+      <Projects Name="ReportExplorer.exe" Type="String">ReportExplorer\ReportExplorer.bdsproj</Projects>
+      <Projects Name="SchedulerLink.exe" Type="String">SchedulerRL\SchedulerLink.bdsproj</Projects>
+      <Projects Name="SpreadSheetRL.exe" Type="String">SpreadSheetRL\SpreadSheetRL.bdsproj</Projects>
+      <Projects Name="StandardReportLink.exe" Type="String">StandardRL\StandardReportLink.bdsproj</Projects>
+      <Projects Name="TeeChartReportLink.exe" Type="String">TeeChartRL\TeeChartReportLink.bdsproj</Projects>
+      <Projects Name="PivotGridReportLink.exe" Type="String">PivotGridRL\PivotGridReportLink.bdsproj</Projects>
+      <Projects Name="cxTreeListReportLink.exe" Type="String">cxTreeListRL\cxTreeListReportLink.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">DBBasedExplorer.exe EQGrid6ReportLink.exe FlowChartReportLink.exe LayoutControlReportLink.exe OrgChartReportLink.exe ReportExplorer.exe SchedulerLink.exe SpreadSheetRL.exe StandardReportLink.exe TeeChartReportLink.exe PivotGridReportLink.exe cxTreeListReportLink.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

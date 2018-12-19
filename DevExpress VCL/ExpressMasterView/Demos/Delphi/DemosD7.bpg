@@ -1,0 +1,35 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = HugeTablesDemo.exe MasterViewColumnsDemo.exe ExpressMasterViewStyles.exe querydemo.exe \
+RuntimeStyles.exe SelfRef.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+HugeTablesDemo.exe: HugeTables\HugeTablesDemo.dpr
+  $(DCC)
+
+MasterViewColumnsDemo.exe: MasterViewColumns\MasterViewColumnsDemo.dpr
+  $(DCC)
+
+ExpressMasterViewStyles.exe: MasterViewStyles\ExpressMasterViewStyles.dpr
+  $(DCC)
+
+querydemo.exe: QueryDemo\querydemo.dpr
+  $(DCC)
+
+RuntimeStyles.exe: RunTimeStyles\RuntimeStyles.dpr
+  $(DCC)
+
+SelfRef.exe: SelfRef\SelfRef.dpr
+  $(DCC)

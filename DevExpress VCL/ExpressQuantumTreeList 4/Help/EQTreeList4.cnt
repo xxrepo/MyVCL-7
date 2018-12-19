@@ -1,0 +1,89 @@
+:Base EQTreeList4.hlp
+:Title ExpressQuantumTreeList Suite 4
+:Index ExpressQuantumTreeList Suite 4=EQTreeList4.hlp
+1 ExpressQuantumTreeList4
+2 Introduction=IDH_bc_Introduction
+2 Getting Started=Getting_Started
+2 Known Issues and Important Changes List=CD_Known_Issues_and_Important_Changes_List
+2 Reference
+3 Units
+4 cxTL Unit Overview=IDH_Unit_cxTL
+4 cxDBTL Unit Overview=IDH_Unit_cxDBTL
+4 cxTLData Unit Overview=IDH_Unit_cxTLData
+3 cxCustomTreeListControl
+4 TcxCustomTreeListControl=IDH_Class_TcxCustomTreeListControl
+4 TcxCustomDataTreeList=IDH_Class_TcxCustomDataTreeList
+3 cxDBTreeList
+4 TcxCustomDBTreeList=IDH_Class_TcxCustomDBTreeList
+4 TcxDBTreeList=IDH_Class_TcxDBTreeList
+3 cxTreeList Band
+4 TcxTreeListBand=IDH_Class_TcxTreeListBand
+4 TcxTreeListBands=IDH_Class_TcxTreeListBands
+4 TcxTreeListBandOptions=IDH_Class_TcxTreeListBandOptions
+3 cxTreeList Column
+4 TcxTreeListColumn=IDH_Class_TcxTreeListColumn
+4 TcxDBTreeListColumn=IDH_Class_TcxDBTreeListColumn
+4 TcxTreeListColumnPosition=IDH_Class_TcxTreeListColumnPosition
+4 TcxTreeListColumnOptions=IDH_Class_TcxTreeListColumnOptions
+4 TcxTreeListColumnSummaryFooter=IDH_Class_TcxTreeListColumnSummaryFooter
+3 cxTreeList Control
+4 TcxTreeList=IDH_Class_TcxTreeList
+3 cxTreeList DataController
+4 TcxDBTreeListDataController=IDH_Class_TcxDBTreeListDataController
+4 TcxVirtualTreeListDataController=IDH_Class_TcxVirtualTreeListDataController
+4 TcxTreeListCustomDataSource=IDH_Class_TcxTreeListCustomDataSource
+4 TcxDBItemDataBinding=IDH_Class_TcxDBItemDataBinding
+3 cxTreeList HitTest
+4 TcxTreeListHitTest=IDH_Class_TcxTreeListHitTest
+3 cxTreeList Node
+4 TcxTreeListNode=IDH_Class_TcxTreeListNode
+4 TcxTreeListDataNode=IDH_Class_TcxTreeListDataNode
+4 TcxTreeListNodes=IDH_Class_TcxTreeListNodes
+3 cxTreeList Options
+4 TcxTreeListOptionsBehavior=IDH_Class_TcxTreeListOptionsBehavior
+4 TcxTreeListOptionsCustomizing=IDH_Class_TcxTreeListOptionsCustomizing
+4 TcxTreeListOptionsData=IDH_Class_TcxTreeListOptionsData
+4 TcxTreeListOptionsSelection=IDH_Class_TcxTreeListOptionsSelection
+4 TcxTreeListOptionsView=IDH_Class_TcxTreeListOptionsView
+4 TcxDBTreeListOptionsData=IDH_Class_TcxDBTreeListOptionsData
+4 TcxVirtualTreeListOptionsData=IDH_Class_TcxVirtualTreeListOptionsData
+3 cxTreeList Preview
+4 TcxTreeListPreview=IDH_Class_TcxTreeListPreview
+3 cxVirtualTreeList
+4 TcxCustomVirtualTreeList=IDH_Class_TcxCustomVirtualTreeList
+4 TcxVirtualTreeList=IDH_Class_TcxVirtualTreeList
+3 Miscellaneous Classes And Types
+4 TcxTreeListCaption=IDH_Class_TcxTreeListCaption
+4 TcxTreeListCustomizing=IDH_Class_TcxTreeListCustomizing
+3 Styles
+4 TcxTreeListColumnStyles=IDH_Class_TcxTreeListColumnStyles
+4 TcxTreeListBandStyles=IDH_Class_TcxTreeListBandStyles
+4 TcxTreeListStyles=IDH_Class_TcxTreeListStyles
+4 TcxTreeListStyleSheet=IDH_Class_TcxTreeListStyleSheet
+2 Base Concepts
+3 Categorized Column=IDH_bc_Categorized_Column
+3 Custom Draw=IDH_bc_Custom_Draw
+3 Data Loading Modes=IDH_bc_Data_Loading_Modes
+3 Export=IDH_bc_Export
+3 Inplace Editors=IDH_bc_Inplace_Editors
+3 Options=IDH_bc_Options
+3 Preview=IDH_bc_Preview
+3 Self-Referenced Dataset=IDH_bc_Self_Referenced_Dataset
+3 TreeList Elements=TreeList_Elements
+2 Resource Strings
+3 ExpressQuantumTreeList: Resource Strings=IDH_bc_Resource_Strings
+2 Task Based Help
+3 Bands=IDH_tbh_Bands
+3 Connecting to Data=IDH_tbh_Connecting_to_Data
+3 Create And Delete Columns=IDH_tbh_Create_And_Delete_Columns
+3 Create Summaries=IDH_tbh_Create_Summaries
+3 Deleting Nodes=IDH_tbh_Deleting_Nodes
+3 Implement Sorting=IDH_tbh_Implement_Sorting
+3 Implementing the Drag-And-Drop Functionality=IDH_tbh_Implementing_the_Drag_And_Drop_Functionality
+3 Importing ExpressQuantumTreeList3=IDH_tbh_Importing_ExpressQuantumTreeList3
+3 Obtain And Set Cell Values=IDH_tbh_Obtain_And_Set_Cell_Values
+3 Selecting Nodes=IDH_tbh_Selecting_Nodes
+3 Setting The cxTreeList Appearance=IDH_tbh_Setting_The_cxTreeList_Appearance
+3 Unbound Mode=IDH_tbh_Unbound_Mode
+3 Using Lookup Column=IDH_tbh_Using_Lookup_Column
+3 Using Virtual cxTreeList=IDH_tbh_Using_Virtual_cxTreeList

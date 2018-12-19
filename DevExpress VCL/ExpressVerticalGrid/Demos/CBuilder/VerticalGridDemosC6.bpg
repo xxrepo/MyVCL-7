@@ -1,0 +1,48 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = CustomDrawDemoC6.exe EditorsInPlaceDemoC6.exe EditorsLookupDemoC6.exe EditorsMaskDemoC6.exe \
+ProviderModeDemoC6.exe RowsMultiEditorsDemoC6.exe RTTIInspectorDemoC6.exe SimpleVerticalGridDemoC6.exe \
+StylesMultiDemoC6.exe StylesSimpleDemoC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+CustomDrawDemoC6.exe: CustomDrawDemo\CustomDrawDemoC6.bpr
+  $(MAKE)
+
+EditorsInPlaceDemoC6.exe: EditorsInPlaceDemo\EditorsInPlaceDemoC6.bpr
+  $(MAKE)
+
+EditorsLookupDemoC6.exe: EditorsLookupDemo\EditorsLookupDemoC6.bpr
+  $(MAKE)
+
+EditorsMaskDemoC6.exe: EditorsMaskDemo\EditorsMaskDemoC6.bpr
+  $(MAKE)
+
+ProviderModeDemoC6.exe: ProviderModeDemo\ProviderModeDemoC6.bpr
+  $(MAKE)
+
+RowsMultiEditorsDemoC6.exe: RowsMultiEditorsDemo\RowsMultiEditorsDemoC6.bpr
+  $(MAKE)
+
+RTTIInspectorDemoC6.exe: RTTIInspectorDemo\RTTIInspectorDemoC6.bpr
+  $(MAKE)
+
+SimpleVerticalGridDemoC6.exe: SimpleVerticalGridDemo\SimpleVerticalGridDemoC6.bpr
+  $(MAKE)
+
+StylesMultiDemoC6.exe: StylesMultiDemo\StylesMultiDemoC6.bpr
+  $(MAKE)
+
+StylesSimpleDemoC6.exe: StylesSimpleDemo\StylesSimpleDemoC6.bpr
+  $(MAKE)

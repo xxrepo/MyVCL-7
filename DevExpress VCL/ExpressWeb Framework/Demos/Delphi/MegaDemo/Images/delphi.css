@@ -1,0 +1,25 @@
+.demo_menu {
+	font-family : Arial, Helvetica, sans-serif;
+	color : #2F59aC;
+	font-size : 12px;
+	font-weight : bold;
+	text-decoration : none;
+}
+.copy {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 9px;
+	color : #2F59AC;
+	text-decoration : none;
+}
+P {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 9pt;
+	color : #2F59AC;
+	font-weight : bold;
+}
+A {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 9pt;
+	color : #4A74C7;
+	font-weight : bold;
+}

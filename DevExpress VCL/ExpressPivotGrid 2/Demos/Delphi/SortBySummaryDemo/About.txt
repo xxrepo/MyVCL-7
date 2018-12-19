@@ -1,0 +1,8 @@
+  In this demo you can:
+  - Sort values of the field - which can be selected in the first combo box (the cbxSortField) and by grand total summaries of the field provided in the second combo box (the cbxSortByField)
+  - Limit the number of the visible outermost row grouping values (by using the speTopCount spin edit)
+  - Change the visibility of the Others outermost row grouping value (by using the cbxTopValuesShowOtherscheck box)
+  - Export data in either Excel format, as text, html or xml (the File/Export menu)
+  - Change the location of grand totals (the Options/Totals Location menu)
+  - Hide subtotals and grand totals (the Options/Totals Visibility menu)
+  - Select a particular look and feel from the five look and feel options available (the Look&Feel menu)

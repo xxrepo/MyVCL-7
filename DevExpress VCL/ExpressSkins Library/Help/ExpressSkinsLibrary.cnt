@@ -1,0 +1,36 @@
+:Base ExpressSkinsLibrary.hlp
+:Title ExpressSkins Library
+:Index ExpressSkins Library=ExpressSkinsLibrary.hlp
+1 ExpressSkins Library
+2 Overview=CD_Overview
+2 Project Skin Options Editor=CD_Project_Skin_Options_Editor
+2 Skin Editor UI=CD_Skin_Editor_UI
+2 Skin Editor Command Line Parameters=CD_Skin_Editor_Command_Line_Parameters
+2 Known Issues and Important Changes List=CD_Known_Issues_and_Important_Changes_List
+2 Skin Elements and Members Grouped by Products
+3 Bars=CD_List_Elements_Bars
+3 Common=CD_List_Elements_Common
+3 Docking=CD_List_Elements_Docking
+3 Editors=CD_List_Elements_Editors
+3 Form=CD_List_Elements_Form
+3 Grid=CD_List_Elements_Grid
+3 NavBar=CD_List_Elements_NavBar
+3 NavPane=CD_List_Elements_NavPane
+3 PageControl=CD_List_Elements_PageControl
+3 Ribbon=CD_List_Elements_Ribbon
+3 Scheduler=CD_List_Elements_Scheduler
+3 VerticalGrid=CD_List_Elements_VerticalGrid
+2 How To...
+3 Add Custom Colors and Properties to Skins=CD_How_to_Add_Custom_Colors_and_Properties_to_Skins
+3 Add Custom Elements to Skins=CD_How_to_Add_Custom_Elements_to_Skins
+3 Apply Custom Skins in the Application=CD_How_to_Apply_Custom_Skins_in_the_Application
+3 Apply Skins in the Application=CD_How_to_Apply_Skins_in_the_Application
+3 Create Skins Using the Skin Editor=CD_How_to_Create_Skins_Using_the_Skin_Editor
+3 Modify Skin Options Applied to the Application Project=CD_How_to_Modify_Skin_Options_Applied_to_the_Application_Project
+3 Use Skin Display Names in the Application=CD_How_to_Use_Skin_Display_Names_in_the_Application
+2 Reference
+3 Components
+4 TdxSkinController=IDH_Class_TdxSkinController
+3 Units
+4 dxSkinsDefaultPainters=IDH_Unit_dxSkinsDefaultPainters>Main
+4 dxSkinsForm=IDH_Unit_dxSkinsForm

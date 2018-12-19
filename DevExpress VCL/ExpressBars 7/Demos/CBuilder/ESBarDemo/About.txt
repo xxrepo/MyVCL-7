@@ -1,0 +1,7 @@
+This is the SideBar feature demo.
+
+Experiment with adding, deleting and renaming groups.
+
+Drag a tree node into the SideBar to add an item into a group.
+
+Try different SideBar paint styles - Flat, Standard, W2k and XP

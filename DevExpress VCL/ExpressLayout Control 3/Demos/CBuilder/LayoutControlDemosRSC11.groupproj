@@ -1,0 +1,20 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="cxEditorsDemo">
+    <MSBuild Projects="cxEditorsDemo\cxEditorsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsDemo">
+    <MSBuild Projects="EditorsDemo\EditorsDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="PuzzleDemo">
+    <MSBuild Projects="PuzzleDemo\PuzzleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="cxEditorsDemoRSC11;EditorsDemoRSC11;PuzzleDemoRSC11" />
+  </Target>
+</Project>

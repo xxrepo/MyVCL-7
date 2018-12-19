@@ -1,0 +1,25 @@
+; /////////////////// From v4 to v5 ////////////////////
+
+[TsScrollBox]
+FullRepaint=_Deleted_
+_USED_=TRUE
+
+[TsSkinProvider]
+BorderIcons=_Deleted_
+_USED_=TRUE
+
+[TsCheckBox]
+MultiLine=WordWrap
+_USED_=TRUE
+
+[TsRadioButton]
+MultiLine=WordWrap
+_USED_=TRUE
+
+[TsDBCheckBox]
+MultiLine=WordWrap
+_USED_=TRUE
+
+[TsDBRadioButton]
+MultiLine=WordWrap
+_USED_=TRUE

@@ -1,0 +1,23 @@
+для установки TMS компонентов надо установить пакет TMSD7.dpk
+
+для установки Ehlib-грида надо установить пакет Ehlib.dpk
+
+RX Library
+Выберите пункт меню "File/Open...", и откройте пакет (package) RXCTL7.DPK.
+В появившемся окне "Package - ..." нажмите кнопку "Compile". После
+компиляции пакета RXCTL7 аналогичным образом скомпилируйте остальные
+run-time пакеты RXDB7.DPK и RXBDE7.DPK. Скомпилированные BPL-файлы поместите
+в каталог, включенный в переменную окружения PATH (например, WINDOWS\SYSTEM).
+После компиляции run-time пакетов окройте с помощью меню "File/Open..." файл
+DCLRX7.DPK. В появившемся окне "Package - ..." нажмите кнопку "Compile",
+и после компиляции нажмите кнопку "Install". После установки пакета
+DCLRX7.DPK (должен быть установлен в IDE первым) произведите те же действия
+с пакетами DCLRXDB7.DPK и DCLRXBD7.DPK.
+Не сохраняйте пакеты библиотеки RX в Delphi IDE.
+Если у Вас была установлена предыдущая версия библиотеки RX, удалите
+перед установкой старые скомпилированные packages - файлы RXCTL7.BPL,
+RXDB7.BPL, RXBDE7.DPK, DCLRX7.BPL, DCLRXDB7.BPL, DCLRXBD7.DPK.
+
+
+
+;$(DELPHI)\MyVcl\AdvGrid;$(DELPHI)\MyVcl\EhLib\Delphi5;$(DELPHI)\MyVcl\RThread;$(DELPHI)\MyVcl\RX\Units

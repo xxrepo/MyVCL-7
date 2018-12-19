@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "CustomRowHeightDemoData.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma link "cxClasses"
+#pragma link "cxGridTableView"
+#pragma link "cxStyles"
+#pragma link "cxDBEditRepository"
+#pragma link "cxEdit"
+#pragma link "cxEditRepositoryItems"
+#pragma link "cxGridCardView"
+#pragma resource "*.dfm"
+TCustomRowHeightDemoDataDM *CustomRowHeightDemoDataDM;
+//---------------------------------------------------------------------------
+__fastcall TCustomRowHeightDemoDataDM::TCustomRowHeightDemoDataDM(TComponent* Owner)
+  : TDataModule(Owner)
+{
+}
+//---------------------------------------------------------------------------
+

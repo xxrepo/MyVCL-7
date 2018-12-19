@@ -1,0 +1,29 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{D5FB5D96-F9AA-45A9-A3D7-D8723F1BC9A2}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DBDemo">
+    <MSBuild Projects="DBDemo\DBDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemo">
+    <MSBuild Projects="StylesDemo\StylesDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemo">
+    <MSBuild Projects="UnboundDemo\UnboundDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemo">
+    <MSBuild Projects="ResourceDemo\ResourceDemoD12.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DBDemoD12;CustomDrawDemoD12;StylesDemoD12;UnboundDemoD12;ResourceDemoD12" />
+  </Target>
+</Project>

@@ -1,0 +1,41 @@
+<%
+  function PathInfoToRelativePath(S)
+  {
+    var R = '';
+    var L = S.length
+    I = 0
+    while (I < L)
+    {
+      if (S.charAt(I) == '/')
+        R = R + '../'
+      I++
+    }
+    return R
+  }
+
+  function QualifyImage(S)
+  {
+//    if (Application.Designing)
+//      return Application.QualifyFileName("..\\Images\\" + S);   // relative directory
+//    else
+      return PathInfoToRelativePath(Context.Request.InternalPathInfo) + 'Images/' + S;  // virtual directory
+  }
+
+%>
+  <STYLE TYPE="text/css">
+  <!--
+    .Tail { font-family : Arial, Helvetica, sans-serif; font-size : 9px; color : #2F59AC; text-decoration : none; }
+    P {	font-family : Arial, Helvetica, sans-serif; font-size : 9pt; color : #2F59AC; font-weight : bold; }
+    A {	font-family : Arial, Helvetica, sans-serif; font-size : 9pt; color : #4A74C7; font-weight : bold; }
+  // -->
+  </STYLE>
+    <MAP name="men">
+      <AREA alt="" coords="510,58,553,77" href="<%=Context.Request.InternalScriptName%>/home">
+      <AREA alt="" coords="557,58,610,77" href="<%=Context.Request.InternalScriptName%>/demos">
+      <AREA alt="" coords="613,58,654,77" href="<%=Context.Request.InternalScriptName%>/order">
+      <AREA alt="" coords="658,58,690,77" href="<%=Context.Request.InternalScriptName%>/links">
+      <AREA alt="" coords="698,58,756,77" href="<%=Context.Request.InternalScriptName%>/contact">
+    </MAP>
+
+    <IMG src="<%=QualifyImage("Header.gif")%>" width="769" height="98" alt="" border="0" usemap="#men">
+

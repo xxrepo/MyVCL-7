@@ -1,0 +1,53 @@
+package KrmComp;
+
+{$R *.res}
+{$R 'REALTHREAD.DCR'}
+{$R 'SQLUPDATEDSPROVIDER.DCR'}
+{$R 'DSFILTER.DCR'}
+{$R 'EHGRIDFILTER.DCR'}
+{$R 'DBGRIDFILTER.DCR'}
+{$R 'XPMenu.dcr'}
+{$ALIGN 1}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA OFF}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Karaim components'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  vcldb,
+  bdertl,
+  dsnap,
+  adortl,
+  vclx,
+  vclsmp,
+  RxCtl7,
+  EhLib;
+
+contains
+  RealThread in 'RealThread.pas',
+  MtUPDPrv in 'MTUpdPrv.pas',
+  uDataSetFilter in 'uDataSetFilter.pas',
+  uBaseGridFilter in 'uBaseGridFilter.pas',
+  uEhGridFilter in 'uEhGridFilter.pas',
+  XPMenu in 'XPMenu.pas';
+
+end.

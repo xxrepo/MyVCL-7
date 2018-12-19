@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="BandedDemo.exe" Type="String">BandedDemo\BandedDemo.bdsproj</Projects>
+      <Projects Name="BandedFixedDemo.exe" Type="String">BandedFixedDemo\BandedFixedDemo.bdsproj</Projects>
+      <Projects Name="CustomDrawDemo.exe" Type="String">CustomDrawDemo\CustomDrawDemo.bdsproj</Projects>
+      <Projects Name="EditorsInPlaceDemo.exe" Type="String">EditorsInPlaceDemo\EditorsInPlaceDemo.bdsproj</Projects>
+      <Projects Name="SimpleListDemo.exe" Type="String">SimpleListDemo\SimpleListDemo.bdsproj</Projects>
+      <Projects Name="SimpleTreeDemo.exe" Type="String">SimpleTreeDemo\SimpleTreeDemo.bdsproj</Projects>
+      <Projects Name="StylesMultiDemo.exe" Type="String">StylesMultiDemo\StylesMultiDemo.bdsproj</Projects>
+      <Projects Name="StylesSimpleDemo.exe" Type="String">StylesSimpleDemo\StylesSimpleDemo.bdsproj</Projects>
+      <Projects Name="SummariesDemo.exe" Type="String">SummariesDemo\SummariesDemo.bdsproj</Projects>
+      <Projects Name="UnboundModeDemo.exe" Type="String">UnboundModeDemo\UnboundModeDemo.bdsproj</Projects>
+      <Projects Name="ProviderModeDemo.exe" Type="String">ProviderModeDemo\ProviderModeDemo.bdsproj</Projects>
+      <Projects Name="DragDropDemo.exe" Type="String">DragDropDemo\DragDropDemo.bdsproj</Projects>
+      <Projects Name="ColumnsMultiEditorsDemo.exe" Type="String">ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemo.bdsproj</Projects>
+      <Projects Name="EditorsLookupDemo.exe" Type="String">EditorsLookupDemo\EditorsLookupDemo.bdsproj</Projects>
+      <Projects Name="EditorsMaskDemo.exe" Type="String">EditorsMaskDemo\EditorsMaskDemo.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">BandedDemo.exe BandedFixedDemo.exe CustomDrawDemo.exe EditorsInPlaceDemo.exe SimpleListDemo.exe SimpleTreeDemo.exe StylesMultiDemo.exe StylesSimpleDemo.exe SummariesDemo.exe UnboundModeDemo.exe ProviderModeDemo.exe DragDropDemo.exe ColumnsMultiEditorsDemo.exe EditorsLookupDemo.exe EditorsMaskDemo.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

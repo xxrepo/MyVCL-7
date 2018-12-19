@@ -1,0 +1,33 @@
+<html>
+  <head><title><%=Context.Page.Title%></title>
+    <script language="javascript">
+      function s_page()
+      {
+        var search = document.Search.weSearch.value
+        if(search!="")
+        {
+          page = "Searchres?cont="+escape(search);
+          parent.info.location=page;
+        }
+      }</script>
+
+<meta content="MSHTML 6.00.2600.0" name="GENERATOR"></head>
+  <body text="#ffff00" vlink="#ffff00" alink="#ffff00" link="#ffff00" bgcolor="#0a66de"><ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<table height="136" cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+  <td align="middle" colspan="2">
+    <a href="http://24.120.189.50/dxforum/" target="_blank">
+      <img height="88" src="/dxforum/images/small_logo_n.gif" width="192" border="0"></a></td></tr>
+<tr><td colspan="2"><img height="6" width="1"></td></tr>
+<tr align="middle">
+  <td colspan="2">
+    <ewf:Edit id="weSearch"></td></tr>
+<tr><td colspan="2"><img height="6" width="1"></td></tr>
+<tr>
+  <td align="middle">
+<a href="javascript:s_page();"><ewf:Image id="wiSearch" border="0"></a></td>
+  <td align="middle"><a href="ASearch" target="info">
+      <img alt="Advanced search" src="/dxforum/images/b_asearch.gif" border="0"></a></td></tr>
+<tr><td colspan="2"><img height="6" width="1"></td></tr>
+<tr><td background="/dxforum/images/back_d.gif" colspan="2"><img height="6" width="1"></td></tr></tbody></table></ewf:form></body></html>

@@ -1,0 +1,55 @@
+package SimpleTabControlDsgnPack;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+{$IFDEF VER140} { Borland Delphi 6.0 }
+  {$DEFINE DELPHI6}
+{$ENDIF}
+
+{$IFDEF VER150} { Borland Delphi 7.0 }
+  {$DEFINE DELPHI6}
+  {$DEFINE DELPHI7}
+{$ENDIF}
+
+requires
+  rtl,
+  designide,
+  inet,
+  {$IFDEF DELPHI7}
+  cxWebD7,
+  cxScriptEngineD7,
+  dclcxWebD7,
+  {$ELSE}
+  cxWebD6,
+  cxScriptEngineD6,
+  dclcxWebD6,
+  {$ENDIF}
+  SimplTabControlPack;
+
+contains
+  SimpleTabControlReg in 'SimpleTabControlReg.pas';
+
+end.

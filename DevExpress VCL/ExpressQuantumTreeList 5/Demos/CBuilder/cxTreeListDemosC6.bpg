@@ -1,0 +1,71 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = BandedDemoC6.exe BandedFixedDemoC6.exe ColumnsMultiEditorsDemoC6.exe CheckGroupsDemoC6.exe \
+CustomDrawDemoC6.exe DragDropDemoC6.exe EditorsInPlaceDemoC6.exe EditorsLookupDemoC6.exe \
+EditorsMaskDemoC6.exe VirtualModeDemoC6.exe ProviderModeDemoC6.exe SimpleListDemoC6.exe \
+SimpleTreeDemoC6.exe StylesMultiDemoC6.exe StylesSimpleDemoC6.exe SummariesDemoC6.exe \
+UnboundModeDemoC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+BandedDemoC6.exe: BandedDemo\BandedDemoC6.bpr
+  $(MAKE)
+
+BandedFixedDemoC6.exe: BandedFixedDemo\BandedFixedDemoC6.bpr
+  $(MAKE)
+
+ColumnsMultiEditorsDemoC6.exe: ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoC6.bpr
+  $(MAKE)
+
+CheckGroupsDemoC6.exe: CheckGroupsDemo\CheckGroupsDemoC6.bpr
+  $(MAKE)
+
+CustomDrawDemoC6.exe: CustomDrawDemo\CustomDrawDemoC6.bpr
+  $(MAKE)
+
+DragDropDemoC6.exe: DragDropDemo\DragDropDemoC6.bpr
+  $(MAKE)
+
+EditorsInPlaceDemoC6.exe: EditorsInPlaceDemo\EditorsInPlaceDemoC6.bpr
+  $(MAKE)
+
+EditorsLookupDemoC6.exe: EditorsLookupDemo\EditorsLookupDemoC6.bpr
+  $(MAKE)
+
+EditorsMaskDemoC6.exe: EditorsMaskDemo\EditorsMaskDemoC6.bpr
+  $(MAKE)
+
+VirtualModeDemoC6.exe: VirtualModeDemo\VirtualModeDemoC6.bpr
+  $(MAKE)
+
+ProviderModeDemoC6.exe: ProviderModeDemo\ProviderModeDemoC6.bpr
+  $(MAKE)
+
+SimpleListDemoC6.exe: SimpleListDemo\SimpleListDemoC6.bpr
+  $(MAKE)
+
+SimpleTreeDemoC6.exe: SimpleTreeDemo\SimpleTreeDemoC6.bpr
+  $(MAKE)
+
+StylesMultiDemoC6.exe: StylesMultiDemo\StylesMultiDemoC6.bpr
+  $(MAKE)
+
+StylesSimpleDemoC6.exe: StylesSimpleDemo\StylesSimpleDemoC6.bpr
+  $(MAKE)
+
+SummariesDemoC6.exe: SummariesDemo\SummariesDemoC6.bpr
+  $(MAKE)
+
+UnboundModeDemoC6.exe: UnboundModeDemo\UnboundModeDemoC6.bpr
+  $(MAKE)

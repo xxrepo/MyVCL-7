@@ -1,0 +1,45 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = BackgroundDemoC6.exe DockingMegaDemoC6.exe EBarMegaDemoC6.exe EBar2000DemoC6.exe \
+MDIDemoC6.exe ESBarDemoC6.exe InPlaceEditorsDemoC6.exe RibbonNotepadDemoC6.exe \
+SampleDockingC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+BackgroundDemoC6.exe: BackgroundDemo\BackgroundDemoC6.bpr
+  $(MAKE)
+
+DockingMegaDemoC6.exe: DockingMegaDemo\DockingMegaDemoC6.bpr
+  $(MAKE)
+
+EBarMegaDemoC6.exe: EBarMegaDemo\EBarMegaDemoC6.bpr
+  $(MAKE)
+
+EBar2000DemoC6.exe: EBar2000Demo\EBar2000DemoC6.bpr
+  $(MAKE)
+
+MDIDemoC6.exe: MDIDemo\MDIDemoC6.bpr
+  $(MAKE)
+
+ESBarDemoC6.exe: ESBarDemo\ESBarDemoC6.bpr
+  $(MAKE)
+
+InPlaceEditorsDemoC6.exe: InPlaceEditorsDemo\InPlaceEditorsDemoC6.bpr
+  $(MAKE)
+
+RibbonNotepadDemoC6.exe: RibbonNotepadDemo\RibbonNotepadDemoC6.bpr
+  $(MAKE)
+
+SampleDockingC6.exe: SampleDocking\SampleDockingC6.bpr
+  $(MAKE)

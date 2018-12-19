@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------------------
+!if !$d(BCB)
+BCB = $(MAKEDIR)\..
+!endif
+
+!ifdef DXDEBUGMODE
+DEBUGOPTIONS = -$D+ -$L+ -$W+ -$O-
+!else
+DEBUGOPTIONS = -$D- -$L- -$W- -$O+
+!endif
+
+# ---------------------------------------------------------------------------
+# IDE SECTION
+# ---------------------------------------------------------------------------
+# The following section of the project makefile is managed by the BCB IDE.
+# It is recommended to use the IDE to change any of the values in this
+# section.
+# ---------------------------------------------------------------------------
+
+VERSION = BCB.14.00
+# ---------------------------------------------------------------------------
+PROJECT = dclcxPageControldxBarPopupMenuC14.bpl
+OBJFILES = cxPCdxBarPopupMenuReg.obj \
+  dclcxPageControldxBarPopupMenuC14.obj
+MAINSOURCE = dclcxPageControldxBarPopupMenuC14.cpp
+RESFILES = dclcxPageControldxBarPopupMenuC14.res
+RESDEPEN = $(RESFILES)
+LIBFILES =
+LIBRARIES =
+SPARELIBS = designide.bpi rtl.bpi vcl.bpi vclx.bpi dxComnC14.bpi dxCoreC14.bpi dxThemeC14.bpi dxGDIPlusC14.bpi cxLibraryC14.bpi cxPageControlC14.bpi dxBarC14.bpi \
+  cxPageControldxBarPopupMenuC14.bpi dcldxCoreC14.bpi dclcxLibraryC14.bpi 
+PACKAGES = designide.bpi rtl.bpi vcl.bpi vclx.bpi dxComnC14.bpi dxCoreC14.bpi dxThemeC14.bpi dxGDIPlusC14.bpi cxLibraryC14.bpi cxPageControlC14.bpi dxBarC14.bpi \
+  cxPageControldxBarPopupMenuC14.bpi dcldxCoreC14.bpi dclcxLibraryC14.bpi 
+# ---------------------------------------------------------------------------
+PATHCPP = .;
+PATHASM = .;
+PATHPAS = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+USERDEFINES =
+SYSDEFINES = _RTLDLL;NO_STRICT;USEPACKAGES
+# ---------------------------------------------------------------------------
+CFLAG1 = -I$(BCB)\include;$(BCB)\include\vcl -O2 -Hc -H=$(BCB)\lib\vcl100.csm -w -Ve -a8 \
+  -k- -vi -c -b- -w-par -w-inl -Vx -tWM -D$(SYSDEFINES);$(USERDEFINES)
+PFLAGS = -U"$(SEARCHPATH)";$(LIBDIR);$(BCB)\lib\obj;$(BCB)\lib;$(RELEASELIBPATH) \
+  -I$(BCB)\include;$(BCB)\include\vcl -$Y- $(DEBUGOPTIONS) -v -JPHNE -M -LUdclstd
+RFLAGS = -i$(BCB)\include;$(BCB)\include\vcl
+AFLAGS = /i$(BCB)\include /i$(BCB)\include\vcl /mx /w2 /zn
+LFLAGS = -L"$(SEARCHPATH)";$(LIBDIR);$(BCB)\lib\obj;$(BCB)\lib;$(RELEASELIBPATH) \
+  -D"Express PageControl 3 dxBar Popup Menu by Developer Express Inc." -aa -Tpp -x -Gn -Gl -Gi -Gpd
+# ---------------------------------------------------------------------------
+ALLOBJ = c0pkg32.obj Memmgr.Lib $(PACKAGES) sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib
+# ---------------------------------------------------------------------------
+!ifdef IDEOPTIONS
+
+
+!endif

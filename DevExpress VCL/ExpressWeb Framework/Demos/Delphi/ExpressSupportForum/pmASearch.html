@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><TITLE></TITLE>
+    <link rel="stylesheet" href="/dx.css" type="text/css">
+    <script language="javascript">
+      function s_page()
+      {
+        var search = document.ASearch.weCont.value
+        if(search!="")
+        {
+          page = "Searchres?cont="+escape(search);
+          parent.info.location=page;
+        }
+      }
+    </script>
+</HEAD>
+<BODY><ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<table border="0" valign="middle" cellspacing="0" cellpadding="0" bgcolor=#ffc454 width="100%">
+<tr>
+  <td colspan="2"><IMG height=6 src="/dxforum/images/1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td><IMG height=1 src="/dxforum/images/1x1.gif" width=20></td>
+  <td width="2000">
+    <div style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Arial" 
+     ><b>ADVANCED SEARCH:</b></div>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><IMG height=5 src="/1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="white"><IMG height=1 src="/dxforum/images/1x1`" width=20></td>
+</tr>
+</table>
+
+<TABLE border=0 cellPadding=1 cellSpacing=10 width="70%">
+    <TR>
+        <TD style="FONT-SIZE: 8pt; FONT-FAMILY: Arial" align="right">Keywords</TD>
+        <TD>
+<ewf:Edit id="weCont"></TD></TR>
+    <TR><TD style="FONT-SIZE: 8pt; FONT-FAMILY: Arial" align="right">Source</TD><TD>
+    <ewf:ComboBox id="wcbSource">
+             </TD></TR>
+    <TR>
+        <TD style="FONT-SIZE: 8pt; FONT-FAMILY: Arial" align="right">Expert
+        <TD>
+    <ewf:ComboBox id="wcbExpert">
+    <TR><TD colspan=2 align=middle>
+<ewf:Button id="cxWebButton1">&nbsp; 
+<ewf:Button id="wbReset"></TD>
+    </TR>
+</TABLE>
+</ewf:Form>
+<!--#include file="copy.inc"-->
+
+</BODY></HTML>
+  
+  
+  

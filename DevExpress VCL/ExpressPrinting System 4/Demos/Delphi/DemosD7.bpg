@@ -1,0 +1,54 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = DBBasedExplorer.exe EQGrid6ReportLink.exe FlowChartReportLink.exe LayoutControlReportLink.exe \
+OrgChartReportLink.exe ReportExplorer.exe SchedulerLink.exe SpreadSheetRL.exe \
+StandardReportLink.exe TeeChartReportLink.exe PivotGridReportLink.exe cxTreeListReportLink.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+DBBasedExplorer.exe: DB ReportExplorer\DBBasedExplorer.dpr
+  $(DCC)
+
+EQGrid6ReportLink.exe: EQGrid6RL\EQGrid6ReportLink.dpr
+  $(DCC)
+
+FlowChartReportLink.exe: FlowChartRL\FlowChartReportLink.dpr
+  $(DCC)
+
+LayoutControlReportLink.exe: LayoutControlRL\LayoutControlReportLink.dpr
+  $(DCC)
+
+OrgChartReportLink.exe: OrgChartRL\OrgChartReportLink.dpr
+  $(DCC)
+
+ReportExplorer.exe: ReportExplorer\ReportExplorer.dpr
+  $(DCC)
+
+SchedulerLink.exe: SchedulerRL\SchedulerLink.dpr
+  $(DCC)
+
+SpreadSheetRL.exe: SpreadSheetRL\SpreadSheetRL.dpr
+  $(DCC)
+
+StandardReportLink.exe: StandardRL\StandardReportLink.dpr
+  $(DCC)
+
+TeeChartReportLink.exe: TeeChartRL\TeeChartReportLink.dpr
+  $(DCC)
+
+PivotGridReportLink.exe: PivotGridRL\PivotGridReportLink.dpr
+  $(DCC)
+
+cxTreeListReportLink.exe: cxTreeListRL\cxTreeListReportLink.dpr
+  $(DCC)

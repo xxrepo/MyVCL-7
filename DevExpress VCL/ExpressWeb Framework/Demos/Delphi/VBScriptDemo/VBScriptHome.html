@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>VBScript Demo</title>
+  </head>
+  <body>
+  <ewf:Form id="<%=Form.Name%>"  renderchildren="noRender">
+  <% var FirstRecord = customerTable.RecNo; %>
+  <H3 align=center>Content generated using JScript (default script)</H3>
+  <TABLE  cellSpacing=0 cellPadding=0 border=2 width=100%>
+    <TR>
+      <TD width=50% align=center>
+        <A id="Prev" href="<%=Form.Name%>?customerRecNo=<%=FirstRecord - 5%>&orderRecNo=<%=orderTable.RecNo%>">
+           <STRONG><< Prior Page</STRONG>
+        </A>
+      </TD>
+      <TD width=50% align=center>
+        <A id="Next" href="<%=Form.Name%>?customerRecNo=<%=FirstRecord + 5%>&orderRecNo=<%=orderTable.RecNo%>">
+          <STRONG>Next Page >></STRONG>
+        </A>
+      </TD>
+    </TR>
+    <TR><TD colspan=2>
+      <TABLE cellSpacing=0 cellPadding=0 border=1 width=100% bgcolor=whitesmoke>
+        <TR bgcolor=lightgrey>
+          <TH align=center >Customer No</TH>
+          <TH align=center >Company</TH>
+          <TH align=center>City</TH>
+          <TH align=center>Country</TH>
+          <TH align=center>Address</TH>
+          <TH align=center>Phone</TH>
+        </TR>
+
+      <%  var RecordCount = 0;
+          while (RecordCount < 5) { %>
+         <TR>
+           <TD align=center><%=customerTable.FindField("CustNo").DisplayText %></TD>
+           <TD align=center><%=customerTable.FindField("Company").DisplayText %></TD>
+           <TD align=center><%=customerTable.FindField("City").DisplayText %></TD>
+           <TD align=center><%=customerTable.FindField("Country").DisplayText %></TD>
+           <TD align=center><%=customerTable.FindField("Addr1").DisplayText %></TD>
+           <TD align=center><%=customerTable.FindField("Phone").DisplayText %></TD>
+         <TR>
+      <%  RecordCount ++;
+          customerTable.next;
+          if(customerTable.eof) break; } %>
+      <% customerTable.RecNo = FirstRecord; %>
+        <TR bgcolor=lightgrey>
+          <TD colspan=6>Record count = <%=customerTable.RecordCount%>. Visible records <%=FirstRecord%> - <%=(FirstRecord + 5 - 1)%></TD>
+        </TR>
+      </TABLE>
+    </TD></TR>
+  </TABLE>
+  <BR>
+
+  <%serverscript = VBScript%>
+  <% FirstRecord = orderTable.RecNo %>
+  <H3 align=center>Content generated using VBScript</H3>
+  <TABLE  cellSpacing=0 cellPadding=0 border=2 width=100%>
+    <TR>
+      <TD width=50% align=center>
+        <A id="Prev" href="<%=Form.Name%>?orderRecNo=<%=FirstRecord - 5%>&customerRecNo=<%=customerTable.RecNo%>">
+          <STRONG><< Prior Page</STRONG>
+        </A>
+      </TD>
+      <TD width=50% align=center>
+        <A id="Next" href="<%=Form.Name%>?orderRecNo=<%=FirstRecord + 5%>&customerRecNo=<%=customerTable.RecNo%>">
+          <STRONG>Next Page >></STRONG>
+        </A>
+      </TD>
+    </TR>
+
+    <TR><TD colspan=2>
+      <TABLE cellSpacing=0 cellPadding=0 border=1 width=100% bgcolor=whitesmoke>
+        <TR bgcolor=lightgrey>
+          <TH align=center >Order No</TH>
+          <TH align=center >Customer No</TH>
+          <TH align=center>Total Items</TH>
+          <TH align=center>Amount paid</TH>
+          <TH align=center>Payment method</TH>
+          <TH align=center>Sale date</TH>
+        </TR>
+
+      <%  RecordCount = 0
+          do while RecordCount < 5 %>
+         <TR>
+           <TD align=center><%=orderTable.FindField("OrderNo").DisplayText %></TD>
+           <TD align=center><%=orderTable.FindField("CustNo").DisplayText %></TD>
+           <TD align=center><%=orderTable.FindField("ItemsTotal").DisplayText %></TD>
+           <TD align=center><%=orderTable.FindField("AmountPaid").DisplayText %></TD>
+           <TD align=center><%=orderTable.FindField("PaymentMethod").DisplayText %></TD>
+           <TD align=center><%=orderTable.FindField("SaleDate").DisplayText %></TD>
+         <TR>
+      <%    RecordCount = RecordCount + 1
+            orderTable.next
+            If orderTable.eof Then
+              exit do
+            end if
+          loop %>
+
+      <% orderTable.RecNo = FirstRecord %>
+        <TR bgcolor=lightgrey>
+          <TD colspan=6>Record count = <%=orderTable.RecordCount%>. Visible records <%=FirstRecord%> - <%=(FirstRecord + 5 - 1)%></TD>
+        </TR>
+      </TABLE>
+
+    </TD></TR>
+  </TABLE>
+  <%/serverscript%>
+
+  </ewf:Form>
+  </body>
+</html>
+

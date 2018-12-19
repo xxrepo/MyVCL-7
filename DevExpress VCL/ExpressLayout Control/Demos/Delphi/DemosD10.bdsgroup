@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="LookAndFeels.exe" Type="String">Look &amp; Feels\LookAndFeels.bdsproj</Projects>
+      <Projects Name="MSMoneyStyle.exe" Type="String">MS Money Style\MSMoneyStyle.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">LookAndFeels.exe MSMoneyStyle.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

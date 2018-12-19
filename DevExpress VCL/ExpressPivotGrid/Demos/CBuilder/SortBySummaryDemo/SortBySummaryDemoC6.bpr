@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--C++Builder XML Project-->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="SortBySummaryDemo.exe"/>
+    <OBJFILES value="SortBySummaryDemo.obj ..\Common\AboutDemoForm.obj ..\Common\DemoBasicDM.obj ..\Common\DemoBasicMain.obj SortBySummaryMain.obj"/>
+    <RESFILES value="SortBySummaryDemo.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ..\Common\AboutDemoForm.dfm ..\Common\DemoBasicDM.dfm ..\Common\DemoBasicMain.dfm SortBySummaryMain.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="cxPivotGridC6.lib cxExportVCLC6.lib cxEditorsVCLC6.lib cxExtEditorsVCLC6.lib cxLibraryVCLC6.lib cxDataC6.lib dxThemeC6.lib vcldb.lib dbrtl.lib bdertl.lib adortl.lib vclx.lib vcl.lib rtl.lib dxCoreC6.lib dxGDIPlusC6.lib "/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib vcldb.lib dbrtl.lib bdertl.lib adortl.lib dxThemeC6.lib cxDataC6.lib cxLibraryVCLC6.lib cxExtEditorsVCLC6.lib cxEditorsVCLC6.lib cxExportVCLC6.lib cxPivotGridC6.lib dxCoreC6.lib dxGDIPlusC6.lib "/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;..\Common;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="iLink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="SortBySummaryDemo.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;..\..\..\..\Library\CBuilder6"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib;..\..\..\..\Library\CBuilder6"/>
+    <WARNINGS value="-w-par"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-I$(BCB)\include;$(BCB)\include\vcl;..\Common -Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tW -tWM -D$(SYSDEFINES);$(USERDEFINES)"/>
+    <LFLAGS value="-L$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\Common;$(DEBUGLIBPATH) -aa -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib "/>
+  </LINKER>
+  <IDEOPTIONS/>
+</PROJECT>

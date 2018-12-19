@@ -1,0 +1,38 @@
+:Base EXPRESSSPELLCHECKER2.hlp
+:Title ExpressSpellChecker 2
+:Index ExpressSpellChecker=ExpressSpellChecker2.hlp
+1 ExpressSpellChecker 2
+2 Overview=CD_Overview>Main
+2 Getting Started=CD_Getting_Started
+2 What's New in v2=CD_Whats_New_in_v2
+2 Known Issues and Important Changes List=CD_Known_Issues_and_Important_Changes_List>Main
+2 Fundamentals
+3 Fundamentals (Overview)=CD_Fundamentals>Features
+3 Spell-Check Algorithms=CD_Spell_Check_Algorithms>Main
+2 User Interface Elements
+3 User Interface Elements (Overview)=CD_User_Interface_Elements>Features
+3 Auto Correct Mode=CD_Auto_Correct_Mode
+3 AutoCorrect Options Dialog=CD_AutoCorrect_Options_Dialog
+3 Check As You Type Mode=CD_Check_As_You_Type_Mode>Main
+3 Custom Dictionary Dialog=CD_Custom_Dictionary_Dialog>Main
+3 Exceptions Dialog=CD_Exceptions_Dialog
+3 Spelling Complete Dialog=CD_Spelling_Complete_Dialog>Main
+3 Spelling Dialog=CD_Spelling_Dialog>Main
+3 Spelling Options Dialog=CD_Spelling_Options_Dialog>Main
+2 Task-Based Help
+3 Task-Based Help (Overview)=CD_Task_Based_Help>Features
+3 How to Add Dictionaries in Code=CD_How_to_Add_Dictionaries_in_Code>Main
+2 Reference
+3 dxHunspellDictionary Unit=IDH_Unit_dxHunspellDictionary>Main
+3 dxISpellDecompressor Unit=IDH_Unit_dxISpellDecompressor>Main
+3 dxSpellChecker Unit=IDH_Unit_dxSpellChecker>Main
+3 dxSpellCheckerDialogs Unit=IDH_Unit_dxSpellCheckerDialogs>Main
+3 Components
+4 TdxSpellChecker=IDH_Class_TdxSpellChecker>Main
+3 Routines
+4 dxShowAutoCorrectExceptionsDialog=IDH_dxSpellCheckerDialogs_dxShowAutoCorrectExceptionsDialog>Main
+4 dxShowAutoCorrectOptionsDialog=IDH_dxSpellCheckerDialogs_dxShowAutoCorrectOptionsDialog>Main
+4 dxShowCustomDictionaryDialog=IDH_dxSpellCheckerDialogs_dxShowCustomDictionaryDialog>Main
+4 dxShowOutlookSpellingDialog=IDH_dxSpellCheckerDialogs_dxShowOutlookSpellingDialog>Main
+4 dxShowSpellingOptionsDialog=IDH_dxSpellCheckerDialogs_dxShowSpellingOptionsDialog>Main
+4 dxShowWordSpellingDialog=IDH_dxSpellCheckerDialogs_dxShowWordSpellingDialog>Main

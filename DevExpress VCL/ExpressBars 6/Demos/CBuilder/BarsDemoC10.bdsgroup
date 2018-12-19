@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="BackgroundDemoC10.exe" Type="String">BackgroundDemo\BackgroundDemoC10.bdsproj</Projects>
+      <Projects Name="DockingMegaDemoC10.exe" Type="String">DockingMegaDemo\DockingMegaDemoC10.bdsproj</Projects>
+      <Projects Name="EBarMegaDemoC10.exe" Type="String">EBarMegaDemo\EBarMegaDemoC10.bdsproj</Projects>
+      <Projects Name="EBar2000DemoC10.exe" Type="String">EBar2000Demo\EBar2000DemoC10.bdsproj</Projects>
+      <Projects Name="EBarMDIDemoC10.exe" Type="String">EBarMDIDemo\EBarMDIDemoC10.bdsproj</Projects>
+      <Projects Name="ESBarDemoC10.exe" Type="String">ESBarDemo\ESBarDemoC10.bdsproj</Projects>
+      <Projects Name="InPlaceEditorsDemoC10.exe" Type="String">InPlaceEditorsDemo\InPlaceEditorsDemoC10.bdsproj</Projects>
+      <Projects Name="RibbonNotepadDemoC10.exe" Type="String">RibbonNotepadDemo\RibbonNotepadDemoC10.bdsproj</Projects>
+      <Projects Name="SampleDockingC10.exe" Type="String">SampleDocking\SampleDockingC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">BackgroundDemoC10.exe DockingMegaDemoC10.exe EBarMegaDemoC10.exe EBar2000DemoC10.exe EBarMDIDemoC10.exe ESBarDemoC10.exe InPlaceEditorsDemoC10.exe RibbonNotepadDemoC10.exe SampleDockingC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

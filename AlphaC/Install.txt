@@ -1,0 +1,4 @@
+1. Скопировать файлы ahelp.hlp и ahelp.cnt в директорию Delphi HELP
+2. В Delphi IDE выбрать пункт меню Help|Customize для запуска программы OpenHelp
+3. Добавить файл ahelp.cnt на странице Contents, добавить файл ahelp.hlp на страницах Index и Link
+4. Сохранить все

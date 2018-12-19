@@ -1,0 +1,9 @@
+:Base FCEditor.hlp
+:Title ExpressFlowChart Editor
+:Index ExpressFlowChart Editor=FCEditor.hlp
+1 ExpressFlowChart Editor
+2 Main Menu=MainMenu
+2 Toolbar=Toolbar
+2 Popup Menu=PopupMenu
+2 Connection Customizing Form=ConnectionCustomizingForm
+2 Object Customizing Form=ObjectCustomizingForm

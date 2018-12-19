@@ -1,0 +1,56 @@
+:Base cxPageControl.hlp
+:Title ExpressPageControl Suite
+:Index ExpressPageControl Suite=cxPageControl.hlp
+1 ExpressPageControl
+2 Overview
+3 Tab Control=IDH_BC_TabControlOverview
+3 Page Control=IDH_BC_PageControlOverview
+2 Glossary
+3 Tab=IDH_Term_Tab
+3 Selected Tab=IDH_Term_SelectedTab
+3 Main Tab=IDH_Term_MainTab
+3 Tab Caption=IDH_Term_TabCaption
+3 Tab Image=IDH_Term_TabImage
+3 Tab Panel=IDH_Term_TabPanel
+3 Tab Row=IDH_Term_TabRow
+3 Page=IDH_Term_Page
+3 Navigator Bar=IDH_Term_NavigatorBar
+3 Go Dialog=IDH_Term_GoDialog
+3 Close Button=IDH_Term_CloseButton
+3 Painting Style=IDH_Term_PaintingStyle
+3 Buttons Painting Style=IDH_Term_ButtonsPaintingStyle
+3 Flat Buttons Painting Style=IDH_Term_FlatButtonsPaintingStyle
+3 Tabs Painting Style=IDH_Term_TabsPaintingStyle
+3 Flat Painting Style=IDH_Term_FlatPaintingStyle
+3 Extra Flat Painting Style=IDH_Term_ExtraFlatPaintingStyle
+3 Ultra Flat Painting Style=IDH_Term_UltraFlatPaintingStyle
+3 Office11 Painting Style=IDH_Term_Office11PaintingStyle
+3 OneNote Painting Style=IDH_Term_OneNotePaintingStyle
+3 Slanted Painting Style=IDH_Term_SlantedPaintingStyle
+3 XP Painting Style=IDH_Term_XPPaintingStyle
+3 Skin Painting Style=IDH_Term_SkinPaintingStyle
+2 Quick Start
+3 Tab Control=IDH_Tutorial_TabControl
+3 Page Control=IDH_Tutorial_PageControl
+2 Concepts
+3 Tabs Position and Arrangement=IDH_Story_TabsPositionAndArrangement
+3 Displaying Images in Tabs=IDH_Story_DisplayingImagesInTabs
+3 Navigator Bar Position and Visibility=IDH_Story_NavigatorBarPositionAndVisibility
+3 Applying Painting Styles=IDH_Story_ApplyingPaintingStyles
+3 Handling Multiple Selections=IDH_Story_HandlingMultiSelections
+3 Traversing through Tabs and Pages=IDH_Story_IteratingThroughTabsAndPages
+3 Managing the Pages Collection=IDH_Story_ManagingPagesCollection
+3 Managing Tabs Collection=IDH_Story_ManagingTabsCollection
+3 Custom Painting=IDH_Story_TabsCustomDrawing
+2 Task Based Help
+3 Using the Tab Control to Display Dataset Records=IDH_TBH_UsingTheTabControlToDisplayDatasetRecords
+2 Reference
+3 Base Classes
+4 TcxCustomTabControl=IDH_Class_TcxCustomTabControl
+3 Controls
+4 TcxTabControl=IDH_Class_TcxTabControl
+4 TcxPageControl=IDH_Class_TcxPageControl
+3 Tabs and Pages
+4 TcxTab=IDH_Class_TcxTab
+4 TcxTabs=IDH_Class_TcxTabs
+4 TcxTabSheet=IDH_Class_TcxTabSheet

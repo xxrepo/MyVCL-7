@@ -1,0 +1,71 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = BandedDemo.exe BandedFixedDemo.exe CheckGroupsDemo.exe CustomDrawDemo.exe \
+EditorsInPlaceDemo.exe SimpleListDemo.exe SimpleTreeDemo.exe StylesMultiDemo.exe \
+StylesSimpleDemo.exe SummariesDemo.exe UnboundModeDemo.exe VirtualModeDemo.exe \
+ProviderModeDemo.exe DragDropDemo.exe ColumnsMultiEditorsDemo.exe EditorsLookupDemo.exe \
+EditorsMaskDemo.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+BandedDemo.exe: BandedDemo\BandedDemo.dpr
+  $(DCC)
+
+BandedFixedDemo.exe: BandedFixedDemo\BandedFixedDemo.dpr
+  $(DCC)
+
+CheckGroupsDemo.exe: CheckGroupsDemo\CheckGroupsDemo.dpr
+  $(DCC)
+
+CustomDrawDemo.exe: CustomDrawDemo\CustomDrawDemo.dpr
+  $(DCC)
+
+EditorsInPlaceDemo.exe: EditorsInPlaceDemo\EditorsInPlaceDemo.dpr
+  $(DCC)
+
+SimpleListDemo.exe: SimpleListDemo\SimpleListDemo.dpr
+  $(DCC)
+
+SimpleTreeDemo.exe: SimpleTreeDemo\SimpleTreeDemo.dpr
+  $(DCC)
+
+StylesMultiDemo.exe: StylesMultiDemo\StylesMultiDemo.dpr
+  $(DCC)
+
+StylesSimpleDemo.exe: StylesSimpleDemo\StylesSimpleDemo.dpr
+  $(DCC)
+
+SummariesDemo.exe: SummariesDemo\SummariesDemo.dpr
+  $(DCC)
+
+UnboundModeDemo.exe: UnboundModeDemo\UnboundModeDemo.dpr
+  $(DCC)
+
+VirtualModeDemo.exe: VirtualModeDemo\VirtualModeDemo.dpr
+  $(DCC)
+
+ProviderModeDemo.exe: ProviderModeDemo\ProviderModeDemo.dpr
+  $(DCC)
+
+DragDropDemo.exe: DragDropDemo\DragDropDemo.dpr
+  $(DCC)
+
+ColumnsMultiEditorsDemo.exe: ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemo.dpr
+  $(DCC)
+
+EditorsLookupDemo.exe: EditorsLookupDemo\EditorsLookupDemo.dpr
+  $(DCC)
+
+EditorsMaskDemo.exe: EditorsMaskDemo\EditorsMaskDemo.dpr
+  $(DCC)

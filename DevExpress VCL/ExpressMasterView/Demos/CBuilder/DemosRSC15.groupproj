@@ -1,0 +1,32 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="HugeTablesDemo">
+    <MSBuild Projects="HugeTables\HugeTablesDemoRSC15.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterViewColumnsDemo">
+    <MSBuild Projects="MasterViewColumns\MasterViewColumnsDemoRSC15.cbproj" Targets="" />
+  </Target>
+  <Target Name="ExpressMasterViewStyles">
+    <MSBuild Projects="MasterViewStyles\ExpressMasterViewStylesRSC15.cbproj" Targets="" />
+  </Target>
+  <Target Name="querydemo">
+    <MSBuild Projects="QueryDemo\querydemoRSC15.cbproj" Targets="" />
+  </Target>
+  <Target Name="RuntimeStyles">
+    <MSBuild Projects="RunTimeStyles\RuntimeStylesRSC15.cbproj" Targets="" />
+  </Target>
+  <Target Name="SelfRef">
+    <MSBuild Projects="SelfRef\SelfRefRSC15.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="HugeTablesDemoRSC15;MasterViewColumnsDemoRSC15;ExpressMasterViewStylesRSC15;querydemoRSC15;RuntimeStylesRSC15;SelfRefRSC15" />
+  </Target>
+</Project>

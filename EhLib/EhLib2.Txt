@@ -1,0 +1,153 @@
+What's new in EhLib 2.0
+
+EhLib 2.0 don't support Delphi 3 and C++ Builder 3.
+
+
+In TDBGridEh
+   + For columns that attached to lookup Fields it support
+     possibility of changing values if TField.KeyFields and 
+     TField.LookupKeyFields is kept a list of several 
+     names of fields (list is separated by semicolon).
+
+   + In TDBGridEhOption type (OptionsEh propery) dghRowHighlight 
+     value is added - it allows to highlight current record.
+
+   + Added crpDropDownRowsEh and crpDropDownWidthEh values 
+     in TColumnEhRestoreParam type, it allows to save and restore
+     DropDownRows and DropDownWidth properties of TColumnEh
+     in/from the registry or ini file.   
+
+   + Added property AllowedSelections: TDBGridEhAllowedSelections;
+     TDBGridEhAllowedSelections = set of 
+         (gstRecordBookmarks, gstRectangle, gstColumns, gstAll);
+     Defines what types of selection is available in grid.
+     dgMultiSelect value in Options property also affects 
+     available of selection.
+
+   + Added property ColumnDefValues: TColumnDefValuesEh
+      TColumnDefValuesEh = class(TPersistent)
+        AlwaysShowEditButton: Boolean
+        EndEllipsis: Boolean
+        AutoDropDown: Boolean
+        DblClickNextVal: Boolean
+        ToolTips: Boolean
+        DropDownSizing: Boolean
+        DropDownShowTitles: Boolean
+        Title.Alignment: TAlignment
+        Title.Color: TColor
+        Title.TitleButton: Boolean
+        Title.EndEllipsis: Boolean
+        Title.ToolTips: Boolean
+        Title.Orientation: TTextOrientationEh
+
+     defines default values for newly created colonies.
+
+In TColumEh
+     + Added OnNotInList event. Operates when user enter 
+        a text not kept in the list of values. If this event 
+        is assigned then user is automatically allowed to enter 
+        a text not kept in the list. Event makes sense if row 
+        is based on lookup field or PickList is filled or 
+        PickList and KeyList is filled.
+
+     +  Added OnGetCellParams event:
+          TGetColCellParamsEventEh = procedure (Sender: TObject; 
+             EditMode: Boolean; Params: TColCellParamsEh) of object;
+          TColCellParamsEh = class
+            property Col:Longint;
+            property Row:Longint;
+            property State: TGridDrawState;
+            property Font: TFont read FFont;
+            property Background: TColo;
+            property Alignment: TAlignment;
+            property ImageIndex: Integer;
+            property Text: String read;
+            property CheckboxState: TCheckBoxState;
+            property ReadOnly: Boolean;
+          end;
+        Requests the parameters of cell before draw/editing.
+
+      + Added OnUpdateData event:
+          TColCellUpdateDataEventEh = procedure(Sender: TObject; 
+             var Text: String; var Value: Variant; 
+             var UseText: Boolean; var Processed: Boolean) of object;
+
+         Operates when writing data from InplaceEditor in DataSet field.
+         You can change text or value, UseText defines what parameter 
+         is used for writing: Text or Value. You may themselves write 
+         data to the field and sets Processed in True.
+
+       + Added OnEditButtonClick event:
+          TButtonClickEventEh = procedure(Sender: TObject; 
+            var Handled: Boolean) of object;
+
+       + Added OnEditButtonDown event:
+           TButtonDownEventEh = procedure(Sender: TObject; TopButton: Boolean;
+             var AutoRepeat: Boolean;  var Handled: Boolean) of object;
+         TopButton - when style of the button ebsUpDownEh, defines 
+           that pressed upper button.
+         AutoRepeat - repeat events if mouse is keeping pressed.
+
+
+In TDBSumListProducer 
+     * State Of working group operations goCount is changed. When in 
+       TDBSum installed by GroupOperation = goCount and 
+       FieldName <> '' that SumValue will contain an amount of records 
+       for which field <FieldName> is not Null.
+
+In TDBLookupComboboxEh
+
+ * Component has changed an ancestor, so possible inconsistency of 
+   functioning with the preceding version.
+
+ + Supports working with lookup fields that containing in 
+   TField.KeyFields and TField.LookupKeyFields properties the list of 
+   the several names of fields, in the same way possible enter a list 
+   of several names of fields in DataField and KeyField properties of
+   combobox. List of field names must be separated by semicolon 
+   (For instance: 'CustNo;EmpNo').
+
+ + Added OnButtonDown event:
+     TButtonDownEventEh = procedure(Sender: TObject; TopButton: Boolean;
+        var AutoRepeat: Boolean;  var Handled: Boolean) of object;
+     TopButton - when style of the button ebsUpDownEh, defines 
+     that pressed upper button.
+     AutoRepeat - repeat events if mouse is keeping pressed.
+
+Added 4 new components:
+
+TDBEditEh - to edit text values.
+TDBDateTimeEditEh - to edit date or time values.
+TDBComboBoxEh - to edit text values with capacity to
+                select values from list.
+TDBNumberEditEh - to edit numeric values.
+
+
+Common features in all components.
+
+  Can works as in data-aware mode as in usual not data-aware mode.
+  If DataField and DataSource properties is not assigned then
+  component works in usual not data-aware mode.
+
+  Have Flat and AlwaysShowBorder properties to show 
+  in the flat mode.
+
+
+  Have Text (String type) and Value (Variant type) properties.
+  Moreover Value can accept Null value or:
+  String type for TDBEditEh and TDBComboBoxEh,
+  TDateTime, TDate, TTime, Double type for TDBDateTimeEditEh,
+  all numeric types for TDBNumberEditEh.
+
+  Have an OnUpdateData event that occurs before writing data 
+  in DataSet field or in internal variable when not data-aware mode. 
+  Event is call when component lose the focus or 
+  when DataSet send PostData event.
+
+
+Individual features of components.
+
+  TDBEditEh, TDBComboBoxEh and TDBLookupComboboxEh have WordWrap 
+  propertiy to show and edit multiline text. Don't forget to hang 
+  up AutoSize propertiy if you want to change and fix a height of 
+  the control.

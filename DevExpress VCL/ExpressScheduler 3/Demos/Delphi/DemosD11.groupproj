@@ -1,0 +1,35 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DBDemo">
+    <MSBuild Projects="DBDemo\DBDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemo">
+    <MSBuild Projects="StylesDemo\StylesDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemo">
+    <MSBuild Projects="UnboundDemo\UnboundDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemo">
+    <MSBuild Projects="ResourceDemo\ResourceDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemo">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemo">
+    <MSBuild Projects="AggregateDemo\AggregateDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemo">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DBDemoD11;CustomDrawDemoD11;StylesDemoD11;UnboundDemoD11;ResourceDemoD11;GanttViewDemoD11;AggregateDemoD11;HolidaysDemoD11" />
+  </Target>
+</Project>

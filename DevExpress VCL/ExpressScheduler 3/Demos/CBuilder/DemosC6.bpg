@@ -1,0 +1,41 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = CustomDrawDemoC6.exe DBDemoC6.exe StylesDemoC6.exe UnboundDemoC6.exe \
+ResourceDemoC6.exe GanttViewDemoC6.exe HolidaysDemoC6.exe AggregateDemoC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+CustomDrawDemoC6.exe: CustomDrawDemo\CustomDrawDemoC6.bpr
+  $(MAKE)
+
+DBDemoC6.exe: DBDemo\DBDemoC6.bpr
+  $(MAKE)
+
+StylesDemoC6.exe: StylesDemo\StylesDemoC6.bpr
+  $(MAKE)
+
+UnboundDemoC6.exe: UnboundDemo\UnboundDemoC6.bpr
+  $(MAKE)
+
+ResourceDemoC6.exe: ResourceDemo\ResourceDemoC6.bpr
+  $(MAKE)
+
+GanttViewDemoC6.exe: GanttViewDemo\GanttViewDemoC6.bpr
+  $(MAKE)
+
+HolidaysDemoC6.exe: HolidaysDemo\HolidaysDemoC6.bpr
+  $(MAKE)
+
+AggregateDemoC6.exe: AggregateDemo\AggregateDemoC6.bpr
+  $(MAKE)

@@ -1,0 +1,124 @@
+:Base ExpressNavBar2.hlp
+:Title ExpressNavBar Suite 2
+:Index ExpressNavBar Suite 2=ExpressNavBar2.hlp
+1 ExpressNavBar 2
+2 Overview=Overview
+2 What's New in v2=CD_Whats_New_in_v2
+2 Known Issues and Important Changes List=CD_Known_Issues_and_Important_Changes_List
+2 Quick Start
+3 Step 1 - Creating a Layout=Step_1_Creating_a_Layout
+3 Step 2 - Assigning Images=Step_2_Assigning_Images
+3 Step 3 - Modifying Styles=Step_3_Modifying_Styles
+2 Glossary
+3 Group=IDH_Term_Group
+3 Item=IDH_Term_Item
+3 Link=IDH_Term_Link
+3 Active Group=IDH_Term_Active_Group
+3 Expanded Group=IDH_Term_Expanded_Group
+3 Group Header=IDH_Term_Group_Header
+3 Large images=IDH_Term_Large_images
+3 Small images=IDH_Term_Small_images
+3 Icon view=IDH_Term_Icon_view
+3 Group hint=IDH_Term_Group_hint
+3 Link hint=IDH_Term_Link_hint
+3 Default Style=IDH_Term_Default_Style
+3 Custom Style=IDH_Term_Custom_Style
+3 View=IDH_Term_View
+3 Side Bar View=IDH_Term_SideBar_View
+3 Explorer Bar View=IDH_Term_ExplorerBar_View
+3 Group Header Sign=IDH_Term_Group_Header_Sign
+3 Scroll Button=IDH_Term_Scroll_Button
+3 Navigation Pane's Header Section=IDH_Term_NavPaneHeaderSection
+3 Navigation Pane's Splitter=IDH_Term_NavPaneSplitter
+3 Navigation Pane's Overflow Panel=IDH_Term_NavPaneOverflowPanel
+3 Navigation Pane's Context Menu=IDH_Term_NavPaneContextMenu
+3 Collapsed Navigation Pane=CD_NavBarTerm_Collapsed_Navigation_Pane
+2 Concepts
+3 Groups, Links and Items
+4 Customizing Group Layout=IDH_Concept_Customizing_Group_Layout
+4 Embedding Controls into Groups=Embedding_Controls_into_Groups
+4 Expanding and Collapsing Groups=IDH_Concept_Expanding_and_Collapsing_Groups
+4 Link Arrangement=IDH_Concept_Links_Arrangement
+4 Linking Groups and Items=IDH_Concept_Linking_Groups_And_Items
+4 Selecting and Clicking Links=IDH_Concept_Selecting_and_Clicking_Links
+3 Views
+4 Differences in Side Bar and Explorer Bar Views=IDH_Concept_Differences_in_the_SideBar_and_ExplorerBar_Views
+4 Expanding and Collapsing Navigation Panes=CD_Concept_Expanding_and_Collapsing_Navigation_Panes
+4 Registering Custom Views=IDH_Concept_Registering_Custom_Views
+3 Hints
+4 Link & Group Hints=IDH_Concept_Link_and_Group_Hints
+3 Styles
+4 Style Settings=IDH_Concept_Style_Settings
+4 Assigning Styles to Elements=IDH_Concept_Assigning_Styles_to_Elements
+3 Drag and Drop
+4 Internal and External Drag & Drop Operations=IDH_Concept_Internal_and_External_Drag_and_Drop_Operations
+3 Custom Painting
+4 Custom Draw Basics=IDH_Concept_Custom_Draw_Basics
+4 Custom Painting Hints=IDH_Concept_Hints_Custom_Painting
+4 Custom Painting Static Elements=IDH_Concept_Custom_Painting_of_Static_Elements
+4 Custom Painting Active Elements=IDH_Concept_Custom_Painting_of_Active_Elements
+4 GDI+ Library Overview=IDH_Concept_GDIplus_Library_Overview
+3 Saving and Restoring Settings
+4 Saving and Restoring NavBar Settings=Saving_and_Restoring_NavBar_Settings
+2 Reference
+3 TdxCustomNavBar=IDH_Class_TcxCustomNavBar
+3 TdxNavBar=IDH_Class_TcxNavBar
+3 Units
+4 dxNavBar Unit Overview=IDH_Unit_dxNavBar
+4 dxNavBarBase Unit Overview=IDH_Unit_cxNavBarBase
+4 dxNavBarCollns Unit Overview=IDH_Unit_cxNavBarCollns
+4 dxNavBarGroupItems Unit Overview=IDH_Unit_dxNavBarGroupItems
+4 dxNavBarStyles Unit Overview=IDH_Unit_cxNavBarStyles
+4 cxNavBarViewsFact Unit Overview=IDH_Unit_cxNavBarViewsFact
+4 cxNavBarConsts Unit Overview=IDH_Unit_cxNavBarConsts
+3 Base Collection and Item Objects
+4 TdxNavBarCustomItem=IDH_Class_TdxNavBarCustomItem
+4 TdxNavBarComponentCollection=IDH_Class_TcxNavBarComponentCollection
+4 TdxNavBarComponentCollectionItem=IDH_Class_TcxNavBarComponentCollectionItem
+3 Groups
+4 TdxNavBarGroup=IDH_Class_TcxNavBarGroup
+4 TdxNavBarGroups=IDH_Class_TcxNavBarGroups
+3 Items
+4 TdxNavBarItem=IDH_Class_TcxNavBarItem
+4 TdxNavBarItems=IDH_Class_TcxNavBarItems
+4 TdxNavBarSeparator=IDH_Class_TdxNavBarSeparator
+3 Links
+4 TdxNavBarItemLink=IDH_Class_TcxNavBarItemLink
+4 TdxNavBarItemLinks=IDH_Class_TcxNavBarItemLinks
+3 Styles
+4 TdxNavBarBaseStyle=IDH_Class_TdxNavBarBaseStyle
+4 TdxNavBarBaseCustomStyles=IDH_Class_TdxNavBarBaseCustomStyles
+4 TdxNavBarDefaultStyle=IDH_Class_TdxNavBarDefaultStyle
+4 TdxNavBarDefaultStyles=IDH_Class_TcxNavBarDefaultStyles
+4 TdxNavBarCustomStyles=IDH_Class_TdxNavBarCustomStyles
+4 TdxNavBarGroupCustomStyles=IDH_Class_TdxNavBarGroupCustomStyles
+4 TdxNavBarItemCustomStyles=IDH_Class_TdxNavBarItemCustomStyles
+4 TdxNavBarStyle=IDH_Class_TcxNavBarStyle
+4 TdxNavBarStyleItem=IDH_Class_TcxNavBarStyleItem
+4 TdxNavBarStyleRepository=IDH_Class_TdxNavBarStyleRepository
+3 Views
+4 TdxNavBarViewsFactory=IDH_Class_TcxNavBarViewsFactory
+4 dxNavBarViewsFactory function=IDH_cxNavBarViewsFact_cxNavBarViewsFactory
+3 View Infos
+4 TdxNavBarViewInfo=IDH_Class_TcxNavBarViewInfo
+4 TdxNavBarGroupViewInfo=IDH_Class_TcxNavBarGroupViewInfo
+4 TdxNavBarLinkViewInfo=IDH_Class_TcxNavBarLinkViewInfo
+3 Base Painters
+4 TdxNavBarCustomBackgroundPainter=IDH_Class_TdxNavBarCustomBackgroundPainter
+4 TdxNavBarCustomButtonPainter=IDH_Class_TdxNavBarCustomButtonPainter
+4 TdxNavBarCustomHintPainter=IDH_Class_TdxNavBarCustomHintPainter
+4 TdxNavBarCustomImagePainter=IDH_Class_TdxNavBarCustomImagePainter
+4 TdxNavBarCustomScrollButtonsPainter=IDH_Class_TdxNavBarCustomScrollButtonsPainter
+4 TdxNavBarCustomSelectionPainter=IDH_Class_TdxNavBarCustomSelectionPainter
+4 TdxNavBarCustomSignPainter=IDH_Class_TdxNavBarCustomSignPainter
+3 Constants and Variables
+4 dxNavBarDefaultLargeImageHeight constant=IDH_Const_cxNavBarDefaultLargeImageHeight
+4 dxNavBarDefaultLargeImageWidth constant=IDH_Const_cxNavBarDefaultLargeImageWidth
+4 dxNavBarDefaultSmallImageHeight constant=IDH_Const_cxNavBarDefaultSmallImageHeight
+4 dxNavBarDefaultSmallImageWidth constant=IDH_Const_cxNavBarDefaultSmallImageWidth
+4 dxNavBarScrollInterval constant=IDH_Const_cxNavBarScrollInterval
+4 dxNavBarDragObject variable=IDH_Var_dxNavBarDragObject
+3 Types and Other Objects
+4 TdxBarStyleHAlignment=IDH_Type_TcxBarStyleHAlignment
+4 TdxBarStyleVAlignment=IDH_Type_TcxBarStyleVAlignment
+4 TdxBarStyleGradientMode=IDH_Type_TcxBarStyleGradientMode

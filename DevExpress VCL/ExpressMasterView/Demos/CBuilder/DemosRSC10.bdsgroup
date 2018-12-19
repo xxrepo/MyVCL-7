@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="HugeTablesDemoRSC10.exe" Type="String">HugeTables\HugeTablesDemoRSC10.bdsproj</Projects>
+      <Projects Name="MasterViewColumnsDemoRSC10.exe" Type="String">MasterViewColumns\MasterViewColumnsDemoRSC10.bdsproj</Projects>
+      <Projects Name="ExpressMasterViewStylesRSC10.exe" Type="String">MasterViewStyles\ExpressMasterViewStylesRSC10.bdsproj</Projects>
+      <Projects Name="querydemoRSC10.exe" Type="String">QueryDemo\querydemoRSC10.bdsproj</Projects>
+      <Projects Name="RuntimeStylesRSC10.exe" Type="String">RunTimeStyles\RuntimeStylesRSC10.bdsproj</Projects>
+      <Projects Name="SelfRefRSC10.exe" Type="String">SelfRef\SelfRefRSC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">HugeTablesDemoRSC10.exe MasterViewColumnsDemoRSC10.exe ExpressMasterViewStylesRSC10.exe querydemoRSC10.exe RuntimeStylesRSC10.exe SelfRefRSC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

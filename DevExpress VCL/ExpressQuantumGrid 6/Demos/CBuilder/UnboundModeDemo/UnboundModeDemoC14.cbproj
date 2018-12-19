@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C4F64397-BF0C-43CD-A941-D2BCC5E5BFF8}</ProjectGuid>
+    <ProjectVersion>12.0</ProjectVersion>
+    <MainSource>UnboundModeDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <Multithreaded>true</Multithreaded>
+    <AllPackageLibs>rtl.lib;vcl.lib;cxPageControlC14.lib;cxGridC14.lib;cxExportC14.lib;cxEditorsC14.lib;cxExtEditorsC14.lib;cxLibraryC14.lib;dxGDIPlusC14.lib;cxDataC14.lib;dxThemeC14.lib;vcldb.lib;dbrtl.lib;bdertl.lib;adortl.lib;vclx.lib;;dxCoreC14.lib</AllPackageLibs>
+    <LinkPackageImports></LinkPackageImports>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+   <IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;$(BDS)\include\windows\;$(BDS)\include\windows\vcl;$(BDS)\include\windows\rtl;..\Common;..</IncludePath>
+   <ILINK_LibraryPath>$(BDS)\lib\release;$(BDS)\lib;$(BDS)\lib\obj;$(BDS)\lib\psdk;..\Common;..</ILINK_LibraryPath>
+    <BCC_wpar>false</BCC_wpar>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResFiles Include="UnboundModeDemo.res">
+    </ResFiles>
+    <CppCompile Include="UnboundModeDemo.cpp"> </CppCompile>
+    <CppCompile Include="UnboundModeDemoTypes.cpp"> </CppCompile>
+    <CppCompile Include="UnboundModeDemoIntMinerField.cpp"> </CppCompile>
+    <CppCompile Include="UnboundModeDemoMinerDataSource.cpp"> </CppCompile>
+    <CppCompile Include="UnboundModeDemoMain.cpp">
+      <Form>UnboundModeDemoMainForm</Form>
+    </CppCompile>
+    <CppCompile Include="UnboundModeDemoCustomField.cpp">
+      <Form>UnboundModeDemoCustomFieldForm</Form>
+    </CppCompile>
+    <CppCompile Include="UnboundModeDemoFastestSweepers.cpp">
+      <Form>UnboundModeDemoFastestSweepersForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\AboutDemoForm.cpp">
+      <Form>formAboutDemo</Form>
+    </CppCompile>
+    <CppCompile Include="UnboundModeDemoMinerCore.cpp"> </CppCompile>
+    <FormResources Include="UnboundModeDemoMain.dfm" />
+    <FormResources Include="UnboundModeDemoCustomField.dfm" />
+    <FormResources Include="UnboundModeDemoFastestSweepers.dfm" />
+    <FormResources Include="..\AboutDemoForm.dfm" />
+  </ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <CPlusPlusBuilder.Personality>
+      </CPlusPlusBuilder.Personality>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

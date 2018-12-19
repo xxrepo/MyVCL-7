@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="CustomDrawDemoRSC10.exe" Type="String">CustomDrawDemo\CustomDrawDemoRSC10.bdsproj</Projects>
+      <Projects Name="EditorsInPlaceDemoRSC10.exe" Type="String">EditorsInPlaceDemo\EditorsInPlaceDemoRSC10.bdsproj</Projects>
+      <Projects Name="EditorsLookupDemoRSC10.exe" Type="String">EditorsLookupDemo\EditorsLookupDemoRSC10.bdsproj</Projects>
+      <Projects Name="EditorsMaskDemoRSC10.exe" Type="String">EditorsMaskDemo\EditorsMaskDemoRSC10.bdsproj</Projects>
+      <Projects Name="ProviderModeDemoRSC10.exe" Type="String">ProviderModeDemo\ProviderModeDemoRSC10.bdsproj</Projects>
+      <Projects Name="RowsMultiEditorsDemoRSC10.exe" Type="String">RowsMultiEditorsDemo\RowsMultiEditorsDemoRSC10.bdsproj</Projects>
+      <Projects Name="RTTIInspectorDemoRSC10.exe" Type="String">RTTIInspectorDemo\RTTIInspectorDemoRSC10.bdsproj</Projects>
+      <Projects Name="SimpleVerticalGridDemoRSC10.exe" Type="String">SimpleVerticalGridDemo\SimpleVerticalGridDemoRSC10.bdsproj</Projects>
+      <Projects Name="StylesMultiDemoRSC10.exe" Type="String">StylesMultiDemo\StylesMultiDemoRSC10.bdsproj</Projects>
+      <Projects Name="StylesSimpleDemoRSC10.exe" Type="String">StylesSimpleDemo\StylesSimpleDemoRSC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">CustomDrawDemoRSC10.exe EditorsInPlaceDemoRSC10.exe EditorsLookupDemoRSC10.exe EditorsMaskDemoRSC10.exe ProviderModeDemoRSC10.exe RowsMultiEditorsDemoRSC10.exe RTTIInspectorDemoRSC10.exe SimpleVerticalGridDemoRSC10.exe StylesMultiDemoRSC10.exe StylesSimpleDemoRSC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

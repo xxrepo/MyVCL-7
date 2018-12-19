@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="BandedDemoC10.exe" Type="String">BandedDemo\BandedDemoC10.bdsproj</Projects>
+      <Projects Name="BandedFixedDemoC10.exe" Type="String">BandedFixedDemo\BandedFixedDemoC10.bdsproj</Projects>
+      <Projects Name="ColumnsMultiEditorsDemoC10.exe" Type="String">ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoC10.bdsproj</Projects>
+      <Projects Name="CustomDrawDemoC10.exe" Type="String">CustomDrawDemo\CustomDrawDemoC10.bdsproj</Projects>
+      <Projects Name="DragDropDemoC10.exe" Type="String">DragDropDemo\DragDropDemoC10.bdsproj</Projects>
+      <Projects Name="EditorsInPlaceDemoC10.exe" Type="String">EditorsInPlaceDemo\EditorsInPlaceDemoC10.bdsproj</Projects>
+      <Projects Name="EditorsLookupDemoC10.exe" Type="String">EditorsLookupDemo\EditorsLookupDemoC10.bdsproj</Projects>
+      <Projects Name="EditorsMaskDemoC10.exe" Type="String">EditorsMaskDemo\EditorsMaskDemoC10.bdsproj</Projects>
+      <Projects Name="ProviderModeDemoC10.exe" Type="String">ProviderModeDemo\ProviderModeDemoC10.bdsproj</Projects>
+      <Projects Name="SimpleListDemoC10.exe" Type="String">SimpleListDemo\SimpleListDemoC10.bdsproj</Projects>
+      <Projects Name="SimpleTreeDemoC10.exe" Type="String">SimpleTreeDemo\SimpleTreeDemoC10.bdsproj</Projects>
+      <Projects Name="StylesMultiDemoC10.exe" Type="String">StylesMultiDemo\StylesMultiDemoC10.bdsproj</Projects>
+      <Projects Name="StylesSimpleDemoC10.exe" Type="String">StylesSimpleDemo\StylesSimpleDemoC10.bdsproj</Projects>
+      <Projects Name="SummariesDemoC10.exe" Type="String">SummariesDemo\SummariesDemoC10.bdsproj</Projects>
+      <Projects Name="UnboundModeDemoC10.exe" Type="String">UnboundModeDemo\UnboundModeDemoC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">BandedDemoC10.exe BandedFixedDemoC10.exe ColumnsMultiEditorsDemoC10.exe CustomDrawDemoC10.exe DragDropDemoC10.exe EditorsInPlaceDemoC10.exe EditorsLookupDemoC10.exe EditorsMaskDemoC10.exe ProviderModeDemoC10.exe SimpleListDemoC10.exe SimpleTreeDemoC10.exe StylesMultiDemoC10.exe StylesSimpleDemoC10.exe SummariesDemoC10.exe UnboundModeDemoC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

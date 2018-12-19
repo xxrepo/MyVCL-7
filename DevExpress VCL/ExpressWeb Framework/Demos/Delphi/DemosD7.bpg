@@ -1,0 +1,87 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = CustomAttrDemoWAD.exe FramesDemoWAD.exe SessionDemoWAD.exe ServerScriptsDemoWAD.exe \
+MasterDetailDemoWAD.exe WebDBTableDemoWAD.exe WebSnapAdaptersDemoWAD.exe VBScriptDemoWAD.exe \
+WebDateEditDemoWAD.exe WebServiceDemoWAD.exe LoginDemoWAD.exe ClientEventsDemoWAD.exe \
+XPBarDemoWAD.exe IncludeDemoWAD.exe TabControlTest.exe LoginDemoWAD.exe \
+LookupDemoWAD.exe WebChartDemoWAD.exe CustomRenderDemo.exe WebChartProDemoWAD.exe \
+DxForum.exe webob.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+CustomAttrDemoWAD.exe: CustomAttrDemo\CustomAttrDemoWAD.dpr
+  $(DCC)
+
+FramesDemoWAD.exe: FramesDemo\FramesDemoWAD.dpr
+  $(DCC)
+
+SessionDemoWAD.exe: SessionDemo\SessionDemoWAD.dpr
+  $(DCC)
+
+ServerScriptsDemoWAD.exe: ServerScripts\ServerScriptsDemoWAD.dpr
+  $(DCC)
+
+MasterDetailDemoWAD.exe: MasterDetailDemo\MasterDetailDemoWAD.dpr
+  $(DCC)
+
+WebDBTableDemoWAD.exe: WebDBTable\WebDBTableDemoWAD.dpr
+  $(DCC)
+
+WebSnapAdaptersDemoWAD.exe: WebSnapAdapters\WebSnapAdaptersDemoWAD.dpr
+  $(DCC)
+
+VBScriptDemoWAD.exe: VBScriptDemo\VBScriptDemoWAD.dpr
+  $(DCC)
+
+WebDateEditDemoWAD.exe: WebDateEdit\WebDateEditDemoWAD.dpr
+  $(DCC)
+
+WebServiceDemoWAD.exe: WebServices\WebServiceDemoWAD.dpr
+  $(DCC)
+
+LoginDemoWAD.exe: LoginDemo\LoginDemoWAD.dpr
+  $(DCC)
+
+ClientEventsDemoWAD.exe: ClientEventsDemo\ClientEventsDemoWAD.dpr
+  $(DCC)
+
+XPBarDemoWAD.exe: XPBarDemo\XPBarDemoWAD.dpr
+  $(DCC)
+
+IncludeDemoWAD.exe: IncludeDemo\IncludeDemoWAD.dpr
+  $(DCC)
+
+TabControlTest.exe: SimpleTabControl\TestDemo\TabControlTest.dpr
+  $(DCC)
+
+LoginDemoWAD.exe: LoginDemo\LoginDemoWAD.dpr
+  $(DCC)
+
+LookupDemoWAD.exe: LookupDemo\LookupDemoWAD.dpr
+  $(DCC)
+
+WebChartDemoWAD.exe: WebChartDemo\WebChartDemoWAD.dpr
+  $(DCC)
+
+CustomRenderDemo.exe: CustomRenderDemo\CustomRenderDemo.dpr
+  $(DCC)
+
+WebChartProDemoWAD.exe: WebChartProDemo\WebChartProDemoWAD.dpr
+  $(DCC)
+
+DxForum.exe: ExpressSupportForum\DxForum.dpr
+  $(DCC)
+
+webob.exe: MegaDemo\webob.dpr
+  $(DCC)

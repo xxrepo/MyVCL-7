@@ -1,0 +1,28 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = Dbtree_.exe Dbtree_f.exe dbtrprnp.exe Dbtredit.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+Dbtree_.exe: DBTree\Dbtree_.dpr
+  $(DCC)
+
+Dbtree_f.exe: DBTree_F\Dbtree_f.dpr
+  $(DCC)
+
+dbtrprnp.exe: DBTrPrn\dbtrprnp.dpr
+  $(DCC)
+
+Dbtredit.exe: TreeEdit\Dbtredit.dpr
+  $(DCC)

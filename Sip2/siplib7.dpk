@@ -1,0 +1,59 @@
+package siplib7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  sipclient in 'SipClient.pas',
+  account in 'Account.pas',
+  accounts in 'Accounts.pas',
+  acm in 'acm.pas',
+  call in 'Call.pas',
+  calls in 'Calls.pas',
+  codecgsm in 'CodecGSM.pas',
+  codecpcm in 'CodecPCM.pas',
+  codecs in 'Codecs.pas',
+  dtmf in 'DTMF.pas',
+  guids in 'GUIDs.pas',
+  iputils in 'IPutils.pas',
+  sip in 'SIP.pas',
+  udp in 'UDP.pas',
+  sipints in 'SipInts.pas',
+  sipmessage in 'SipMessage.pas',
+  siprequests in 'SipRequests.pas',
+  text2speech in 'Text2Speech.pas',
+  conference in 'Conference.pas',
+  microphone in 'Microphone.pas',
+  speaker in 'Speaker.pas',
+  wavfiles in 'WavFiles.pas',
+  recorder in 'Recorder.pas',
+  codecspeex in 'CodecSpeex.pas',
+  redirector in 'Redirector.pas',
+  AudioBuf in 'AudioBuf.pas';
+
+end.

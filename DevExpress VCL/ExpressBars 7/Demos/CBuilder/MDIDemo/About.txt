@@ -1,0 +1,13 @@
+This demo demonstrates the tabbed MDI manager that converts MDI child forms into tabbed pages.
+
+In the demo, you can:
+
+- Switch between tabbed and window MDI layout modes.
+- Navigate the tab pages using the Tab Navigator.
+- Drag and drop tabs to change the tab order.
+- Close unnecessary pages via the close button.
+- Customize the location of tabs.
+- Display tabs on multiple lines.
+- Apply different painting styles to tabs.
+- Change the orientation of tab headers.
+- Customize the close button location.

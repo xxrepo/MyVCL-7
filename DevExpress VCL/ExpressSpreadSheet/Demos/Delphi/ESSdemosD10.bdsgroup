@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="FeaturesDemo.exe" Type="String">FeaturesDemo\FeaturesDemo.bdsproj</Projects>
+      <Projects Name="Stocks.exe" Type="String">StocksDemo\Stocks.bdsproj</Projects>
+      <Projects Name="Flying.exe" Type="String">FlyingDemo\Flying.bdsproj</Projects>
+      <Projects Name="CustomFunction.exe" Type="String">CustomFunctionDemo\CustomFunction.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">FeaturesDemo.exe Stocks.exe Flying.exe CustomFunction.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

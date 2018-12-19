@@ -1,0 +1,29 @@
+This demo demonstrates an RTF editor with the Ribbon interface similar to that found in Microsoft Office 2007 and higher.
+
+To mimic the appearance and layout adaptation capabilities of Ribbon UI elements, it uses our TdxRibbon, TdxRibbonBackstageView, TdxBarApplicationMenu, TdxRibbonMiniToolbar, TdxRibbonPopupMenu, TdxBarScreenTipRepository, TdxRibbonStatusBar, and TcxImageList components.
+
+This application represents a fully functional RTF editor with standard editing features.
+
+You can examine the effect of resizing the editor's window, and in particular, you can see how the bar items are arranged and sized within tab groups and how the width of tab captions is adjusted.
+
+The TdxRibbon component provides a way to arrange and display toolbars and their items. All the design-time customization capabilities introduced in previous versions of ExpressBars are still available in ExpressBars v7. So, at design time you still can right-click a bar item control to invoke the Customizing Popup Menu, for example.
+
+In the demo you can:
+
+- Use the Options dialog (it can be opened via the Options item) to:
+    • Select a color scheme from the three available themes to apply to the Ribbon form.
+    • Pick between three different Ribbon-based styles: the Office 2007 Ribbon, the Office 2010 Ribbon and the Windows Scenic Ribbon.
+    • Choose the manner in which hint information is displayed on-screen.
+
+- Make a selection within the editor to show the Ribbon Mini Toolbar and the 'Selection Tools' contextual tab.
+
+The following additional customization capabilities are available in this demo:
+
+The Home tab
+- Use the various options of tab groups to manage documents, format and manipulate text.
+
+The Appearance tab
+- The Color Scheme tab group. Experiment with the three different color schemes: Blue, Black, and Silver, to instantly change the appearance of the editor.
+- The Ribbon Options tab group. Toggle the "Ribbon Form" option to display the editor either as a Ribbon or normal form. 
+- You can show/hide the Application Button by toggling the corresponding option. Clicking the Application Button invokes a popup menu of the TdxBarApplicationMenu type assigned via the ApplicationButton.Menu property.
+- The Quick Access Toolbar tab group. You can hide/show the Quick Access Toolbar by toggling the corresponding option. You can also specify the position at which this toolbar will be displayed.

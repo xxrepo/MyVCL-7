@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="OrderReportsDemoC10.exe" Type="String">OrderReportsDemo\OrderReportsDemoC10.bdsproj</Projects>
+      <Projects Name="MultipleTotalsDemoC10.exe" Type="String">MultipleTotalsDemo\MultipleTotalsDemoC10.bdsproj</Projects>
+      <Projects Name="SortBySummaryDemoC10.exe" Type="String">SortBySummaryDemo\SortBySummaryDemoC10.bdsproj</Projects>
+      <Projects Name="CustomDrawDemoC10.exe" Type="String">CustomDrawDemo\CustomDrawDemoC10.bdsproj</Projects>
+      <Projects Name="StylesMultiDemoC10.exe" Type="String">StylesMultiDemo\StylesMultiDemoC10.bdsproj</Projects>
+      <Projects Name="UnboundExternalDemoC10.exe" Type="String">UnboundExternalDemo\UnboundExternalDemoC10.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">OrderReportsDemoC10.exe MultipleTotalsDemoC10.exe SortBySummaryDemoC10.exe CustomDrawDemoC10.exe StylesMultiDemoC10.exe UnboundExternalDemoC10.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

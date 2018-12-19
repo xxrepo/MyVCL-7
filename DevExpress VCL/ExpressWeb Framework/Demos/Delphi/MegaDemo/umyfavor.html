@@ -1,0 +1,25 @@
+<HTML>
+  <HEAD>
+    <TITLE><%=Context.Page.Title%></TITLE>
+  </HEAD>
+  <BODY bgcolor="white">
+<!--#include file="head.html"-->
+  <% var NoSelectedBooks = true;
+     for(var i = 0; i < cxWebDataSource1.RecordCount; i ++)
+     {
+       var S = 'cxWebButton' + i;
+       if(Session.GetValue(S) == true)
+       {
+         NoSelectedBooks = false;
+         break;
+       }
+     }
+  %>
+  <ewf:Form id="<%=Form.Name%>">
+  <% if(NoSelectedBooks) {%>
+    <BR><H3>No selected books in favor</H3><BR>
+  <% } %>
+  </ewf:Form>
+<!--#include file="tail.html"-->
+  </BODY>
+</HTML>

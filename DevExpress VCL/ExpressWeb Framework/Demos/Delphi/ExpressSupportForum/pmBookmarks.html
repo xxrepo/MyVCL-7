@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title><%=Context.Page.Title%></title>
+    <link rel="stylesheet" href="/dx.css" type="text/css">
+  </head>
+  <body><ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<table border="0" valign="middle" cellspacing="0" cellpadding="0" bgcolor=#ffc454 width="100%">
+<tr>
+  <td colspan="2"><IMG height=6 src="/dxforum/images/1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td><IMG height=1 src="/dxforum/images/1x1.gif" width=20></td>
+  <td width="2000">
+    <div style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Arial"
+     ><b>BOOKMARKS:</b> Total <%=Form.Total%></div>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><IMG height=5 src="/dxforum/images/1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="white"><IMG height=2 src="/dxforum/images/1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td align="middle" colspan="2" bgcolor="white"><ewf:DBGrid id="Grid"></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="white"><IMG height=35 src="\dxforum\images\1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td align="middle" colspan="2" bgcolor="white"><ewf:DBDataNavigator id="DataNavigator"></td>
+</tr>
+</table>
+  </ewf:Form><!--#include file="copy.inc"-->
+  </body>
+</html>
+
+
+
+

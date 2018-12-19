@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C4F64397-BF0C-43CD-A941-D2BCC5E5BFF8}</ProjectGuid>
+    <ProjectVersion>12.0</ProjectVersion>
+    <MainSource>InPlaceEditorsDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <Multithreaded>true</Multithreaded>
+    <AllPackageLibs>rtl.lib;vcl.lib;vcldb.lib;dbrtl.lib;bdertl.lib;adortl.lib;VCLX.lib;dxComnC14.lib;dxThemeC14.lib;cxDataC14.lib;cxLibraryC14.lib;dxBarC14.lib;dxBarExtItemsC14.lib;dxBarExtDBItemsC14.lib;cxBarEditItemC14.lib;dxBarDBNavC14.lib;dxSBC14.lib;dxRibbonC14.lib;dxGDIPlusC14.lib;cxEditorsC14.lib;cxExtEditorsC14.lib;dxCoreC14.lib</AllPackageLibs>
+    <LinkPackageImports></LinkPackageImports>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+   <IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;$(BDS)\include\windows\;$(BDS)\include\windows\vcl;$(BDS)\include\windows\rtl;..\Common;..</IncludePath>
+   <ILINK_LibraryPath>$(BDS)\lib\release;$(BDS)\lib;$(BDS)\lib\obj;$(BDS)\lib\psdk;..\Common;..</ILINK_LibraryPath>
+    <BCC_wpar>false</BCC_wpar>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResFiles Include="InPlaceEditorsDemo.res">
+    </ResFiles>
+    <CppCompile Include="InPlaceEditorsDemo.cpp"> </CppCompile>
+    <CppCompile Include="..\Common\EBarsUtils.cpp">
+      <Form>dmCommonData</Form>
+    </CppCompile>
+    <CppCompile Include="..\Common\AboutDemoForm.cpp">
+      <Form>formAboutDemo</Form>
+    </CppCompile>
+    <CppCompile Include="..\Common\EBarsDemoRating.cpp">
+      <Form>EBarsDemoRatingForm</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoValue.cpp">
+      <Form>frmValueEditors</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoCheckBoxes.cpp">
+      <Form>frmCheckBoxes</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoComboBoxes.cpp">
+      <Form>frmComboBoxes</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoFrameManager.cpp">
+      <Form>EditorDemoBaseFrame</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoimage.cpp">
+      <Form>frmImageEditors</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoMain.cpp">
+      <Form>frmMain</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoMultiLineText.cpp">
+      <Form>frmMultiLineTextEditors</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoText.cpp">
+      <Form>frmTextEditors</Form>
+    </CppCompile>
+    <CppCompile Include="InPlaceEditorsDemoSplash.cpp">
+      <Form>frmLoading</Form>
+    </CppCompile>
+    <FormResources Include="..\Common\EBarsUtils.dfm" />
+    <FormResources Include="..\Common\AboutDemoForm.dfm" />
+    <FormResources Include="..\Common\EBarsDemoRating.dfm" />
+    <FormResources Include="InPlaceEditorsDemoValue.dfm" />
+    <FormResources Include="InPlaceEditorsDemoCheckBoxes.dfm" />
+    <FormResources Include="InPlaceEditorsDemoComboBoxes.dfm" />
+    <FormResources Include="InPlaceEditorsDemoFrameManager.dfm" />
+    <FormResources Include="InPlaceEditorsDemoimage.dfm" />
+    <FormResources Include="InPlaceEditorsDemoMain.dfm" />
+    <FormResources Include="InPlaceEditorsDemoMultiLineText.dfm" />
+    <FormResources Include="InPlaceEditorsDemoText.dfm" />
+    <FormResources Include="InPlaceEditorsDemoSplash.dfm" />
+  </ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <CPlusPlusBuilder.Personality>
+      </CPlusPlusBuilder.Personality>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

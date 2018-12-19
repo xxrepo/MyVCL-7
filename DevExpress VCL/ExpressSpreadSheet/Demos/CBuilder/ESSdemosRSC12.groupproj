@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{D5FB5D96-F9AA-45A9-A3D7-D8723F1BC9A2}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomFunction">
+    <MSBuild Projects="CustomFunctionDemo\CustomFunctionRSC12.cbproj" Targets="" />
+  </Target>
+  <Target Name="FeaturesDemo">
+    <MSBuild Projects="FeaturesDemo\FeaturesDemoRSC12.cbproj" Targets="" />
+  </Target>
+  <Target Name="Stocks">
+    <MSBuild Projects="StocksDemo\StocksRSC12.cbproj" Targets="" />
+  </Target>
+  <Target Name="Flying">
+    <MSBuild Projects="FlyingDemo\FlyingRSC12.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomFunctionRSC12;FeaturesDemoRSC12;StocksRSC12;FlyingRSC12" />
+  </Target>
+</Project>

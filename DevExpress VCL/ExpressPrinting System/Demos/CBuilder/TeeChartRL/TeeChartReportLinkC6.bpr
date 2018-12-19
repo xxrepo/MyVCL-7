@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--C++Builder XML Project-->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="TeeChartReportLink.exe"/>
+    <OBJFILES value="TeeChartReportLink.obj main.obj"/>
+    <RESFILES value="TeeChartReportLink.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) main.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dxPSDBTeeChartC6.lib TeeDB.lib vcldb.lib dbrtl.lib bdertl.lib adortl.lib dxThemeC6.lib cxLibraryVCLC6.lib dxPSTeeChartC6.lib dxPSCoreC6.lib tee.lib vcl.lib rtl.lib vclx.lib dxCoreC6.lib dxGDIPlusC6.lib "/>
+    <SPARELIBS value="vclx.lib vcl.lib rtl.lib tee.lib dxPSCoreC6.lib dxPSTeeChartC6.lib cxLibraryVCLC6.lib dxThemeC6.lib vcldb.lib dbrtl.lib bdertl.lib adortl.lib TeeDB.lib dxPSDBTeeChartC6.lib dxCoreC6.lib dxGDIPlusC6.lib "/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="iLink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="TeeChartReportLink.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;..\..\..\..\Library\CBuilder6"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib;..\..\..\..\Library\CBuilder6"/>
+    <WARNINGS value="-w-par"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tW -tWM -D$(SYSDEFINES);$(USERDEFINES)"/>
+    <LFLAGS value="-L$(BCB)\lib\obj;$(BCB)\lib;$(RELEASELIBPATH) -aa -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib "/>
+  </LINKER>
+  <IDEOPTIONS/>
+</PROJECT>

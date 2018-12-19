@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemo">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemo">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemo">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemo">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemo">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartConnectionDemo">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowser">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserD11.dproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemo">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD11.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoD11;MultipleTotalsDemoD11;SortBySummaryDemoD11;UnboundExternalDemoD11;StylesMultiDemoD11;CustomDrawDemoD11;DataSetsDemoD11;ChartConnectionDemoD11;OLAPBrowserD11;PrefilterByCodeDemoD11;EditorsInPlaceDemoD11" />
+  </Target>
+</Project>

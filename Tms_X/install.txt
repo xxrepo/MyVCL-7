@@ -1,0 +1,928 @@
+****************************************************************************
+* TMS Component Pack Pro                                                   *
+* for Delphi 7,2007,2009,2010,XE,XE2,XE3,XE4,XE5,XE6,XE7,XE8,10 Seattle    *
+*     C++Builder 2007,2009,2010,XE,XE2,XE3,XE4,XE5,XE6,XE7,XE8,10 Seattle  *
+****************************************************************************
+ 
+      ////////////////////////////////////////////////// 
+      //   I M P O R T A N T    R E M A R K  !!!!!    //
+      //                                              //  
+      //  For a succesful install of the components,  //
+      //       follow  A L L  steps below             //
+      //                                              //   
+      //////////////////////////////////////////////////
+
+
+Installation :
+--------------
+
+ Unzipping files
+ _______________
+
+
+ For Delphi 2007 & C++Builder 2007
+ ----------------------------------
+
+ Unzip the files included into a separate directory {$TMSDIR}\Win32 with relative
+ directories.
+
+ Unzip the files included into a separate directory {$TMSDIR}\VCLNET with relative
+ directories. (not applicable for C++Builder 2006,2007)
+
+
+ Setting library paths
+ _____________________
+
+ For Delphi 7
+ ---------------------------------
+ Under Tools, Environment Options, Library, add the directory where
+ the TMS components have been installed {$TMSDIR} to the library path
+ as well as {$TMSDIR}\XlsAdapter
+
+
+ For Delphi 2007,2009,2010,XE,XE2,XE3,XE4,XE5,XE6,XE7,XE8,10 Seattle & C++Builder 2007,2009,2010,XE,XE2,XE3,XE4,XE5,XE6,XE7,XE8,10 Seattle
+ -----------------------------------------------------------------------------------------------------------------------------------------
+ 
+ Under Tools, Environment Options, Library, add the directory where
+ the TMS components have been installed {$TMSDIR}\Win32 to the Win32 library path
+
+  
+ Installing components with project groups (preferred)
+ _____________________________________________________
+
+ In Delphi or C++Builder, select File, Open
+ and browse for the appropriate project group file:
+
+ Delphi 7        : TMSD7.BPG
+ Delphi 2007     : TMSD2007.BDSGROUP
+ Delphi 2009     : TMSD2009.GROUPPROJ
+ Delphi 2010     : TMSD2010GROUP.GROUPPROJ
+ Delphi XE       : TMSD2011GROUP.GROUPPROJ
+ Delphi XE2      : TMSDXE2GROUP.GROUPPROJ
+ Delphi XE3      : TMSDXE3GROUP.GROUPPROJ
+ Delphi XE4      : TMSDXE4GROUP.GROUPPROJ
+ Delphi XE5      : TMSDXE5GROUP.GROUPPROJ
+ Delphi XE6      : TMSDXE6GROUP.GROUPPROJ
+ Delphi XE7      : TMSDXE7GROUP.GROUPPROJ
+ Delphi XE8      : TMSDXE8GROUP.GROUPPROJ
+ Delphi 10 Seattle : TMSDXE9GROUP.GROUPPROJ
+
+ C++Builder 2007 : TMSC2007.GROUPPROJ
+ C++Builder 2009 : TMSC2009.GROUPPROJ
+ C++Builder 2010 : TMSC2010GROUP.GROUPPROJ
+ C++Builder XE   : TMSC2011GROUP.GROUPPROJ
+ C++Builder XE2  : TMSCXE2GROUP.GROUPPROJ
+ C++Builder XE3  : TMSCXE3GROUP.GROUPPROJ
+ C++Builder XE4  : TMSCXE4GROUP.GROUPPROJ
+ C++Builder XE5  : TMSCXE5GROUP.GROUPPROJ
+ C++Builder XE6  : TMSCXE6GROUP.GROUPPROJ
+ C++Builder XE7  : TMSCXE7GROUP.GROUPPROJ
+ C++Builder XE8  : TMSCXE8GROUP.GROUPPROJ
+ C++Builder 10 Seattle : TMSCXE9GROUP.GROUPPROJ
+
+ Right click on each of the packages in the project group 
+ and choose Install in following order:
+
+ TMSxxx
+ TMSEXxxx
+ TMSDExxx
+ TMSXLSxxx 
+ TMSWIZxxx (only Delphi 2007/2009/2010/XE/XE2/XE3/XE4/XE5/XE6/XE7/XE8/10 Seattle!)
+
+ with 
+ xxx = D7 for Delphi 7
+ xxx = D2007 for Delphi 2007
+ xxx = D2009 for Delphi 2009
+ xxx = D2010 for Delphi 2010
+ xxx = D2011 for Delphi XE
+ xxx = DXE2  for Delphi XE2
+ xxx = DXE3  for Delphi XE3  
+ xxx = DXE4  for Delphi XE4
+ xxx = DXE5  for Delphi XE5
+ xxx = DXE6  for Delphi XE6
+ xxx = DXE7  for Delphi XE7
+ xxx = DXE8  for Delphi XE8
+ xxx = DXE9  for Delphi 10 Seattle
+
+ xxx = C2007 for C++Builder 2007
+ xxx = C2009 for C++Builder 2009
+ xxx = C2010 for C++Builder 2010
+ xxx = C2011 for C++Builder XE
+ xxx = CXE2  for C++Builder XE2
+ xxx = CXE3  for C++Builder XE3
+ xxx = CXE4  for C++Builder XE4
+ xxx = CXE5  for C++Builder XE5
+ xxx = CXE6  for C++Builder XE6
+ xxx = CXE7  for C++Builder XE7
+ xxx = CXE8  for C++Builder XE8
+ xxx = CXE9  for C++Builder 10 Seattle
+
+ Installing components with packages (deprecated backwards compatible method)
+ ____________________________________________________________________________
+
+ In Delphi or C++Builder, select File, Open
+ and browse for the appropriate package file:
+
+  Delphi 7  : TMSD7PERS.DPK (Personal)
+  Delphi 7  : TMSD7.DPK & TMSEXD7.DPK (Professional, Enterprise, Architect versions) 
+
+  After opening the package file, choose Compile and after
+  compilation, select Install.
+
+ 
+  For Delphi 2007
+
+  Support for Win32 VCL for Delphi 2007 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSD2007.dproj and TMSEXD2007.dproj
+  From the project manager, right click on the TMSD2007.dproj and TMSEXD2007.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For RAD Studio 2007
+
+  Support for Win32 VCL for Delphi 2007 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSD2007.dproj and TMSEXD2007.dproj
+  From the project manager, right click on the TMSD2007.dproj and TMSEXD2007.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For Delphi 2009 / RAD Studio 2009
+
+  Support for Win32 VCL for Delphi 2009 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSD2009.dproj and TMSEXD2009.dproj
+  From the project manager, right click on the TMSD2009.dproj and TMSEXD2009.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder 2009
+
+  Support for Win32 VCL for C++Builder 2009 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSC2009.cbproj and TMSEXC2009.cbproj
+  From the project manager, right click on the TMSC2009.cbproj and TMSEXC2009.cbproj project and from the menu, choose
+  Install VCL package
+
+
+  For Delphi 2010 / RAD Studio 2010
+
+  Support for Win32 VCL for Delphi 2010 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSD2010.dproj and TMSEXD2010.dproj
+  From the project manager, right click on the TMSD2010.dproj and TMSEXD2010.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder 2010
+
+  Support for Win32 VCL for Delphi 2010 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSC2010.cbproj and TMSEXC2010.cbproj
+  From the project manager, right click on the TMSC2010.cbproj and TMSEXC2010.cbproj project and from the menu, choose
+  Install VCL package
+
+
+  For Delphi XE / RAD Studio XE
+
+  Support for Win32 VCL for Delphi XE Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSD2011.dproj and TMSEXD2011.dproj
+  From the project manager, right click on the TMSD2011.dproj and TMSEXD2011.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE
+
+  Support for Win32 VCL for Delphi 2010 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSC2011.cbproj and TMSEXC2011.cbproj
+  From the project manager, right click on the TMSC2011.cbproj and TMSEXC2011.cbproj project and from the menu, choose
+  Install VCL package 
+
+  For Delphi XE2 / RAD Studio XE2
+
+  Support for Win32 VCL for Delphi XE2 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE2.dproj and TMSEXDXE2.dproj
+  From the project manager, right click on the TMSDXE2.dproj and TMSEXDXE2.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE2
+
+  Support for Win32 VCL for Delphi XE2 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE2.cbproj and TMSEXCXE2.cbproj
+  From the project manager, right click on the TMSCXE2.cbproj and TMSEXCXE2.cbproj project and from the menu, choose
+  Install VCL package
+
+  For Delphi XE3 / RAD Studio XE3
+
+  Support for Win32 VCL for Delphi XE3 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE3.dproj and TMSEXDXE3.dproj
+  From the project manager, right click on the TMSDXE3.dproj and TMSEXDXE3.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE3
+
+  Support for Win32 VCL for Delphi XE3 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE3.cbproj and TMSEXCXE3.cbproj
+  From the project manager, right click on the TMSCXE3.cbproj and TMSEXCXE3.cbproj project and from the menu, choose
+  Install VCL package
+
+  For Delphi XE4 / RAD Studio XE4
+
+  Support for Win32 VCL for Delphi XE4 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE4.dproj and TMSEXDXE4.dproj
+  From the project manager, right click on the TMSDXE4.dproj and TMSEXDXE4.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE4
+
+  Support for Win32 VCL for Delphi XE4 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE4.cbproj and TMSEXCXE4.cbproj
+  From the project manager, right click on the TMSCXE4.cbproj and TMSEXCXE4.cbproj project and from the menu, choose
+  Install VCL package
+
+  For Delphi XE5 / RAD Studio XE5
+
+  Support for Win32 VCL for Delphi XE5 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE5.dproj and TMSEXDXE5.dproj
+  From the project manager, right click on the TMSDXE5.dproj and TMSEXDXE5.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE5
+
+  Support for Win32 VCL for Delphi XE5 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE5.cbproj and TMSEXCXE5.cbproj
+  From the project manager, right click on the TMSCXE5.cbproj and TMSEXCXE5.cbproj project and from the menu, choose
+  Install VCL package
+
+  For Delphi XE6 / RAD Studio XE6
+
+  Support for Win32 VCL for Delphi XE6 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE6.dproj and TMSEXDXE6.dproj
+  From the project manager, right click on the TMSDXE6.dproj and TMSEXDXE6.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE6
+
+  Support for Win32 VCL for Delphi XE6 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE6.cbproj and TMSEXCXE6.cbproj
+  From the project manager, right click on the TMSCXE6.cbproj and TMSEXCXE6.cbproj project and from the menu, choose
+  Install VCL package
+
+  For Delphi XE7 / RAD Studio XE7
+
+  Support for Win32 VCL for Delphi XE7 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE7.dproj and TMSEXDXE7.dproj
+  From the project manager, right click on the TMSDXE7.dproj and TMSEXDXE7.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE7
+
+  Support for Win32 VCL for Delphi XE7 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE7.cbproj and TMSEXCXE7.cbproj
+  From the project manager, right click on the TMSCXE7.cbproj and TMSEXCXE7.cbproj project and from the menu, choose
+  Install VCL package
+
+ 
+  For Delphi XE8 / RAD Studio XE8
+
+  Support for Win32 VCL for Delphi XE8 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE8.dproj and TMSEXDXE8.dproj
+  From the project manager, right click on the TMSDXE8.dproj and TMSEXDXE8.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder XE8
+
+  Support for Win32 VCL for Delphi XE8 Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE8.cbproj and TMSEXCXE8.cbproj
+  From the project manager, right click on the TMSCXE8.cbproj and TMSEXCXE8.cbproj project and from the menu, choose
+  Install VCL package
+
+
+  For Delphi 10 Seattle / RAD Studio 10 Seattle
+
+  Support for Win32 VCL for Delphi 10 Seattle Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSDXE9.dproj and TMSEXDXE9.dproj
+  From the project manager, right click on the TMSDXE9.dproj and TMSEXDXE9.dproj project and from the menu, choose
+  Install VCL package
+
+
+  For C++Builder 10 Seattle
+
+  Support for Win32 VCL for Delphi 10 Seattle Prof, Enterprise, Architect
+
+  In the IDE, select File, Open
+  browse for TMSCXE9.cbproj and TMSEXCXE9.cbproj
+  From the project manager, right click on the TMSCXE9.cbproj and TMSEXCXE9.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ Installing design time support (not for Std or Personal versions)
+ -----------------------------------------------------------------
+
+ In Delphi or C++Builder, select File, Open
+ and browse for the appropriate package file:
+
+  Delphi 7  : TMSDED7.DPK
+
+  After opening the package file, choose Compile and after
+  compilation, select Install.
+
+ For Delphi 2007
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDED2007.bdsproj
+  From the project manager, right click on the TMSDED2007.bdsproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For RAD Studio 2007
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDED2007.dproj
+  From the project manager, right click on the TMSDED2007.dproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi 2009 / RAD Studio 2009
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDED2009.dproj
+  From the project manager, right click on the TMSDED2009.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder 2009
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEC2009.cbproj
+  From the project manager, right click on the TMSDEC2009.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi 2010 / RAD Studio 2010
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDED2010.dproj
+  From the project manager, right click on the TMSDED2010.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder 2010
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEC2010.cbproj
+  From the project manager, right click on the TMSDEC2010.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi XE / RAD Studio XE
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDED2011.dproj
+  From the project manager, right click on the TMSDED2011.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEC2011.cbproj
+  From the project manager, right click on the TMSDEC2011.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE2 / RAD Studio XE2
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE2.dproj
+  From the project manager, right click on the TMSDEDXE2.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE2
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE2.cbproj
+  From the project manager, right click on the TMSDECXE2.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE3 / RAD Studio XE3
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE3.dproj
+  From the project manager, right click on the TMSDEDXE3.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE3
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE3.cbproj
+  From the project manager, right click on the TMSDECXE3.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE4 / RAD Studio XE4
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE4.dproj
+  From the project manager, right click on the TMSDEDXE4.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE4
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE4.cbproj
+  From the project manager, right click on the TMSDECXE4.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE5 / RAD Studio XE5
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE5.dproj
+  From the project manager, right click on the TMSDEDXE5.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE5
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE5.cbproj
+  From the project manager, right click on the TMSDECXE5.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi XE6 / RAD Studio XE6
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE6.dproj
+  From the project manager, right click on the TMSDEDXE6.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE6
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE6.cbproj
+  From the project manager, right click on the TMSDECXE6.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE7 / RAD Studio XE7
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE7.dproj
+  From the project manager, right click on the TMSDEDXE7.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE7
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE7.cbproj
+  From the project manager, right click on the TMSDECXE7.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi XE8 / RAD Studio XE8
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE8.dproj
+  From the project manager, right click on the TMSDEDXE8.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder XE8
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE8.cbproj
+  From the project manager, right click on the TMSDECXE8.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi 10 Seattle / RAD Studio 10 Seattle
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDEDXE9.dproj
+  From the project manager, right click on the TMSDEDXE9.dproj project and from the menu, choose
+  Install VCL package
+
+ 
+ For C++Builder 10 Seattle
+
+  Support for Win32
+
+  In the IDE, select File, Open
+  browse for TMSDECXE9.cbproj
+  From the project manager, right click on the TMSDECXE9.cbproj project and from the menu, choose
+  Install VCL package
+
+
+
+ Installing native XLS export / import
+ -------------------------------------
+
+ For Delphi 7
+
+  Delphi 7  : TMSXLSD7.DPK
+
+ 
+ For Delphi 2007
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSD2007.dproj
+
+  From the project manager, right click on the TMSXLSD2007.bdsproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi 2009 / RAD Studio 2009
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSD2009.dproj
+
+  From the project manager, right click on the TMSXLSD2009.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder 2009
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSC2009.cbproj
+
+  From the project manager, right click on the TMSXLSC2009.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi 2010 / RAD Studio 2010
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSD2010.dproj
+
+  From the project manager, right click on the TMSXLSD2010.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder 2010
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSC2010.cbproj
+
+  From the project manager, right click on the TMSXLSC2010.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE / RAD Studio XE
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSD2011.dproj
+
+  From the project manager, right click on the TMSXLSD2011.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSC2011.cbproj
+
+  From the project manager, right click on the TMSXLSC2011.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi XE2 / RAD Studio XE2
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE2.dproj
+
+  From the project manager, right click on the TMSXLSDXE2.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE2
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE2.cbproj
+
+  From the project manager, right click on the TMSXLSCXE2.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi XE3 / RAD Studio XE3
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE3.dproj
+
+  From the project manager, right click on the TMSXLSDXE3.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE3
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE3.cbproj
+
+  From the project manager, right click on the TMSXLSCXE3.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE4 / RAD Studio XE4
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE4.dproj
+
+  From the project manager, right click on the TMSXLSDXE4.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE4
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE4.cbproj
+
+  From the project manager, right click on the TMSXLSCXE4.cbproj project and from the menu, choose
+  Install VCL package
+
+ For Delphi XE5 / RAD Studio XE5
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE5.dproj
+
+  From the project manager, right click on the TMSXLSDXE5.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE5
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE5.cbproj
+
+  From the project manager, right click on the TMSXLSCXE5.cbproj project and from the menu, choose
+  Install VCL package
+
+
+ For Delphi XE6 / RAD Studio XE6
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE6.dproj
+
+  From the project manager, right click on the TMSXLSDXE6.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE6
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE6.cbproj
+
+  From the project manager, right click on the TMSXLSCXE6.cbproj project and from the menu, choose
+  Install VCL package
+
+For Delphi XE7 / RAD Studio XE7
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE7.dproj
+
+  From the project manager, right click on the TMSXLSDXE7.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE7
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE7.cbproj
+
+  From the project manager, right click on the TMSXLSCXE7.cbproj project and from the menu, choose
+  Install VCL package
+
+
+For Delphi XE8 / RAD Studio XE8
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE8.dproj
+
+  From the project manager, right click on the TMSXLSDXE8.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder XE8
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE8.cbproj
+
+  From the project manager, right click on the TMSXLSCXE8.cbproj project and from the menu, choose
+  Install VCL package
+
+
+For Delphi 10 Seattle / RAD Studio 10 Seattle
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSDXE9.dproj
+
+  From the project manager, right click on the TMSXLSDXE9.dproj project and from the menu, choose
+  Install VCL package
+
+ For C++Builder 10 Seattle
+ 
+  In the IDE, select File, Open
+  browse for TMSXLSCXE9.cbproj
+
+  From the project manager, right click on the TMSXLSCXE9.cbproj project and from the menu, choose
+  Install VCL package
+
+
+
+  Notes for TeeChart Pro users:
+  -----------------------------
+  The TMS Component Pack comes with support for the default installed
+  TeeChart in Delphi & C++Builder. If you have installed another version
+  of TeeChart, open the TMS Component Pack package file, remove TEE*.*
+  from the requires list of the package an press Install. Delphi or 
+  C++Builder will then automatically add the correct TeeChart library
+  reference to the TMS Component Pack package file.
+
+
+ Installing wizard support
+ -------------------------------------
+
+ For Delphi 7:
+
+  Delphi 7  : TMSWIZD7.DPK
+
+  After opening the package file, choose Compile and after
+  compilation, select Install.
+
+ For Delphi 2007, 2009, 2010, XE, XE2, XE3, XE4, XE5, XE6, XE7, XE8, 10 Seattle
+ 
+  In the IDE, select File, Open
+  browse for TMSWIZDxxxx.dproj
+
+  From the project manager, right click on the TMWIZSDxxxx.bdsproj project and from the menu, choose
+  Install VCL package
+
+
+
+  Installing online help
+  ______________________
+
+  Go through menu Help, Customize and add following file to the Index tab:
+  
+  Delphi 7     : TMSPACKD7.HLP
+
+  For Delphi 7 it is required to first put the TMSPACK.ALS file in the
+  {$DELPHI}\Help directory.
+
+  Delphi 2007 & C++Builder 2007
+  Close the IDE
+  Run RegHelp2 /i TMSPackdBDS5W.hxx
+  Restart the IDE
+
+  Delphi 2009 & C++Builder 2009
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRS2009W.hxx
+  Restart the IDE
+
+  Delphi 2010 & C++Builder 2010
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRS2010W.hxx
+  Restart the IDE
+
+  Delphi XE & C++Builder XE
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRSXE.hxx
+  Restart the IDE
+
+  Delphi XE2 & C++Builder XE2
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRSXE2.hxx
+  Restart the IDE
+
+  Delphi XE3 & C++Builder XE3
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRSXE3.hxx
+  Restart the IDE
+
+  Delphi XE4 & C++Builder XE4
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRSXE4.hxx
+  Restart the IDE
+
+  Delphi XE5 & C++Builder XE5
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRSXE5.hxx
+  Restart the IDE
+
+  Delphi XE6 & C++Builder XE6
+  Close the IDE
+  Run RegHelp2 /i TMSPackdRSXE6.hxx
+  Restart the IDE
+
+Examples
+--------
+Examples for components usage can be obtained after login on the
+website with registration email & code and are included as well
+in the freeware distribution files and available for free download 
+at : http://www.tmssoftware.com
+
+
+Free updates for a full version cycle :
+---------------------------------------
+Free source code updates to all new versions
+during a full TMS Component Pack version cycle
+are available upon request. New versions are
+released at : http://www.tmssoftware.com
+and source code can be obtained after login on
+our website in the registered users section.
+
+
+Installing Add-on components
+----------------------------
+Several add-on components require other 3rd party libraries to be installed.
+In case you have these 3rd party libraries installed, you can use the components.
+
+Installation can be done by adding following files to the TMS Component Pack package
+file :
+
+TChartLink : Add ChartLinkReg.pas
+TAddictPlannerCheck : Add AddictPlannerCheckReg.pas
+TEmailAlarm : Add PlanEmailAlarm.pas
+TOxygenSMSAlaram : Add PlanSMSAlarm.pas

@@ -1,0 +1,32 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = AlphaBlendingDemo.exe DragDropDemo.exe FeaturesDemo.exe GroupControlDemo.exe \
+Office12ViewsDemo.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+AlphaBlendingDemo.exe: AlphaBlendingDemo\AlphaBlendingDemo.dpr
+  $(DCC)
+
+DragDropDemo.exe: DragDropDemo\DragDropDemo.dpr
+  $(DCC)
+
+FeaturesDemo.exe: FeaturesDemo\FeaturesDemo.dpr
+  $(DCC)
+
+GroupControlDemo.exe: GroupControlDemo\GroupControlDemo.dpr
+  $(DCC)
+
+Office12ViewsDemo.exe: Office12ViewsDemo\Office12ViewsDemo.dpr
+  $(DCC)

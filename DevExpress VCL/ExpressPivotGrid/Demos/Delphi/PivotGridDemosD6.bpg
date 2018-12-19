@@ -1,0 +1,35 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = OrderReportsDemo.exe MultipleTotalsDemo.exe SortBySummaryDemo.exe UnboundExternalDemo.exe \
+StylesMultiDemo.exe CustomDrawDemo.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+OrderReportsDemo.exe: OrderReportsDemo\OrderReportsDemo.dpr
+  $(DCC)
+
+MultipleTotalsDemo.exe: MultipleTotalsDemo\MultipleTotalsDemo.dpr
+  $(DCC)
+
+SortBySummaryDemo.exe: SortBySummaryDemo\SortBySummaryDemo.dpr
+  $(DCC)
+
+UnboundExternalDemo.exe: UnboundExternalDemo\UnboundExternalDemo.dpr
+  $(DCC)
+
+StylesMultiDemo.exe: StylesMultiDemo\StylesMultiDemo.dpr
+  $(DCC)
+
+CustomDrawDemo.exe: CustomDrawDemo\CustomDrawDemo.dpr
+  $(DCC)

@@ -1,0 +1,17 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="SpellCheckerSimpleDemo">
+    <MSBuild Projects="SimpleDemo\SpellCheckerSimpleDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="SpellCheckerMegaDemo">
+    <MSBuild Projects="MegaDemo\SpellCheckerMegaDemoRSC11.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="SpellCheckerSimpleDemoRSC11;SpellCheckerMegaDemoRSC11" />
+  </Target>
+</Project>

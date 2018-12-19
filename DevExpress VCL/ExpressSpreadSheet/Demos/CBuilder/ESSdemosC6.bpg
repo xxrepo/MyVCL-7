@@ -1,0 +1,28 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = CustomFunctionC6.exe FeaturesDemoC6.exe StocksC6.exe FlyingC6.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+CustomFunctionC6.exe: CustomFunctionDemo\CustomFunctionC6.bpr
+  $(MAKE)
+
+FeaturesDemoC6.exe: FeaturesDemo\FeaturesDemoC6.bpr
+  $(MAKE)
+
+StocksC6.exe: StocksDemo\StocksC6.bpr
+  $(MAKE)
+
+FlyingC6.exe: FlyingDemo\FlyingC6.bpr
+  $(MAKE)

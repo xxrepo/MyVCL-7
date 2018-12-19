@@ -1,0 +1,20 @@
+In this demo you can:
+
+ - Create/delete/edit events (use popupmenus, inplace editor and dialogs)
+
+ - See and use the integrated popup menu
+
+ - See how the scheduler changes its appearance depending on the Look&Feel used (Look&Feel menu)
+
+- Menu File/Export:
+	- export data in either Excel's format, as text, html or xml
+
+- Menu File/Synchronization:
+	- synchronize the scheduler with MS Outlook®
+	- synchronize MS Outlook® with the scheduler
+
+- Menu Task Options/HotTrack:
+	- Highlight the task link when the mouse pointer hovers over this task link
+
+- Menu Task Options/Show As Progress:
+	- Display progress to the due date

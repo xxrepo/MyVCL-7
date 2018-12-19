@@ -1,0 +1,29 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="FeaturesDemo">
+    <MSBuild Projects="FeaturesDemo\FeaturesDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="AlphaBlendingDemo">
+    <MSBuild Projects="AlphaBlendingDemo\AlphaBlendingDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemo">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="GroupControlDemo">
+    <MSBuild Projects="GroupControlDemo\GroupControlDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="Office12ViewsDemo">
+    <MSBuild Projects="Office12ViewsDemo\Office12ViewsDemoRSC14.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="FeaturesDemoRSC14;AlphaBlendingDemoRSC14;DragDropDemoRSC14;GroupControlDemoRSC14;Office12ViewsDemoRSC14" />
+  </Target>
+</Project>

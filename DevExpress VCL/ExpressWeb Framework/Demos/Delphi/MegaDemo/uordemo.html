@@ -1,0 +1,84 @@
+<HTML>
+  <HEAD>
+    <TITLE><%=Context.Page.Title%></TITLE>
+  </HEAD>
+  <BODY bgcolor="white">
+<!--#include file="head.html"-->
+<%
+  var Data = [["ExpressQuantumGrid", "EQuantumGrid.jpg", "The Limitless Grid - TreeList - and Field Editors control library for the VCL. Includes over 45 components to help you create killer applications without writing a single line of code. The ExpressQuantumGrid Suite is available in both a Professional and Standard Editions.", "299.99"],
+	      ["ExpressQuantumTreeList", "ETreelist.jpg", "Data aware and non-data aware TreeList technology - along with 34 standalone field editors. With these components, you can quickly display self-referenced hierarchical data using both a tree and list display metaphor as well as build top-notch data entry forms, without writing a single line of code.", "199.99"],
+              ["ExpressBars", "Ebars.jpg", "The Unrivaled ExpressBars Suite - Fully emulate the menu/toolbar and sidebar navigation systems introduced in MS Officer 97, 2000, and Internet Explorer. In fact, with version 4, you can even emulate the new toolbar/menu system introduced in the yet unreleased version of Office 10 and the .NET IDE!", "179.99"],
+	      ["ExpressMasterView", "Emasterv.jpg", "ExpressMasterView is specifically designed for Delphi and C++Builder developers who need to represent multiple datasets in a hierarchal manner within a single grid control.", "199.99"],
+              ["ExpressPrinting System", "Eprint.jpg", "Take a sledge hammer to traditional banded reports, and the hassles associated with their creation, with the only full featured data rendering and printing engine for the VCL. When you start using the ExpressPrinting System, you can bring your application to the printed page by rendering visual controls such as the ExpressQuantumGrid and ExpressMasterView - giving you reports on-the-fly without actually creating a single report!", "179.99"],
+              ["ExpressDBTree", "EDBTree.jpg", "Fast, efficient data aware and non data aware Tree Suite with the New Developer Express re-sizeable drop down window technology, to help you represent self-referenced tables via familiar tree structures.", "89.99"],
+              ["ExpressInspector", "EInspector.jpg", "A powerful-easy to use and resource friendly suite of components to help you build user friendly applications easily and without any hassles... The suite includes 14 unique in-place editors to solve all your data entry requirements.", "129.99"],
+              ["ExpressOrgChart", "EOrgChart.jpg", "Specifically designed for VCL programmers to display hierarchical tree information using the powerful display properties of charts such as those found in products like Visior&amp;reg;.", "129.99"],
+              ["ExpressFlowChart", "EFlowChart.jpg", "The Power to display and edit charts of any style and manner... You can finally build information and workflow diagrams, hierarchical charts, network topologies, equation graphs and so much more.", "129.99"]];
+%>
+
+<STYLE>
+<!--
+  .Title { color:#800080;font-family:"Times New Roman";font-size:22pt;font-weight:bold;}
+  .desc { font-weight : bold; font-size : 9pt; }
+  .head { color : White; font-size : 12px; font-weight : bold; font-family : Arial, Helvetica, sans-serif; }
+-->
+</STYLE>
+
+<%
+  var FormRender = "noRender";
+  if (wbBuy.Tag == 0) FormRender = "endtablerender";
+%>
+<ewf:form id="<%=Form.Name%>" renderchildren="<%=FormRender%>">
+
+<DIV class="Title">Order Form</DIV>
+<TABLE width="769" cellspacing="0" cellpadding="0" bgcolor="navy"><TD><TD></TD></TR></TABLE>
+
+<%if (wbBuy.Tag != 0) {%>
+<TABLE width="769" >
+ <TR>
+  <TD align=center>
+  <H1>Congratulation !</H1>
+  <P>Dear&nbsp;<%=wedFirstName.Text%>&nbsp;<%=wedLastName.Text%>, you became the fortunate possessor of the world best Delphi components:
+  <%for(var i = 0; i < Data.length; i ++)
+    {
+      if (eval('Quantity' + i).Tag > 0)
+      {%>
+        <H3><%=Data[i][0]%></H3>
+      <%}
+    }%>
+    <H>and only for <SPAN class="Title"><%=TotalPrice.Caption%> !</SPAN>
+  </TD>
+ </TR>
+</TABLE>
+<%} else {%>
+<H2>&nbsp;&nbsp;Products</H2>
+<TABLE border="0" cellspacing="1" cellpadding="7" bgcolor="navy">
+  <TR bgcolor="#3399FF" align="center" class="head">
+    <TD>Product</TD>
+    <TD>Short&nbsp;Description</TD>
+    <TD>Unit&nbsp;Price</TD>
+    <TD>Quantity</TD>
+    <TD>Total&nbsp;Price</TD>
+  </TR>
+<%for(var i = 0; i < Data.length; i ++)
+  {%>
+  <TR bgcolor="white">
+    <TD><ewf:Image id="Image<%=i%>" PictureURL="<%=QualifyImage(Data[i][1])%>" AltText="<%=Data[i][0]%>"></TD>
+    <TD><P><ewf:Label id="Description<%=i%>" caption="<%=Data[i][2]%>" AutoSize=false Height=75 Width=420 WordWrap=true Styles.Default=stDescription></P></TD>
+    <TD align="center"><ewf:Label id="Price<%=i%>" caption="$<%=Data[i][3]%>" Width=60 Alignment=whalCenter></TD>
+    <TD align="center"><ewf:Edit id="Quantity<%=i%>" text="0" size=3></TD>
+    <TD align="center"><ewf:Label id="TotalPrice<%=i%>" caption="$0" Width=80 Alignment=whalCenter></TD>
+  </TR>
+<%}%>
+  <TR bgcolor="#FFCC99">
+    <TD colspan="2" align="center"><ewf:Button id="wbCalculate" Caption="Re-Calculate" Width=100 Height=25 onclick=wbCalcClick Styles.Default = stButtonDef></TD>
+    <TD colspan="2" align="right" class="desc">TOTAL:</TD>
+    <TD align="right" style="color: red;"><ewf:Label id="TotalPrice" caption="$0" Width=80 Alignment=whalCenter></TD>
+  </TR>
+<% } %>
+</TABLE>
+
+</ewf:form>
+<!--#include file="tail.html"-->
+  </BODY>
+</HTML>

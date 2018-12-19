@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012.10.25 11:49:03.063.pas,C:\Users\abalyaev\Documents\RAD Studio\Projects\Unit2.pas=D:\Sys32_Delphi2010\ReadOleStorage\Main.pas</Transaction>
+    <Transaction>2012.10.25 11:49:03.063.dfm,C:\Users\abalyaev\Documents\RAD Studio\Projects\Unit2.dfm=D:\Sys32_Delphi2010\ReadOleStorage\Main.dfm</Transaction>
+    <Transaction>2012.10.25 11:49:11.915.dproj,C:\Users\abalyaev\Documents\RAD Studio\Projects\Project2.dproj=D:\Sys32_Delphi2010\ReadOleStorage\MsgReader.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

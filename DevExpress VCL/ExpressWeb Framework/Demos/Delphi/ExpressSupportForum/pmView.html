@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title><%=Context.Page.Title%></title>
+    <link rel="stylesheet" href="/dx.css" type="text/css">
+  </head>
+  <body>
+    <ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<input type="hidden" name="isbook" value="1" >
+<input type="hidden" name="aid" value="<%= Form.ArticleId%>" >
+
+<%
+  version_str = Form.Versions;
+  platform_str = Form.Platforms;
+%>
+<table border="0" valign="middle" cellspacing="0" cellpadding="0" bgcolor=#ffc454 width="100%" >
+<tr>
+  <td colspan="2"><IMG height=6 src="/dxforum/images/1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td><IMG height=1 src="/1x1.gif" width=20></td>
+  <td width="2000">
+    <div style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Arial" 
+     ><b>ARTICLE:</b> <%=Form.Subject%></div>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><IMG height=5 src="/dxforum/images/1x1.gif" width=20></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="white"><IMG height=2 src="/dxforum/images/1x1.gif" width=20></td>
+</tr>
+</table>
+
+
+<table width="100%" border=0 bgcolor=#d3d3d3 >
+<tr>
+<td align=left><span style="FONT-SIZE: 9pt; FONT-FAMILY: Arial"><b>Source:&nbsp;</b><%=Form.Source%></span></td>
+<td align=right><span style="FONT-SIZE: 9pt; FONT-FAMILY: Arial"><b>Expert:</b>&nbsp;<A href="mailto:<%=Form.ExpertEmail%>"><%=Form.ExpertFName%>&nbsp;<%=Form.ExpertMName%>&nbsp;<%=Form.ExpertLName%></A></span></td></tr>
+<tr><td align=left><span style="FONT-SIZE: 9pt; FONT-FAMILY: Arial"><b>IDE version: </b><%=version_str%></span></td>
+<td align=right><span style="FONT-SIZE: 9pt; FONT-FAMILY: Arial"><%=Form.CompanyName%></span></td></tr>
+<tr><td align=left><span style="FONT-SIZE: 9pt; FONT-FAMILY: Arial"><b>Platform: </b><%=platform_str%></span></td>
+<td align=right><span style="FONT-SIZE: 9pt; FONT-FAMILY: Arial"><a href="<%=Form.ExpertWWW%>" target=new><%=Form.ExpertWWW%></span></A></td></tr>
+</table></FONT>
+<p><%=Form.Body%></p>
+
+<%
+if(Form.AttCount > 0)
+{%>
+	<div >Attachments<hr></div>
+	<%
+	for(i = 0; i < Form.AttCount; i++)
+	{%>
+	<div > <A href="../attachments/<%=Form.AttFileName%>"><%=Form.AttDisplayName%></A></div>
+	<%
+    j = Form.MoveNextAttach;
+	}%>
+	<div ><hr></div>
+	<%
+}
+%>
+  </ewf:Form><!--#include file="copy.inc"-->
+  </body>
+</html>
+

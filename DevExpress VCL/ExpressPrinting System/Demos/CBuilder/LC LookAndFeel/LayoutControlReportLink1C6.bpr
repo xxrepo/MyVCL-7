@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--C++Builder XML Project-->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="LayoutControlReportLink1.exe"/>
+    <OBJFILES value="LayoutControlReportLink1.obj Unit1.obj"/>
+    <RESFILES value="LayoutControlReportLink1.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dxPSLnksC6.lib dxpsdxlc2lnkc5.lib VCLX.lib dxPSCoreC6.lib dxLayoutControlC6.lib dxThemeC6.lib dxGDIPlusC6.lib cxLibraryVCLC6.lib vcldb.lib dbrtl.lib bdertl.lib adortl.lib vcl.lib rtl.lib dxCoreC6.lib cxPageControlVCLC6.lib cxExtEditorsVCLC6.lib cxDataC6.lib cxEditorsVCLC6.lib "/>
+    <SPARELIBS value="vcl.lib rtl.lib vcldb.lib dbrtl.lib bdertl.lib adortl.lib cxLibraryVCLC6.lib dxGDIPlusC6.lib dxThemeC6.lib dxLayoutControlC6.lib dxPSCoreC6.lib VCLX.lib dxPSdxLCLnkC6.lib dxPSLnksC6.lib dxCoreC6.lib cxPageControlVCLC6.lib cxExtEditorsVCLC6.lib cxDataC6.lib cxEditorsVCLC6.lib "/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="iLink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="LayoutControlReportLink1.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;..\..\..\..\Library\CBuilder6"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib;..\..\..\..\Library\CBuilder6"/>
+    <WARNINGS value="-w-par"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tW -tWM -D$(SYSDEFINES);$(USERDEFINES)"/>
+    <LFLAGS value="-aa -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib "/>
+  </LINKER>
+  <IDEOPTIONS/>
+</PROJECT>

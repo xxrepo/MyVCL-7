@@ -1,0 +1,204 @@
+:Base ExpressQuantumTreeList5.hlp
+:Title ExpressQuantumTreeList Suite 5
+:Index ExpressQuantumTreeList Suite 5=ExpressQuantumTreeList5.hlp
+1 ExpressQuantumTreeList Suite 5
+2 Introduction=IDH_bc_Introduction
+2 Getting Started=Getting_Started
+2 What's New in v5=CD_Whats_New_in_v5
+2 Known Issues and Important Changes List=CD_Known_Issues_and_Important_Changes_List
+2 Concepts
+3 Getting Started=Getting_Started
+3 Data Loading Modes=IDH_bc_Data_Loading_Modes
+3 Options=IDH_bc_Options
+3 Self-Referenced Dataset=IDH_bc_Self_Referenced_Dataset
+3 Visual Elements=TreeList_Elements_Review
+2 Feature Center
+3 Feature Center=CD_Features_Feature_Center>Feature
+3 Data Exchange
+4 Data Exchange (Overview)=CD_Features_Data_Exchange
+4 Bind to a Data Source=CD_DataExchange_Bind_to_a_Data_Source
+4 Copy Data to the Clipboard=CD_DataExchange_Copy_Data_to_the_Clipboard
+4 Export Data=CD_DataExchange_Export_Data
+4 Print Data=CD_DataExchange_Print_Data
+3 Data-Related Features
+4 Data-Related Features (Overview)=CD_Features_Data-Related_Features
+4 Cell Value Formatting=CD_DataRelatedFeatures_Cell_Value_Formatting
+4 Footer Summaries=CD_DataRelatedFeatures_Footer_Summaries
+4 Group Summaries=CD_DataRelatedFeatures_Group_Summaries
+4 In-place Editors=IDH_bc_Inplace_Editors
+4 Sorting Data=CD_DataRelatedFeatures_Sorting_Data
+4 Source Data Persistence=CD_DataRelatedFeatures_Source_Data_Persistence
+3 Layout Features
+4 Layout Features (Overview)=CD_Features_Layout_Features
+4 Categorized Columns=CD_LayoutFeatures_Categorized_Columns
+4 Customization Form=CD_Customization_Form
+4 Expandable Bands=CD_LayoutFeatures_Expandable_Bands
+4 Fixed Bands=CD_LayoutFeatures_Fixed_Bands
+4 Multi-Line Cells=CD_LayoutFeatures_MultiLine_Cells
+4 Nested Bands=CD_LayoutFeatures_Nested_Bands
+4 Save and Restore Layout=CD_LayoutFeatures_Save_and_Restore_Layout
+4 Stacked Columns=CD_LayoutFeatures_Stacked_Columns
+3 Focus and Selection
+4 Focus and Selection (Overview)=CD_Features_Focus_and_Selection
+4 Navigation and Scrolling=CD_FocusNavigation_Navigation_and_Scrolling
+4 Selection=CD_FocusNavigation_Selection
+3 Appearance
+4 Appearance (Overview)=CD_Appearance
+4 Custom Draw=IDH_bc_Custom_Draw
+4 Style Customization=CD_Style_Customization
+2 Visual Elements
+3 Visual Elements (Overview)=CD_Visual_Elements>Feature
+3 Band=CD_VisualElements_Band
+3 Band Header=CD_VisualElements_Band_Header
+3 Band Header Panel=CD_VisualElements_Band_Header_Panel
+3 Column=CD_VisualElements_Column
+3 Column Header=CD_VisualElements_Column_Header
+3 Column Header Panel=CD_VisualElements_Column_Header_Panel
+3 Data Cell=CD_VisualElements_Data_Cell
+3 Expand Button=CD_VisualElements_Expand_Button
+3 Fixed Band Separator=CD_VisualElements_Fixed_Band_Separator
+3 Footer=CD_VisualElements_Footer
+3 Footer Cell=CD_VisualElements_Footer_Cell
+3 Grid Line=CD_VisualElements_Grid_Line
+3 Group Footer=CD_VisualElements_Group_Footer
+3 Group Footer Cell=CD_VisualElements_Group_Footer_Cell
+3 Header Panel=CD_VisualElements_Header_Panel
+3 Indent Cell=CD_VisualElements_Indent_Cell
+3 Node=CD_VisualElements_Node
+3 Node Indicator=CD_VisualElements_Node_Indicator
+3 Preview=CD_VisualElements_Preview
+3 Quick Band Customization Button=CD_VisualElements_Quick_Band_Customization_Button
+3 Quick Column Customization Button=CD_VisualElements_Quick_Column_Customization_Button
+3 Tree Line=CD_VisualElements_Tree_Line
+2 Design-Time Features
+3 Design-Time Features (Overview)=CD_Features_DesignTime>Feature
+3 Component Editor=CD_DesignTimeFeatures_Component_Editor
+3 Items Editor=CD_DesignTimeFeatures_Items_Editor
+3 On-Form Object Access=CD_DesignTimeFeatures_OnForm_Object_Access
+2 End-User Capabilities
+3 End-User Capabilities (Overview)=CD_EndUser_Capabilities>Feature
+3 Calculating Summaries=CD_EndUser_Capabilities_Calculating_Summaries
+3 Controlling the Visibility of Bands and Columns=CD_EndUser_Capabilities_Controlling_the_Visibility_of_Bands_and_Columns
+3 Data Editing=CD_EndUser_Capabilities_Data_Editing
+3 Expanding and Collapsing Nodes=CD_EndUser_Capabilities_Expanding_and_Collapsing_Nodes
+3 Focusing and Selecting Nodes=CD_EndUser_Capabilities_Focusing_and_Selecting_Nodes
+3 Incremental Search=CD_EndUser_Capabilities_Incremental_Search
+3 Navigating Through Cells=CD_EndUser_Capabilities_Navigating_Through_Cells
+3 Reordering Bands and Columns=CD_EndUser_Capabilities_Reordering_Bands_and_Columns
+3 Reordering Nodes=CD_EndUser_Capabilities_Reordering_Nodes
+3 Resizing Bands and Columns=CD_EndUser_Capabilities_Resizing_Bands_and_Columns
+3 Resizing Nodes=CD_EndUser_Capabilities_Resizing_Nodes
+3 Sorting Nodes=CD_EndUser_Capabilities_Sorting_Nodes
+2 Task-Based Help
+3 Task-Based Help (Overview)=CD_TaskBased_Help>Feature
+2 Member Tables
+3 Member Table: Appearance=CD_MemberTable_Appearance
+3 Member Table: Bind to a Data Source=CD_MemberTable_Bind_to_a_Data_Source
+3 Member Table: Categorized Columns=CD_MemberTable_Categorized_Columns
+3 Member Table: Expandable Bands=CD_MemberTable_Expandable_Bands
+3 Member Table: Export Data=CD_MemberTable_Export_Data
+3 Member Table: Fixed Bands=CD_MemberTable_Fixed_Bands
+3 Member Table: Footer Summaries=CD_MemberTable_Footer_Summaries
+3 Member Table: Group Summaries=CD_MemberTable_Group_Summaries
+3 Member Table: Navigation and Scrolling=CD_MemberTable_Navigation_and_Scrolling
+3 Member Table: Nested Bands=CD_MemberTable_Nested_Bands
+3 Member Table: Save and Restore Layout=CD_MemberTable_Save_and_Restore_Layout
+3 Member Table: Selection=CD_MemberTable_Selection
+3 Member Table: Sorting Data=CD_MemberTable_Sorting_Data
+3 Member Table: Stacked Columns=CD_MemberTable_Stacked_Columns
+2 Resource Strings
+3 ExpressQuantumTreeList: Resource Strings=IDH_bc_Resource_Strings
+2 Reference
+3 cxCustomTreeList
+4 TcxCustomTreeList=IDH_Class_TcxCustomTreeList
+4 TcxCustomDataTreeList=IDH_Class_TcxCustomDataTreeList
+3 cxDBTreeList
+4 TcxCustomDBTreeList=IDH_Class_TcxCustomDBTreeList
+4 TcxDBTreeList=IDH_Class_TcxDBTreeList
+3 cxTreeList
+4 TcxTreeList=IDH_Class_TcxTreeList
+3 cxVirtualTreeList
+4 TcxCustomVirtualTreeList=IDH_Class_TcxCustomVirtualTreeList
+4 TcxVirtualTreeList=IDH_Class_TcxVirtualTreeList
+3 Units
+4 cxDBTL Unit Overview=IDH_Unit_cxDBTL
+4 cxTL Unit Overview=IDH_Unit_cxTL
+4 cxTLData Unit Overview=IDH_Unit_cxTLData
+4 cxTLExportLink Unit Overview=IDH_Unit_cxTLExportLink
+3 Bands
+4 TcxTreeListBand=IDH_Class_TcxTreeListBand
+4 TcxTreeListBands=IDH_Class_TcxTreeListBands
+4 TcxTreeListBandOptions=IDH_Class_TcxTreeListBandOptions
+3 Band Rows
+4 TcxTreeListBandRow=IDH_Class_TcxTreeListBandRow
+4 TcxTreeListBandRows=IDH_Class_TcxTreeListBandRows
+3 Columns
+4 TcxDBTreeListColumn=IDH_Class_TcxDBTreeListColumn
+4 TcxTreeListColumn=IDH_Class_TcxTreeListColumn
+4 TcxTreeListColumnPosition=IDH_Class_TcxTreeListColumnPosition
+4 TcxTreeListColumnOptions=IDH_Class_TcxTreeListColumnOptions
+3 Context Menus
+4 TcxTreeListBuiltInMenu=IDH_Class_TcxTreeListBuiltInMenu
+4 TcxTreeListColumnHeaderPopupMenu=IDH_Class_TcxTreeListColumnHeaderPopupMenu
+4 TcxTreeListCustomBuiltInMenu=IDH_Class_TcxTreeListCustomBuiltInMenu
+4 TcxTreeListCustomPopupMenu=IDH_Class_TcxTreeListCustomPopupMenu
+4 TcxTreeListFooterPopupMenu=IDH_Class_TcxTreeListFooterPopupMenu
+4 TcxTreeListGroupFooterPopupMenu=IDH_Class_TcxTreeListGroupFooterPopupMenu
+4 TcxTreeListPopupMenu=IDH_Class_TcxTreeListPopupMenu
+4 TcxTreeListPopupMenus=IDH_Class_TcxTreeListPopupMenus
+3 Data Controllers
+4 TcxDataTreeListDataController=IDH_Class_TcxDataTreeListDataController
+4 TcxDBTreeListDataController=IDH_Class_TcxDBTreeListDataController
+4 TcxTreeListCustomDataSource=IDH_Class_TcxTreeListCustomDataSource
+4 TcxTreeListDataController=IDH_Class_TcxTreeListDataController
+4 TcxDBItemDataBinding=IDH_Class_TcxDBItemDataBinding
+3 HitTests
+4 TcxTreeListHitTest=IDH_Class_TcxTreeListHitTest
+3 Nodes
+4 TcxDBTreeListNode=IDH_Class_TcxDBTreeListNode
+4 TcxTreeListNode=IDH_Class_TcxTreeListNode
+4 TcxUnboundTreeListNode=IDH_Class_TcxUnboundTreeListNode
+4 TcxVirtualTreeListNode=IDH_Class_TcxVirtualTreeListNode
+3 Options
+4 TcxDBTreeListOptionsData=IDH_Class_TcxDBTreeListOptionsData
+4 TcxTreeListOptionsBehavior=IDH_Class_TcxTreeListOptionsBehavior
+4 TcxTreeListOptionsCustomizing=IDH_Class_TcxTreeListOptionsCustomizing
+4 TcxTreeListOptionsData=IDH_Class_TcxTreeListOptionsData
+4 TcxTreeListOptionsSelection=IDH_Class_TcxTreeListOptionsSelection
+4 TcxTreeListOptionsView=IDH_Class_TcxTreeListOptionsView
+4 TcxVirtualTreeListOptionsData=IDH_Class_TcxVirtualTreeListOptionsData
+3 Preview
+4 TcxTreeListPreview=IDH_Class_TcxTreeListPreview
+3 Styles
+4 TcxTreeListBandStyles=IDH_Class_TcxTreeListBandStyles
+4 TcxTreeListColumnStyles=IDH_Class_TcxTreeListColumnStyles
+4 TcxTreeListStyles=IDH_Class_TcxTreeListStyles
+4 TcxTreeListStyleSheet=IDH_Class_TcxTreeListStyleSheet
+3 Summaries
+4 TcxTreeListColumnSummary=IDH_Class_TcxTreeListColumnSummary
+4 TcxTreeListSummary=IDH_Class_TcxTreeListSummary
+4 TcxTreeListSummaryItem=IDH_Class_TcxTreeListSummaryItem
+4 TcxTreeListSummaryItems=IDH_Class_TcxTreeListSummaryItems
+3 ViewInfo
+4 TcxTreeListBandCellViewInfo=IDH_Class_TcxTreeListBandCellViewInfo
+4 TcxTreeListCustomCellViewInfo=IDH_Class_TcxTreeListCustomCellViewInfo
+4 TcxTreeListCustomHeaderCellViewInfo=IDH_Class_TcxTreeListCustomHeaderCellViewInfo
+4 TcxTreeListEditCellViewInfo=IDH_Class_TcxTreeListEditCellViewInfo
+4 TcxTreeListFooterCellViewInfo=IDH_Class_TcxTreeListFooterCellViewInfo
+4 TcxTreeListHeaderCellViewInfo=IDH_Class_TcxTreeListHeaderCellViewInfo
+4 TcxTreeListIndentCellViewInfo=IDH_Class_TcxTreeListIndentCellViewInfo
+4 TcxTreeListIndicatorCellViewInfo=IDH_Class_TcxTreeListIndicatorCellViewInfo
+3 Miscellaneous Classes And Types
+4 TcxTreeListBandExpandable=IDH_TcxTreeListBand_Expandable
+4 TcxTreeListBuiltInMenuItemType=IDH_Type_TcxTreeListBuiltInMenuItemType
+4 TcxTreeListCaption=IDH_Class_TcxTreeListCaption
+4 TcxTreeListCustomizing=IDH_Class_TcxTreeListCustomizing
+4 TcxTreeListImageIndexType=IDH_Type_TcxTreeListImageIndexType
+4 TcxTreeListLikeParams=IDH_Class_TcxTreeListLikeParams
+4 TcxTreeListNodeAttachMode=IDH_Type_TcxTreeListNodeAttachMode
+4 TcxTreeListNodeCheckGroupType=IDH_TcxTreeListNode_CheckGroupType
+3 Routines
+4 cxExportTLToExcel=IDH_cxTLExportLink_cxExportTLToExcel
+4 cxExportTLToHTML=IDH_cxTLExportLink_cxExportTLToHTML
+4 cxExportTLToText=IDH_cxTLExportLink_cxExportTLToText
+4 cxExportTLToXML=IDH_cxTLExportLink_cxExportTLToXML

@@ -1,0 +1,38 @@
+<!--#include file="head.html"-->
+<%
+  ProductNames = new Array(
+    "Bars",
+    "Grid",
+    "Inspector",
+    "OrgChart",
+    "FlowCahrt");
+  ProductPrices = new Array(10, 20, 30, 40, 50);
+%>
+<table cellspacing="0" cellpadding="0" border="1">
+  <tr Align="center" bgcolor="Silver">
+    <th>Product</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Totals</th>
+  </tr>
+  <%for(var i = 0; i < ProductNames.length; i++) {%>
+  <tr>
+    <td><%=ProductNames[i]%></td>
+    <td><%="$"+ProductPrices[i]%></td>
+    <td><input type="edit" value=""></td>
+    <td><%=ProductPrices[i]%></td>
+  </tr>
+  <%}%>
+  <tr><td colspan=4></td></tr>
+  <tr>
+    <td colspan=3>Total for this purshase:</td>
+    <td>$0</td>
+  </tr>
+  <tr>
+    <td colspan=3></td>
+    <td><input type="submit" value="Calc"></td>
+  </tr>
+</table>
+<#FORMRENDER>
+<#STYLES><#WARNINGS>
+<!--#include file="tail.html"-->

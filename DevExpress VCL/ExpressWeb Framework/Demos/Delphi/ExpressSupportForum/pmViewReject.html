@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title><%=Context.Page.Title%></title>
+    <link rel="stylesheet" href="/dx.css" type="text/css">
+  </head>
+  <body><ewf:Form id="<%=Form.Name%>" renderchildren="endRender">
+<table border="0" valign="middle" cellspacing="0" cellpadding="0" bgcolor=#FFC454 width=100%>
+<tr>
+  <td colspan="2"><img src="/dxforum/images/1x1.gif" width="20" height="6"></td>
+</tr>
+<tr>
+  <td><img src="/dxforum/images/1x1.gif" width="20" height="1"></td>
+  <td width="2000">
+    <div style=" font-size: 8pt; color: black; font-family: Arial"><b>QUESTION:</b> <%=Form.Subject%></div>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><img src="/dxforum/images/1x1.gif" width="20" height="5"></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="white"><img src="/dxforum/images/1x1.gif" width="20" height="2"></td>
+</tr>
+</table>
+<P style="font-family: Arial; font-size: 9pt;">Experts:&nbsp;<a href="mailto:<%=Form.EMail%>">
+<%=Form.FName%>&nbsp;
+<%=Form.MName%>&nbsp;
+<%=Form.LName%></a>
+<table border="0" valign="middle" cellspacing="0" cellpadding="0" bgcolor=#FFC454 width=100%>
+<tr>
+  <td colspan="2" bgcolor="white"><img src="/dxforum/images/1x1.gif" width="20" height="6"></td>
+</tr>
+<tr>
+  <td colspan="2"><img src="/dxforum/images/1x1.gif" width="20" height="6"></td>
+</tr>
+<tr>
+  <td><img src="/dxforum/images/1x1.gif" width="20" height="1"></td>
+  <td width="2000">
+    <div style=" font-size: 8pt; color: black; font-family: Arial"><b>ANSWER:</b></div>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><img src="/dxforum/images/1x1.gif" width="20" height="5"></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="white"><img src="/dxforum/images/1x1.gif" width="20" height="2"></td>
+</tr>
+</table>
+<P align=center></P>
+<P><%=Form.Reason%></P>
+
+</ewf:Form>
+
+
+  </body>
+</html>
+  

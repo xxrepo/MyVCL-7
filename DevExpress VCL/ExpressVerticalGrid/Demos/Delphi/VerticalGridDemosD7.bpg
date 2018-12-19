@@ -1,0 +1,48 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = CustomDrawDemo.exe EditorsInPlaceDemo.exe EditorsLookupDemo.exe EditorsMaskDemo.exe \
+ProviderModeDemo.exe RTTIInspectorDemo.exe SimpleVerticalGridDemo.exe StylesMultiDemo.exe \
+StylesSimpleDemo.exe RowsMultiEditorsDemo.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+CustomDrawDemo.exe: CustomDrawDemo\CustomDrawDemo.dpr
+  $(DCC)
+
+EditorsInPlaceDemo.exe: EditorsInPlaceDemo\EditorsInPlaceDemo.dpr
+  $(DCC)
+
+EditorsLookupDemo.exe: EditorsLookupDemo\EditorsLookupDemo.dpr
+  $(DCC)
+
+EditorsMaskDemo.exe: EditorsMaskDemo\EditorsMaskDemo.dpr
+  $(DCC)
+
+ProviderModeDemo.exe: ProviderModeDemo\ProviderModeDemo.dpr
+  $(DCC)
+
+RTTIInspectorDemo.exe: RTTIInspectorDemo\RTTIInspectorDemo.dpr
+  $(DCC)
+
+SimpleVerticalGridDemo.exe: SimpleVerticalGridDemo\SimpleVerticalGridDemo.dpr
+  $(DCC)
+
+StylesMultiDemo.exe: StylesMultiDemo\StylesMultiDemo.dpr
+  $(DCC)
+
+StylesSimpleDemo.exe: STYLESSIMPLEDEMO\StylesSimpleDemo.dpr
+  $(DCC)
+
+RowsMultiEditorsDemo.exe: RowsMultiEditorsDemo\RowsMultiEditorsDemo.dpr
+  $(DCC)

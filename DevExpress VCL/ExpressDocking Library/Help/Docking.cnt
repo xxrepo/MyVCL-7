@@ -1,0 +1,93 @@
+:Base Docking.hlp
+:Title ExpressDocking Library
+:Index ExpressDocking Library=docking.hlp
+1 ExpressDocking Library
+2 Overview=IDH_Custom_Overview
+2 Quick Start
+3 Basics
+4 Adding Components and Controls=IDH_QS_AddingComponentsControls
+4 Customizing Dock Panels Appearance=IDH_QS_CustomizingDockPanelsAppearance
+4 Docking Operations Basics=IDH_QS_DockingOperationsBasics
+3 Building User Interfaces
+4 Creating a Visual Studio .NET like Interface=IDH_QS_VisualStudioInferface
+4 Using Dock Controls in MDI Applications=IDH_QS_UsingDockControlsMDI
+3 Managing Dock Controls at Runtime
+4 Understanding the Dock Control Internal Layout=IDH_QS_UnderstandingLayout
+4 Docking Panels to Sites at Runtime=IDH_QS_DockingPanelsSitesRuntime
+4 Creating and Managing Container Controls at Runtime=IDH_QS_ManagingContainerControlsRuntime
+4 Creating, Destroying, Showing and Hiding Dock Controls=IDH_QS_CreatingDestroyingShowingHiding
+2 Concepts
+3 Common Features
+4 Docking Operations=IDH_Concepts_DockingOperations
+4 Resizing Operations=IDH_Concepts_ResizingOperations
+4 Auto Hide Feature=IDH_Concepts_AutoHideFeature
+4 Caption Buttons=IDH_Concepts_CaptionButtons
+3 Dock Controls
+4 Hierarchy=IDH_Concepts_DockControlsHierarchy
+4 Dock Panels=IDH_Concepts_DockPanels
+4 Dock Sites=IDH_Concepts_DockSites
+4 Layout Sites=IDH_Custom_LayoutSites
+4 Float Sites=IDH_Custom_FloatSites
+4 Containers
+5 Tab Container Sites=IDH_Concepts_TabContainerSites
+5 Side Container Sites=IDH_Custom_SideContainerSites
+3 Docking Manager
+4 When to Use the Docking Manager=IDH_Concepts_WhenUseDockingManager
+4 Docking Manager Features=IDH_Concepts_DockingManagerFeatures
+3 Paint Styles and Custom Painting
+4 Paint Styles=IDH_Concepts_PaintStyles
+4 Docking Frame and Resizing Bar Custom Painting
+5 Overview=IDH_Concepts_DockResizeCustomPainting
+5 Docking Frame Custom Painting Sample=IDH_Concepts_DockingFrameCustomPaint
+5 Resizing Bar Custom Painting Sample=IDH_Concepts_ResizingBarCustomPaint
+3 Dock Zones and Resize Zones
+4 Zones Overview=IDH_Concepts_ZonesOverview
+4 Dock Zones=IDH_Concepts_DockZones
+4 Resize Zones=IDH_Concepts_ResizeZones
+3 Managing Dock Controls via Code
+4 Performing Docking Operations=IDH_Concepts_DockingCode
+4 Controlling Docking Operations=IDH_Concepts_ControllingDocking
+4 Controlling Resizing Operations=IDH_Concepts_ControllingResizing
+4 Persisting Settings of Controls Residing in Dock Panels=IDH_Concepts_PersistingSettings
+2 Reference
+3 Units
+4 dxDockControl Unit=IDH_Unit_dxDockControl
+4 dxDockPanel Unit=IDH_Unit_dxDockPanel
+4 dxDockConsts Unit=IDH_Unit_dxDockConsts
+3 Components & Controls
+4 TdxDockPanel=IDH_Class_TdxDockPanel
+4 TdxDockSite=IDH_Class_TdxDockSite
+4 TdxDockingManager=IDH_Class_TdxDockingManager
+3 Classes
+4 Dock Controls
+5 TdxCustomDockControl=IDH_Class_TdxCustomDockControl
+5 TdxCustomDockSite=IDH_Class_TdxCustomDockSite
+5 TdxContainerDockSite=IDH_Class_TdxContainerDockSite
+5 TdxFloatDockSite=IDH_Class_TdxFloatDockSite
+5 TdxLayoutDockSite=IDH_Class_TdxLayoutDockSite
+5 TdxTabContainerDockSite=IDH_Class_TdxTabContainerDockSite
+5 TdxSideContainerDockSite=IDH_Class_TdxSideContainerDockSite
+5 TdxHorizContainerDockSite=IDH_Class_TdxHorizContainerDockSite
+5 TdxVertContainerDockSite=IDH_Class_TdxVertContainerDockSite
+4 Dock Controls Properties
+5 TdxCustomDockControlProperties=IDH_Class_TdxCustomDockControlProperties
+5 TdxFloatDockSiteProperties=IDH_Class_TdxFloatDockSiteProperties
+5 TdxLayoutDockSiteProperties=IDH_Class_TdxLayoutDockSiteProperties
+5 TdxTabContainerDockSiteProperties=IDH_Class_TdxTabContainerDockSiteProperties
+5 TdxSideContainerDockSiteProperties=IDH_Class_TdxSideContainerDockSiteProperties
+4 Other
+5 TdxDockingController=IDH_Class_TdxDockingController
+5 TdxFloatForm=IDH_Class_TdxFloatForm
+5 TdxZone=IDH_Class_TdxZone
+3 Global Functions
+4 dxDockingController=IDH_dxDockControl_dxDockingController
+3 Global Constants
+4 dxAutoHideInterval=IDH_Const_dxAutoHideInterval
+4 dxAutoHideMovingInterval=IDH_Const_dxAutoHideMovingInterval
+4 dxAutoHideMovingSize=IDH_Const_dxAutoHideMovingSize
+4 dxAutoShowInterval=IDH_Const_dxAutoShowInterval
+4 dxDefaultImageHeight=IDH_Const_dxDefaultImageHeight
+4 dxDefaultImageWidth=IDH_Const_dxDefaultImageWidth
+4 dxDockZonesWidth=IDH_Const_dxDockZonesWidth
+4 dxResizeZonesWidth=IDH_Const_dxResizeZonesWidth
+4 dxSelectionFrameWidth=IDH_Const_dxSelectionFrameWidth

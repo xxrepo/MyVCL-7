@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="DBDemo.exe" Type="String">DBDemo\DBDemo.bdsproj</Projects>
+      <Projects Name="CustomDrawDemo.exe" Type="String">CustomDrawDemo\CustomDrawDemo.bdsproj</Projects>
+      <Projects Name="StylesDemo.exe" Type="String">StylesDemo\StylesDemo.bdsproj</Projects>
+      <Projects Name="UnboundDemo.exe" Type="String">UnboundDemo\UnboundDemo.bdsproj</Projects>
+      <Projects Name="ResourceDemo.exe" Type="String">ResourceDemo\ResourceDemo.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">DBDemo.exe CustomDrawDemo.exe StylesDemo.exe UnboundDemo.exe ResourceDemo.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>

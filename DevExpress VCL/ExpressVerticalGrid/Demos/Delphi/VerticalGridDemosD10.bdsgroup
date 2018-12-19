@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality" Type="String">Default.Personality</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    <Projects>
+      <Projects Name="CustomDrawDemo.exe" Type="String">CustomDrawDemo\CustomDrawDemo.bdsproj</Projects>
+      <Projects Name="EditorsInPlaceDemo.exe" Type="String">EditorsInPlaceDemo\EditorsInPlaceDemo.bdsproj</Projects>
+      <Projects Name="EditorsLookupDemo.exe" Type="String">EditorsLookupDemo\EditorsLookupDemo.bdsproj</Projects>
+      <Projects Name="EditorsMaskDemo.exe" Type="String">EditorsMaskDemo\EditorsMaskDemo.bdsproj</Projects>
+      <Projects Name="ProviderModeDemo.exe" Type="String">ProviderModeDemo\ProviderModeDemo.bdsproj</Projects>
+      <Projects Name="RTTIInspectorDemo.exe" Type="String">RTTIInspectorDemo\RTTIInspectorDemo.bdsproj</Projects>
+      <Projects Name="SimpleVerticalGridDemo.exe" Type="String">SimpleVerticalGridDemo\SimpleVerticalGridDemo.bdsproj</Projects>
+      <Projects Name="StylesMultiDemo.exe" Type="String">StylesMultiDemo\StylesMultiDemo.bdsproj</Projects>
+      <Projects Name="StylesSimpleDemo.exe" Type="String">STYLESSIMPLEDEMO\StylesSimpleDemo.bdsproj</Projects>
+      <Projects Name="RowsMultiEditorsDemo.exe" Type="String">RowsMultiEditorsDemo\RowsMultiEditorsDemo.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">CustomDrawDemo.exe EditorsInPlaceDemo.exe EditorsLookupDemo.exe EditorsMaskDemo.exe ProviderModeDemo.exe RTTIInspectorDemo.exe SimpleVerticalGridDemo.exe StylesMultiDemo.exe StylesSimpleDemo.exe RowsMultiEditorsDemo.exe</Projects>
+    </Projects>
+  </Default.Personality>
+</BorlandProject>
