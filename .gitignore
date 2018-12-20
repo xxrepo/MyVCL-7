@@ -1,0 +1,9 @@
+*.txt
+web.config
+*.dll
+*.exe
+*.~*
+*.dcu
+*.ini
+*.bak
+*.bkp
