@@ -7,3 +7,5 @@ web.config
 *.ini
 *.bak
 *.bkp
+*.doc*
+*.xls*
